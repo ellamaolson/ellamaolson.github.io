@@ -1,37 +1,34 @@
 'use client';
-import * as React from 'react';
-import Typography from '@mui/material/Typography';
+import Link from 'next/link';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-import Link from '@mui/material/Link';
+import styled from '@emotion/styled';
 
-function handleClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-  event.preventDefault();
-}
-
-const navItems = {
-  '/': {
-    name: 'home',
-  },
-  '/work': {
-    name: 'work',
-  },
-  '/blog': {
-    name: 'blog',
-  },
-};
+const NavContainer = styled.div`
+  margin-bottom: 1em;
+`;
 
 export function NavigationBar() {
+  const navItems = {
+    '/': {
+      name: 'home',
+    },
+    '/work': {
+      name: 'work',
+    },
+    '/publications': {
+      name: 'publications',
+    },
+  };
+
   return (
-    <div role="presentation" onClick={handleClick}>
+    <NavContainer>
       <Breadcrumbs aria-label="breadcrumb">
-        {Object.entries(navItems).map(([path, { name }]) => {
-          return (
-            <Link underline="hover" color="inherit" href="/" key={path}>
-              {name}
-            </Link>
-          );
-        })}
+        {Object.entries(navItems).map(([path, { name }]) => (
+          <Link color="text.primary" href={path} key={path}>
+            {name}
+          </Link>
+        ))}
       </Breadcrumbs>
-    </div>
+    </NavContainer>
   );
 }

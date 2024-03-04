@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from './theme';
 
-import { NavigationBar } from './components/NavigationBar';
+import { NavigationBar } from './NavigationBar';
 
 export function StyledRoot({
   children,
@@ -24,7 +24,7 @@ export function StyledRoot({
         }}
       >
         <CssBaseline />
-        <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
+        <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="md">
           <NavigationBar />
           {children}
         </Container>
