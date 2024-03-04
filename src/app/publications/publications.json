@@ -1,0 +1,76 @@
+{
+  "publications": [
+    {
+      "title": "Ultimate Packing List for Women World Travelers",
+      "description": "A short packing guide to get you out the door on your next adventure!",
+      "date": "3/4/24",
+      "link": "https://medium.com/@elanaolson/ultimate-packing-list-for-women-world-travelers-f92e7679ff9a",
+      "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*fwWOamRSeQTOzzp1Wa8sAw.jpeg",
+      "site": "medium",
+      "siteUrl": "https://medium.com/@elanaolson"
+    },
+    {
+      "title": "Integrating Material UI into a React NextJS app",
+      "description": "Let’s breakdown how to add Material UI to a NextJS app to get you running with it in no time!",
+      "date": "3/2/24",
+      "link": "https://medium.com/@elanaolson/integrating-material-ui-into-a-react-nextjs-app-55a95e15d767",
+      "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*zmQq6mFRzO8X78XXd6SuhA.png",
+      "site": "medium",
+      "siteUrl": "https://medium.com/@elanaolson"
+    },
+    {
+      "title": "How to create an Angular app in no time",
+      "description": "From zero to deployment, we will build an Angular app with custom components, routing, services, forms, and Angular Material in 6 steps.",
+      "date": "2/10/20",
+      "link": "https://medium.com/angular-blog/create-an-angular-app-in-no-time-2ca89c734dd2",
+      "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*9Z8v2FakQvE6K0Zr",
+      "site": "medium",
+      "siteUrl": "https://medium.com/@elanaolson"
+    },
+    {
+      "title": "Deploying a personal website built in Angular to Github Pages",
+      "description": "We will take a look at how to deploy an Angular application as your personal website on Github Pages.",
+      "date": "2/10/20",
+      "link": "https://medium.com/angular-blog/deploying-a-personal-website-to-github-pages-da2af6167f8b",
+      "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*8na9Au7-617RLoHHWv21BA.jpeg",
+      "site": "Angular Blog",
+      "siteUrl": "https://blog.angular.io/"
+    },
+    {
+      "title": "2 New Tools to help with AngularJS to Angular Migrations",
+      "description": "Many developers are embarking on the migration journey of bringing AngularJS applications up to modern-day web development standards with Angular, and there are a lot of approaches.",
+      "date": "8/14/18",
+      "link": "https://medium.com/angular-blog/migrating-to-angular-fc9618d6fb04",
+      "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*7662Fs3dSpc4S4wdTUvk-g.gif",
+      "site": "Angular Blog",
+      "siteUrl": "https://blog.angular.io/"
+    },
+    {
+      "title": "Finding Angular",
+      "description": "From zero to deployment, we will cover how to quickly create an Angular application. Whether you are learning Angular for the first time, teaching your team Angular, or searching for a fast guide to re-jog your memory, this guide is meant for you",
+      "date": "9/17/19",
+      "link": "https://www.youtube.com/watch?v=feNvtGXPXTg&t=1s",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_k_uCZINecptw4ycBA8DuIwmbNY2cB4vVUlNT65=s176-c-k-c0x00ffffff-no-rj",
+      "site": "Youtube",
+      "siteUrl": "https://www.youtube.com/"
+    },
+    {
+      "title": "Migrating from AngularJS to Angular",
+      "description": "Many developers are embarking on the migration journey of bringing AngularJS applications up to modern-day web development standards with Angular, and there are a lot of approaches",
+      "date": "11/16/18",
+      "link": "https://www.youtube.com/watch?v=fFLKEtIqZeY&t=1s",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_k_uCZINecptw4ycBA8DuIwmbNY2cB4vVUlNT65=s176-c-k-c0x00ffffff-no-rj",
+      "site": "Youtube",
+      "siteUrl": "https://www.youtube.com/"
+    },
+    {
+      "title": "Migrating from AngularJS to Angular - MTV Meetup",
+      "description": "There's two new tools to support developers considering migrating from AngularJS to Angular - ngMigration Assistant and ngMigration Forum.",
+      "date": "9/24/18",
+      "link": "https://www.youtube.com/watch?v=d0S5Q_WuRoo",
+      "image": "https://yt3.googleusercontent.com/y4J_Fs5ksRlxx6_LzT1VKxVqH_T8Vyn_RN_YYgLJhuMzBS5qxTgm7NlEcMkQd3hgCpfWtYcEUg=s176-c-k-c0x00ffffff-no-rj",
+      "site": "Youtube",
+      "siteUrl": "https://www.youtube.com/"
+    }
+  ]
+}
