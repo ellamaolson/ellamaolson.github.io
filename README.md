@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# react-portfolio-app
 
-## Getting Started
+- Framework: Next.js
+- Library: React
+- Language: TypeScript
+- UI Library: Material UI
+- Styling: Tailwind CSS and Emotion Styled Components
+- Deployment: tbd
 
-First, run the development server:
+## Running Locally
+
+This application requires Node.js v18.17+.
 
 ```bash
-npm run dev
-# or
+git clone https://github.com/ellamaolson/react-portfolio-app.git
+cd react-portfolio-app
+yarn install
+yarn build
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Liscence
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. You are free to use this code as inspiration.
+2. Please do not copy it directly, remove my blog posts, images, etc
+3. Crediting the author is appreciated.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Credit
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Credit [Lee Rob](https://github.com/leerob/leerob.io) for inspiration for this project
