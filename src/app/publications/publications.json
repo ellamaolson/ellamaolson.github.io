@@ -1,6 +1,15 @@
 {
   "publications": [
     {
+      "title": "A beginner’s guide to building a React NextJS app",
+      "description": "From installing node to harnessing hooks, we will understand the basics of building a React app with NextJS, TypeScript & Material UI",
+      "date": "3/6/24",
+      "link": "https://medium.com/@elanaolson/a-beginners-guide-to-building-a-react-nextjs-app-7463120389f0",
+      "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*wFdy4kt3t4EignnI",
+      "site": "medium",
+      "siteUrl": "https://medium.com/@elanaolson"
+    },
+    {
       "title": "Ultimate Packing List for Women World Travelers",
       "description": "A short packing guide to get you out the door on your next adventure!",
       "date": "3/4/24",
