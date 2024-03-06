@@ -1,12 +1,12 @@
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+
 export default function Home() {
   return (
-    <section>
-      <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-        my portfolio
-      </h1>
-      <p className="prose prose-neutral dark:prose-invert">
-        This is your new portfolio.
-      </p>
-    </section>
+    <>
+      <Typography variant="h5" gutterBottom>
+        hiya, my name is Elana
+      </Typography>
+    </>
   );
 }

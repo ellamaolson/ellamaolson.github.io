@@ -1,10 +1,11 @@
 'use client';
 import Link from 'next/link';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Typography from '@mui/material/Typography';
 import styled from '@emotion/styled';
 
 const NavContainer = styled.div`
-  margin-bottom: 1em;
+  margin-bottom: 50px;
 `;
 
 export function NavigationBar() {
@@ -25,7 +26,9 @@ export function NavigationBar() {
       <Breadcrumbs aria-label="breadcrumb">
         {Object.entries(navItems).map(([path, { name }]) => (
           <Link color="text.primary" href={path} key={path}>
-            {name}
+            <Typography variant="body1" sx={{ fontWeight: 'bold' }}>
+              {name}
+            </Typography>
           </Link>
         ))}
       </Breadcrumbs>
