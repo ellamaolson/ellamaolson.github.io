@@ -11,6 +11,12 @@ const roboto = Roboto({
 const theme = createTheme({
   typography: {
     fontFamily: roboto.style.fontFamily,
+    body1: {
+      lineHeight: 1.5,
+    },
+    body2: {
+      lineHeight: 1.5,
+    },
   },
 });
 

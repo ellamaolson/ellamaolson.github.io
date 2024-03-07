@@ -24,7 +24,12 @@ export function StyledRoot({
         }}
       >
         <CssBaseline />
-        <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="md">
+        <Container
+          component="main"
+          maxWidth="md"
+          disableGutters
+          sx={{ mt: 8, mb: 2, paddingLeft: '100px', paddingRight: '100px' }}
+        >
           <NavigationBar />
           {children}
         </Container>
