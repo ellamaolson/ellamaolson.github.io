@@ -22,7 +22,7 @@ export default function Work() {
       <Typography variant="h5" gutterBottom>
         one might call this a resume
       </Typography>
-      <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
+      <List sx={{ width: '100%' }}>
         {workList.map((work, index) => {
           const showDivider = index !== workList.length - 1;
 
