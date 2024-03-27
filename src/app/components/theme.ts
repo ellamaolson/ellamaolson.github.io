@@ -42,6 +42,12 @@ const theme = createTheme({
       fontSize: '1rem',
       marginBottom: '2px',
     },
+    button: {
+      textTransform: 'none',
+      fontWeight: 600,
+      fontSize: '1rem',
+      color: 'white',
+    },
   },
 });
 
