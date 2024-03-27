@@ -1,19 +1,18 @@
 'use client';
 import { useState } from 'react';
+import ArticleIcon from '@mui/icons-material/Article';
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Typography from '@mui/material/Typography';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
-import ArticleIcon from '@mui/icons-material/Article';
-
 import Image from 'next/image';
+import babyAlpacaImage from '../../public/holding-baby-alpaca.jpeg';
 import cafeImage from '../../public/cafe.jpeg';
 import cartwheelsImage from '../../public/cartwheels.jpeg';
-import babyAlpacaImage from '../../public/holding-baby-alpaca.jpeg';
 import inkanRuinsImage from '../../public/pisac-ruins.jpeg';
 import sequoiaImage from '../../public/sequoia.jpeg';
 import yosemiteImage from '../../public/yosemite.jpeg';
@@ -40,6 +39,7 @@ export default function Home() {
             sizes="(max-width: 768px) 213px, 33vw"
             priority
             className="rounded-lg object-cover"
+            placeholder="blur"
           />
         </div>
         <div className="relative h-80 mb-4 sm:mb-0">
@@ -50,6 +50,7 @@ export default function Home() {
             sizes="(max-width: 768px) 213px, 33vw"
             priority
             className="rounded-lg object-cover object-[-16px] sm:object-center"
+            placeholder="blur"
           />
         </div>
         <div className="relative h-40 sm:h-80 sm:mb-4">
@@ -60,6 +61,7 @@ export default function Home() {
             sizes="(max-width: 768px) 213px, 33vw"
             priority
             className="rounded-lg object-cover object-top sm:object-center"
+            placeholder="blur"
           />
         </div>
         <div className="relative h-40 mb-4 sm:mb-0">
@@ -70,6 +72,7 @@ export default function Home() {
             sizes="(max-width: 768px) 213px, 33vw"
             priority
             className="rounded-lg object-cover"
+            placeholder="blur"
           />
         </div>
         <div className="relative h-40 mb-4">
@@ -80,6 +83,7 @@ export default function Home() {
             sizes="(max-width: 768px) 213px, 33vw"
             priority
             className="rounded-lg object-cover"
+            placeholder="blur"
           />
         </div>
         <div className="relative h-80">
@@ -90,6 +94,7 @@ export default function Home() {
             sizes="(min-width: 768px) 213px, 33vw"
             priority
             className="rounded-lg object-cover"
+            placeholder="blur"
           />
         </div>
       </div>
