@@ -1,9 +1,10 @@
-import { Fragment } from 'react';
+import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import Divider from '@mui/material/Divider';
-import ListItemText from '@mui/material/ListItemText';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+
 import workData from './work.json';
 
 export default function Work() {
@@ -19,10 +20,48 @@ export default function Work() {
 
   return (
     <>
-      <Typography variant="h5" gutterBottom>
-        one might call this a resume
-      </Typography>
-      <List sx={{ width: '100%' }}>
+      <Typography variant="h1">my resume</Typography>
+      <Box sx={{ width: '100%' }}>
+        <Stack
+          direction={'column'}
+          spacing={{ xs: 1, sm: 2, md: 4 }}
+          divider={<Divider orientation="horizontal" flexItem />}
+          sx={{ paddingLeft: '0px', alignItems: 'flex-start' }}
+        >
+          {workList.map((work, index) => {
+            const showDivider = index !== workList.length - 1;
+
+            const startDate = formatDate(work.startDate);
+            const endDate = work.endDate ? formatDate(work.endDate) : 'Present';
+
+            return (
+              <div key={index}>
+                <Typography variant="h2">{work.company}</Typography>
+
+                <Typography variant="h3">{work.title}</Typography>
+                <Typography variant="subtitle1" gutterBottom>
+                  {startDate + ' - ' + endDate}
+                </Typography>
+                <Typography variant="body1" sx={{ margin: '10px 0 10px 0' }}>
+                  {work.description}
+                </Typography>
+                <List sx={{ listStyleType: 'disc', listStylePosition: 'inside' }}>
+                  {work.notes.map((note, index) => {
+                    return (
+                      <ListItem sx={{ display: 'list-item' }} key={index}>
+                        {note}
+                      </ListItem>
+                    );
+                  })}
+                </List>
+
+                {/* {showDivider && <Divider variant="fullWidth" component="li" />} */}
+              </div>
+            );
+          })}
+        </Stack>
+      </Box>
+      {/* <List sx={{ width: '100%' }}>
         {workList.map((work, index) => {
           const showDivider = index !== workList.length - 1;
 
@@ -33,14 +72,14 @@ export default function Work() {
             <Fragment key={index}>
               <ListItem alignItems="flex-start" sx={{ paddingLeft: '0px' }}>
                 <ListItemText
-                  primary={<Typography variant="h6">{work.company}</Typography>}
+                  primary={<Typography variant="h2">{work.company}</Typography>}
                   secondary={
                     <Fragment>
-                      <Typography variant="subtitle1">{work.title}</Typography>
-                      <Typography variant="subtitle2" gutterBottom>
+                      <Typography variant="h3">{work.title}</Typography>
+                      <Typography variant="h4" gutterBottom>
                         {startDate + ' - ' + endDate}
                       </Typography>
-                      <Typography variant="body2" sx={{ margin: '10px 0 10px 0' }}>
+                      <Typography variant="body1" sx={{ margin: '10px 0 10px 0' }}>
                         {work.description}
                       </Typography>
                       <List sx={{ listStyleType: 'disc', listStylePosition: 'inside' }}>
@@ -60,7 +99,7 @@ export default function Work() {
             </Fragment>
           );
         })}
-      </List>
+      </List> */}
     </>
   );
 }

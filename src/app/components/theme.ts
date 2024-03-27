@@ -15,10 +15,32 @@ const theme = createTheme({
   typography: {
     fontFamily: roboto.style.fontFamily,
     body1: {
-      lineHeight: 1.5,
+      fontWeight: 400,
+      color: 'white',
     },
     body2: {
-      lineHeight: 1.5,
+      fontWeight: 400,
+      color: 'white',
+    },
+    h1: {
+      fontWeight: 500,
+      fontSize: '1.75rem',
+      marginBottom: '32px',
+    },
+    h2: {
+      fontWeight: 500,
+      fontSize: '1.5rem',
+      marginBottom: '8px',
+    },
+    h3: {
+      fontWeight: 400,
+      fontSize: '1.25rem',
+      marginBottom: '4px',
+    },
+    h4: {
+      fontWeight: 400,
+      fontSize: '1rem',
+      marginBottom: '2px',
     },
   },
 });

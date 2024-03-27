@@ -22,9 +22,7 @@ export default function Home() {
   const [value, setValue] = useState(0);
   return (
     <>
-      <Typography variant="h5" gutterBottom sx={{ marginBottom: '32px' }}>
-        hiya, my name is Elana
-      </Typography>
+      <Typography variant="h1">hiya, my name is Elana</Typography>
       <Typography variant="body1" gutterBottom sx={{ marginBottom: '16px' }}>
         I&apos;m a sunshine chasing, wave tumbling, travel enthusiast, yogi, coder who is passionate
         about learning, problem solving, and making hard concepts easier to understand for others.
@@ -96,7 +94,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Typography variant="h6" gutterBottom>
+      <Typography variant="h2" gutterBottom>
         what am I focussing on right now?
       </Typography>
       <List sx={{ listStyleType: 'disc', listStylePosition: 'inside', marginBottom: '32px' }}>

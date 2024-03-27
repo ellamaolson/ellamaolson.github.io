@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
+import Avatar from '@mui/material/Avatar';
+import Divider from '@mui/material/Divider';
+import Link from '@mui/material/Link';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import Divider from '@mui/material/Divider';
-import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
-import Link from '@mui/material/Link';
-import Avatar from '@mui/material/Avatar';
+import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import publicationsData from './publications.json';
 
@@ -17,9 +17,7 @@ export default function Publications() {
 
   return (
     <>
-      <Typography variant="h5" gutterBottom>
-        things I have published
-      </Typography>
+      <Typography variant="h1">things I have published</Typography>
       <List sx={{ width: '100%' }}>
         {sortedPubs.map((pub, index) => {
           const showDivider = index !== sortedPubs.length - 1;
@@ -38,7 +36,7 @@ export default function Publications() {
                 <ListItemText
                   primary={
                     <Link href={pub.link} underline="hover" color="inherit">
-                      {pub.title}
+                      <Typography variant="h3">{pub.title}</Typography>
                     </Link>
                   }
                   secondary={
