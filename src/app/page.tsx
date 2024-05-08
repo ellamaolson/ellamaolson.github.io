@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <>
-      <Typography variant="h1">hiya, I&apos;m Elana</Typography>
+      <Typography variant="h1">Hiya, I&apos;m Elana</Typography>
       <Typography variant="body1" gutterBottom sx={{ marginBottom: '16px' }}>
         I&apos;m a developer with a curiosity for streamlining how engineers engage with their core
         tooling and products. Problem solving and navigating rabbit holes is my specialty, but

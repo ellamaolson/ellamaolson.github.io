@@ -17,7 +17,7 @@ export default function Publications() {
 
   return (
     <>
-      <Typography variant="h1">things I have published</Typography>
+      <Typography variant="h1">Things I have published</Typography>
       <List sx={{ width: '100%' }}>
         {sortedPubs.map((pub, index) => {
           const showDivider = index !== sortedPubs.length - 1;

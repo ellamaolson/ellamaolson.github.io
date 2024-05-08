@@ -19,7 +19,7 @@ export default function Work() {
 
   return (
     <>
-      <Typography variant="h1">my resume</Typography>
+      <Typography variant="h1">Resume</Typography>
       <Box sx={{ width: '100%' }}>
         <Stack
           direction={'column'}
