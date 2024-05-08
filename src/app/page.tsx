@@ -19,16 +19,20 @@ import yosemiteImage from '../../public/yosemite.jpeg';
 
 export default function Home() {
   const [value, setValue] = useState(0);
+
   return (
     <>
-      <Typography variant="h1">hiya, my name is Elana</Typography>
+      <Typography variant="h1">hiya, I&apos;m Elana</Typography>
       <Typography variant="body1" gutterBottom sx={{ marginBottom: '16px' }}>
-        I&apos;m a sunshine chasing, wave tumbling, travel enthusiast, yogi, coder who is passionate
-        about learning, problem solving, and making hard concepts easier to understand for others.
+        I&apos;m a developer with a curiosity for streamlining how engineers engage with their core
+        tooling and products. Problem solving and navigating rabbit holes is my specialty, but
+        documenting and teaching my learnings to others is what I&apos;m most excited about. I want
+        to make hard concepts simpler to understand, create communities that foster support and
+        growth, and continue to improve how we build technology.
       </Typography>
       <Typography variant="body1">
-        I love painting, reading, crochet, journaling, swimming, rock climbing, hiking, camping,
-        spending time with people that fill my cup, and jetting off on the next adventure!
+        Outside of the office ~ I chase the sun, dabble in a few art forms, and surround myself with
+        incredibly loving human beings. I love to travel and am ALWAYS excited to give travel recs.
       </Typography>
       <div className="columns-2 sm:columns-3 gap-4 my-8">
         <div className="relative h-40 mb-4">
@@ -100,32 +104,36 @@ export default function Home() {
       </div>
 
       <Typography variant="h2" gutterBottom>
-        what am I focussing on right now?
+        What am I focussing on right now?
       </Typography>
-      <List sx={{ listStyleType: 'disc', listStylePosition: 'inside', marginBottom: '32px' }}>
-        <ListItem sx={{ display: 'list-item' }}>
-          <strong>Womens&apos; Communities</strong> - cultivating supportive environments for women
+      <List sx={{ listStyleType: 'none', listStylePosition: 'inside', marginBottom: '32px' }}>
+        <ListItem sx={{ display: 'list-item', paddingLeft: '0px', paddingRight: '0px' }}>
+          <strong>Building a supportive community for women</strong>
           <List sx={{ listStyleType: 'circle', listStylePosition: 'inside' }}>
             <ListItem sx={{ display: 'list-item' }}>
-              My good friend Ali and I started a womens group back in August 2023 to build a
-              community of women supporting women. We strive to create an environment of enrichment,
-              growth, love, and creativity for women identifying individuals locally
-            </ListItem>
-            <ListItem sx={{ display: 'list-item' }}>
-              Alongside this group, we started a bookclub to read all the wonderful books being
-              recommended in womens group. We read books written by or surrounding the topic of
-              women.
+              I co-lead a women&apos;s group with my good friend Ali. We created a community of
+              women supporting women and foster an environment of emotional support, enrichment, and
+              growth for women identifying individuals in San Diego. We hold biweekly workshops
+              learning about a variety of topics ranging from financial literacy to non violent
+              communication to anatomy lessons, encouraging our participants to take an active role
+              in the discussions and leading workshops they are passionate about.
             </ListItem>
           </List>
         </ListItem>
-        <ListItem sx={{ display: 'list-item' }}>
-          <strong>Health</strong> - applying new exercise and sleeping routine protocols
+        <ListItem sx={{ display: 'list-item', paddingLeft: '0px', paddingRight: '0px' }}>
+          <strong>Doing lots of art projects</strong>
+          <List sx={{ listStyleType: 'circle', listStylePosition: 'inside' }}>
+            <ListItem sx={{ display: 'list-item' }}>
+              I carry a small watercolor kit with me on my travels and daily life to capture
+              beautiful scenes and sit with the present moment a bit more colorfully. At home
+              I&apos;m working on a temperature blanket (the size of my bed) that maps the local
+              high temperature to a yarn color which I then crochet for that day.
+            </ListItem>
+          </List>
         </ListItem>
-        <ListItem sx={{ display: 'list-item' }}>
-          <strong>Art</strong> - going to try ceramics again soon!
-        </ListItem>
-        <ListItem sx={{ display: 'list-item' }}>
-          <strong>Learning</strong> - too many books and podcasts, but here&apos;s some recs
+        <ListItem sx={{ display: 'list-item', paddingLeft: '0px', paddingRight: '0px' }}>
+          <strong>Learning about health, relational dynamics, and morality</strong> - here&apos;s
+          some recs
           <List sx={{ listStyleType: 'circle', listStylePosition: 'inside' }}>
             <ListItem sx={{ display: 'list-item' }}>
               <i>Huberman Labs</i> - a health and science podcast led by Andrew Huberman to bring
