@@ -14,6 +14,9 @@ export function NavigationBar() {
     '/publications': {
       name: 'publications',
     },
+    '/travel': {
+      name: 'travel',
+    },
   };
 
   return (
