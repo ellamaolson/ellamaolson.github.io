@@ -6,11 +6,14 @@
       "status": "Full-time",
       "location": "remote",
       "startDate": "7/1/20",
-      "endDate": "",
+      "endDate": "12/16/24",
       "description": "I joined Atlassian's Confluence team and a new grad software engineer eager to tackle frontend development on an awesome product.",
       "notes": [
-        "Worked on the core product of Confluence for 2020-2022 years, building collaborative tools and components. Engaged with a large team of engineers to develop projects spanning months to years long, contributing to platform components, integrating with microservices, frequent cross-team collaboration, ownership and maintenance of major elements on Confluence with on-call rotations.",
-        "For the past year I have worked on a Confluence team running experiments for landing and onboarding customers. We build smaller scale projects - collaborating with PMs, designs, architects, other teams, and data analysts to rapidly design, develop, and analyze the impact of experiments."
+        "Designed and implemented product components for Confluence with a focus on feature development (reactions, comments, onboarding suite) using React and TypeScript.",
+        "Authored technical documentation and internal guides for Confluence, enhancing adoption among developers and end-users.",
+        "Collaborated with product, data science, and engineering teams on negotiating project scope, analytics, and running A/B tests, iterating based on user feedback to drive feature success and deliver on time.",
+        "Created API documentation to support third-party integrations, streamlining collaboration with external partners.",
+        "Core product contributions on: collaborative features like reactions and comments, improving the onboarding suite, and running experiments for landing new customers."
       ],
       "relavantLinks": []
     },
@@ -36,9 +39,9 @@
       "endDate": "9/1/19",
       "description": "Interned a second year on the Angular team to build an ecosystem housing useful tooling and technologies for building Angular apps",
       "notes": [
-        "After interning for Angular in summer 2018 and then contributing to the community during the rest of the year, I came back to Angular for summer 2019 to build upon a larger project of evailing useful tools and technologies for Angular.",
-        "Developed a search engine for Angular tooling that allows you to pick and choose the best tools/components for your app. - ellamaolson/ngEcosystem",
-        "Created a guide for Angular beginners - How to build an Angular app with custom components, routing, services, forms, and Angular Material in 6 steps."
+        "Interned with the Angular team (Summer 2018, 2019), contributing to community initiatives and evaluating tools and technologies to enhance the Angular ecosystem.",
+        "Created ngEcosystem, a platform connecting developers with community resources, enhancing ecosystem engagement.",
+        "Authored a beginner-friendly guide, 'How to build an Angular app with custom components, routing, services, forms, and Angular Material in 6 steps.'"
       ],
       "relavantLinks": [
         "https://medium.com/@elanaolson/create-an-angular-app-in-no-time-2ca89c734dd2",
@@ -54,10 +57,9 @@
       "endDate": "9/1/18",
       "description": "Interned on the Angular team to develop and share tooling, documentation, and guides on migrating from AngularJS to Angular",
       "notes": [
-        "Having never worked in Angular before, I eagerly dove in to learn how the community was using Angular and quickly discovered many people struggling with migrating from AngularJS to Angular v2+. I worked closely with major customers to devise a list of pain points they were experiencing in this migration process and built a migration tool to scan, parse, and recommend how to migrate their applications.",
-        "ngMigration-Assistant is an analysis tool that recommends a custom migration path to take to Angular. It scans an AngularJS application for AngularJS patterns, provides statistics on your application, and identify the necessary steps for migrating to Angular. It highlights files containing AngularJS patterns and directs on how to convert those patterns to be Angular compatible. It is the first step in starting a your migration from AngularJS to Angular.",
-        "In the process, I shared this tool and my learnings with the larger Angular community - speaking at local and international meetups and conferences and wrote a detailed blog announcing the tool.",
-        "We created a community hub, ngMigration Forum, for discussing, learning, and sharing relevant information on migrating. So many businesses were going through the same experience and creating private internal documentation I saw duplicated across many teams, so a centralized place felt necessary."
+        "Developed ngMigration-Assistant, a tool to analyze AngularJS applications, provide migration statistics, and recommend custom migration paths to Angular, addressing key challenges in transitioning from AngularJS to Angular v2+.",
+        "Collaborated with major customers to identify migration pain points, guiding the design and implementation of effective solutions.",
+        "Presented learnings and tools at local and international conferences, meetups, and through a detailed blog, fostering community engagement and adoption."
       ],
       "relavantLinks": [
         "https://blog.angular.io/migrating-to-angular-fc9618d6fb04",
@@ -73,7 +75,9 @@
       "startDate": "1/3/17",
       "endDate": "11/1/17",
       "description": "Learned and built a website for Tappity using JavaScript, HTML, and Bootstrap CSS",
-      "notes": [],
+      "notes": [
+        "Contributed to the development of an interactive educational web app, increasing platform usability and engagement."
+      ],
       "relavantLinks": []
     }
   ]

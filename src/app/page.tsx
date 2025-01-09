@@ -18,8 +18,6 @@ import sequoiaImage from '../../public/sequoia.jpeg';
 import yosemiteImage from '../../public/yosemite.jpeg';
 
 export default function Home() {
-  const [value, setValue] = useState(0);
-
   return (
     <>
       <Typography variant="h1">Hiya, I&apos;m Elana</Typography>
@@ -111,12 +109,10 @@ export default function Home() {
           <strong>Building a supportive community for women</strong>
           <List sx={{ listStyleType: 'circle', listStylePosition: 'inside' }}>
             <ListItem sx={{ display: 'list-item' }}>
-              I co-lead a women&apos;s group with my good friend Ali. We created a community of
-              women supporting women and foster an environment of emotional support, enrichment, and
-              growth for women identifying individuals in San Diego. We hold biweekly workshops
-              learning about a variety of topics ranging from financial literacy to non violent
-              communication to anatomy lessons, encouraging our participants to take an active role
-              in the discussions and leading workshops they are passionate about.
+              I co-lead a women&apos;s group with my good friend AliSan Diego, fostering emotional
+              support and growth through biweekly workshops on topics like financial literacy,
+              non-violent communication, and anatomy. We encourage our participants to take an
+              active role in the discussions and leading workshops their passionate about.
             </ListItem>
           </List>
         </ListItem>
@@ -124,10 +120,9 @@ export default function Home() {
           <strong>Doing lots of art projects</strong>
           <List sx={{ listStyleType: 'circle', listStylePosition: 'inside' }}>
             <ListItem sx={{ display: 'list-item' }}>
-              I carry a small watercolor kit with me on my travels and daily life to capture
-              beautiful scenes and sit with the present moment a bit more colorfully. At home
-              I&apos;m working on a temperature blanket (the size of my bed) that maps the local
-              high temperature to a yarn color which I then crochet for that day.
+              I travel with a small watercolor kit to capture scenes and embrace the present moment
+              a bit more colorfully. At home I&apos;m working on a temperature blanket (the size of
+              my bed) mapping daily high temperatures to yarn colors.
             </ListItem>
           </List>
         </ListItem>
