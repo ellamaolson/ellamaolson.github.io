@@ -29,7 +29,7 @@ export default function Publications() {
           const pubSite = pub.site[0].toUpperCase() + pub.site.slice(1);
           return (
             <Fragment key={index}>
-              <ListItem alignItems="flex-start" sx={{ paddingLeft: '0px' }}>
+              <ListItem alignItems="flex-start" sx={{ pl: '0px' }}>
                 <ListItemAvatar>
                   <Avatar alt="Remy Sharp" src={pub.image} />
                 </ListItemAvatar>

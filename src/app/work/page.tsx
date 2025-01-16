@@ -25,7 +25,7 @@ export default function Work() {
           direction={'column'}
           spacing={{ xs: 1, sm: 2, md: 4 }}
           divider={<Divider orientation="horizontal" flexItem />}
-          sx={{ paddingLeft: '0px', alignItems: 'flex-start' }}
+          sx={{ pl: '0px', alignItems: 'flex-start' }}
         >
           {workList.map((work, index) => {
             const showDivider = index !== workList.length - 1;

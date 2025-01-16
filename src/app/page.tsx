@@ -105,7 +105,7 @@ export default function Home() {
         What am I focussing on right now?
       </Typography>
       <List sx={{ listStyleType: 'none', listStylePosition: 'inside', marginBottom: '32px' }}>
-        <ListItem sx={{ display: 'list-item', paddingLeft: '0px', paddingRight: '0px' }}>
+        <ListItem sx={{ display: 'list-item', pl: '0px', pr: '0px' }}>
           <strong>Building a supportive community for women</strong>
           <List sx={{ listStyleType: 'circle', listStylePosition: 'inside' }}>
             <ListItem sx={{ display: 'list-item' }}>
@@ -116,7 +116,7 @@ export default function Home() {
             </ListItem>
           </List>
         </ListItem>
-        <ListItem sx={{ display: 'list-item', paddingLeft: '0px', paddingRight: '0px' }}>
+        <ListItem sx={{ display: 'list-item', pl: '0px', pr: '0px' }}>
           <strong>Doing lots of art projects</strong>
           <List sx={{ listStyleType: 'circle', listStylePosition: 'inside' }}>
             <ListItem sx={{ display: 'list-item' }}>
@@ -126,7 +126,7 @@ export default function Home() {
             </ListItem>
           </List>
         </ListItem>
-        <ListItem sx={{ display: 'list-item', paddingLeft: '0px', paddingRight: '0px' }}>
+        <ListItem sx={{ display: 'list-item', pl: '0px', pr: '0px' }}>
           <strong>Learning about health, relational dynamics, and morality</strong> - here&apos;s
           some recs
           <List sx={{ listStyleType: 'circle', listStylePosition: 'inside' }}>

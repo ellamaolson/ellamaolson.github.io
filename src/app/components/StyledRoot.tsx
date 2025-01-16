@@ -28,7 +28,7 @@ export function StyledRoot({
           component="main"
           maxWidth="md"
           disableGutters
-          sx={{ mt: 8, mb: 2, paddingLeft: '5%', paddingRight: '5%' }}
+          sx={{ mt: 8, mb: 2, pl: '5%', pr: '5%' }}
         >
           <NavigationBar />
           {children}
