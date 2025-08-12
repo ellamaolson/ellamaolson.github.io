@@ -1,5 +1,4 @@
 'use client';
-import { useState } from 'react';
 import ArticleIcon from '@mui/icons-material/Article';
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
@@ -9,13 +8,13 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Typography from '@mui/material/Typography';
 import XIcon from '@mui/icons-material/X';
-import Image from 'next/image';
 import babyAlpacaImage from '../../public/holding-baby-alpaca.jpeg';
 import cafeImage from '../../public/cafe.jpeg';
 import cartwheelsImage from '../../public/cartwheels.jpeg';
 import inkanRuinsImage from '../../public/pisac-ruins.jpeg';
 import sequoiaImage from '../../public/sequoia.jpeg';
 import yosemiteImage from '../../public/yosemite.jpeg';
+import { LoadableImage } from './components/LoadableImage';
 
 export default function Home() {
   return (
@@ -34,69 +33,53 @@ export default function Home() {
       </Typography>
       <div className="columns-2 sm:columns-3 gap-4 my-8">
         <div className="relative h-40 mb-4">
-          <Image
+          <LoadableImage
             alt="Me holding a baby alpaca in Peru"
             src={babyAlpacaImage}
-            fill
-            sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="rounded-lg object-cover"
-            placeholder="blur"
+            className="w-full h-full"
+            priority={true}
           />
         </div>
         <div className="relative h-80 mb-4 sm:mb-0">
-          <Image
+          <LoadableImage
             alt="Me enjoying the winds whipping through the mountains in the Inkan ruins of Pisac, Peru"
             src={inkanRuinsImage}
-            fill
-            sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="rounded-lg object-cover object-[-16px] sm:object-center"
-            placeholder="blur"
+            className="w-full h-full"
+            objectPosition="center"
+            priority={true}
           />
         </div>
         <div className="relative h-40 sm:h-80 sm:mb-4">
-          <Image
+          <LoadableImage
             alt="Me standing under a Sequoia tree"
             src={sequoiaImage}
-            fill
-            sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="rounded-lg object-cover object-top sm:object-center"
-            placeholder="blur"
+            className="w-full h-full"
+            objectPosition="top center"
+            priority={true}
           />
         </div>
         <div className="relative h-40 mb-4 sm:mb-0">
-          <Image
+          <LoadableImage
             alt="Glacier point in Yosemite Valley"
             src={yosemiteImage}
-            fill
-            sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="rounded-lg object-cover"
-            placeholder="blur"
+            className="w-full h-full"
+            priority={true}
           />
         </div>
         <div className="relative h-40 mb-4">
-          <Image
+          <LoadableImage
             alt="Me and Mathilda doing cartwheels on the beach"
             src={cartwheelsImage}
-            fill
-            sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="rounded-lg object-cover"
-            placeholder="blur"
+            className="w-full h-full"
+            priority={true}
           />
         </div>
         <div className="relative h-80">
-          <Image
+          <LoadableImage
             alt="Me sitting in a cafe sipping a cappuccino"
             src={cafeImage}
-            fill
-            sizes="(min-width: 768px) 213px, 33vw"
-            priority
-            className="rounded-lg object-cover"
-            placeholder="blur"
+            className="w-full h-full"
+            priority={true}
           />
         </div>
       </div>
