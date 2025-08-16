@@ -14,6 +14,16 @@ import travelData from './travel.json';
 export default function Travel() {
   const [mapLoading, setMapLoading] = useState(true);
 
+  // Preload destination images when component mounts
+  useEffect(() => {
+    travelData?.destinations?.forEach((destination) => {
+      if (destination.image) {
+        const img = new Image();
+        img.src = destination.image;
+      }
+    });
+  }, []);
+
   // Fallback timeout to hide map loading state after 2 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
