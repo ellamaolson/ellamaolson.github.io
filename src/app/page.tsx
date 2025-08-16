@@ -9,11 +9,11 @@ import ListItem from '@mui/material/ListItem';
 import Typography from '@mui/material/Typography';
 import XIcon from '@mui/icons-material/X';
 import babyAlpacaImage from '../../public/holding-baby-alpaca.jpeg';
-import cafeImage from '../../public/cafe.jpeg';
-import cartwheelsImage from '../../public/cartwheels.jpeg';
 import inkanRuinsImage from '../../public/pisac-ruins.jpeg';
 import sequoiaImage from '../../public/sequoia.jpeg';
-import yosemiteImage from '../../public/yosemite.jpeg';
+import lisbonImage from '../../public/lisbon.jpeg';
+import eatingImage from '../../public/eating-sm.jpeg';
+import elanaEliImage from '../../public/elana-eli.jpeg';
 import { LoadableImage } from './components/LoadableImage';
 
 export default function Home() {
@@ -61,7 +61,7 @@ export default function Home() {
         <div className="relative h-40 mb-4 sm:mb-0">
           <LoadableImage
             alt="Glacier point in Yosemite Valley"
-            src={yosemiteImage}
+            src={elanaEliImage}
             className="w-full h-full"
             priority={true}
           />
@@ -69,15 +69,15 @@ export default function Home() {
         <div className="relative h-40 mb-4">
           <LoadableImage
             alt="Me and Mathilda doing cartwheels on the beach"
-            src={cartwheelsImage}
+            src={eatingImage}
             className="w-full h-full"
             priority={true}
           />
         </div>
         <div className="relative h-80">
           <LoadableImage
-            alt="Me sitting in a cafe sipping a cappuccino"
-            src={cafeImage}
+            alt="Me in the old town of Lisbon, Portugal"
+            src={lisbonImage}
             className="w-full h-full"
             priority={true}
           />
