@@ -33,13 +33,13 @@ export default function Travel() {
         Where have I traveled?
       </Typography>
 
-      <Typography variant="body1" gutterBottom sx={{ marginBottom: '16px' }}>
+      <Typography variant="body1" gutterBottom className="mb-4">
         I&apos;ve been fortunate to explore some incredible places around the world, gathering life
         long memories and cultivating a growing appetite for exploring the world. Here is a map of
         everywhere I&apos;ve been and my standout and maybe lesser known travel recommendations.
       </Typography>
 
-      <Box className="relative flex items-center justify-center mb-8 bg-white/5 border border-white/10 rounded-2xl h-64 sm:h-80 md:h-96">
+      <Box className="relative flex items-center justify-center mb-8 mt-8 bg-white/5 border border-white/10 rounded-2xl h-64 sm:h-80 md:h-96">
         {mapLoading && (
           <Box className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-2xl z-10">
             <CircularProgress size={40} />
@@ -49,7 +49,7 @@ export default function Travel() {
           src="https://www.google.com/maps/d/embed?mid=1O4lQBSS7ygiYY_ScyoSq9uivBS4iPaA&ehbc=2E312F"
           width="100%"
           height="100%"
-          style={{ border: 0, borderRadius: '16px' }}
+          className="border-0 rounded-2xl"
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
@@ -57,13 +57,12 @@ export default function Travel() {
         />
       </Box>
 
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4, marginBottom: '32px' }}>
+      <Box className="flex flex-col gap-8 mb-8">
         {travelData?.destinations?.map((destination, index) => (
           <Card
             key={index}
+            className="flex flex-col md:flex-row bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl rounded-2xl overflow-hidden"
             sx={{
-              display: 'flex',
-              flexDirection: { xs: 'column', md: 'row' },
               backgroundColor: 'rgba(255, 255, 255, 0.05)',
               backdropFilter: 'blur(10px)',
               border: '1px solid rgba(255, 255, 255, 0.1)',
@@ -71,16 +70,7 @@ export default function Travel() {
               borderRadius: '16px',
             }}
           >
-            <Box
-              sx={{
-                width: { xs: '100%', md: '250px' },
-                height: { xs: '180px', md: '350px' },
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                padding: '12px',
-              }}
-            >
+            <Box className="w-full md:w-64 h-48 md:h-80 flex items-center justify-center p-3">
               <LoadableImage
                 alt={destination?.altText || ''}
                 src={destination?.image || ''}
@@ -88,7 +78,7 @@ export default function Travel() {
                 priority={index < 2}
               />
             </Box>
-            <CardContent sx={{ flex: 1, maxHeight: '350px', overflow: 'hidden' }}>
+            <CardContent className="flex-1 max-h-80 overflow-hidden">
               <Typography variant="h2" gutterBottom>
                 {destination?.city}, {destination?.country} {destination?.emoji || ''}
               </Typography>
@@ -102,12 +92,7 @@ export default function Travel() {
               <Typography
                 variant="subtitle1"
                 gutterBottom
-                sx={{
-                  marginTop: 2,
-                  fontWeight: 700,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.5px',
-                }}
+                className="mt-4 font-bold uppercase tracking-wider"
               >
                 Highlights
               </Typography>
