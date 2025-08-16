@@ -1,14 +1,32 @@
 'use client';
+import { useState, useEffect } from 'react';
+import React from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Typography from '@mui/material/Typography';
+import CircularProgress from '@mui/material/CircularProgress';
 import { LoadableImage } from '../components/LoadableImage';
 import travelData from './travel.json';
 
 export default function Travel() {
+  const [mapLoading, setMapLoading] = useState(true);
+
+  // Fallback timeout to hide map loading state after 5 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setMapLoading(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleIframeLoad = () => {
+    setMapLoading(false);
+  };
+
   return (
     <>
       <Typography variant="h1" gutterBottom>
@@ -21,12 +39,12 @@ export default function Travel() {
         everywhere I&apos;ve been and my standout and maybe lesser known travel recommendations.
       </Typography>
 
-      <Box
-        sx={{
-          height: { xs: '250px', sm: '300px', md: '400px' },
-          marginBottom: '32px',
-        }}
-      >
+      <Box className="relative flex items-center justify-center mb-8 bg-white/5 border border-white/10 rounded-2xl h-64 sm:h-80 md:h-96">
+        {mapLoading && (
+          <Box className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-2xl z-10">
+            <CircularProgress size={40} />
+          </Box>
+        )}
         <iframe
           src="https://www.google.com/maps/d/embed?mid=1O4lQBSS7ygiYY_ScyoSq9uivBS4iPaA&ehbc=2E312F"
           width="100%"
@@ -35,6 +53,7 @@ export default function Travel() {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          onLoad={() => setMapLoading(false)}
         />
       </Box>
 
