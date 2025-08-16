@@ -31,7 +31,6 @@ export const LoadableImage = ({
           isLoading ? 'opacity-0' : 'opacity-100'
         }`}
         style={{ objectPosition }}
-        placeholder="blur"
         onLoad={() => setIsLoading(false)}
       />
     </div>
