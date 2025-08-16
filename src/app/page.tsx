@@ -60,7 +60,7 @@ export default function Home() {
         </div>
         <div className="relative h-40 mb-4 sm:mb-0">
           <LoadableImage
-            alt="Glacier point in Yosemite Valley"
+            alt="My brother Eli and I at Yosemite National Park"
             src={elanaEliImage}
             className="w-full h-full"
             priority={true}
@@ -68,7 +68,7 @@ export default function Home() {
         </div>
         <div className="relative h-40 mb-4">
           <LoadableImage
-            alt="Me and Mathilda doing cartwheels on the beach"
+            alt="Eating doner kebab - yum!"
             src={eatingImage}
             className="w-full h-full"
             priority={true}
