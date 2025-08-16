@@ -14,11 +14,11 @@ import travelData from './travel.json';
 export default function Travel() {
   const [mapLoading, setMapLoading] = useState(true);
 
-  // Fallback timeout to hide map loading state after 5 seconds
+  // Fallback timeout to hide map loading state after 2 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setMapLoading(false);
-    }, 5000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
