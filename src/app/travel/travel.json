@@ -1,1 +1,19 @@
-{}
+{
+  "destinations": [
+    {
+      "city": "Ericiera",
+      "country": "Portugal",
+      "location": "Europe",
+      "emoji": "🌊",
+      "description": "A cozy dreamy little beach town that feels like a cross between Greece and California.",
+      "highlights": [
+        "Sleepy fishing village with epic beaches and surf",
+        "White and blue buildings everywhere",
+        "Such cute little groceries and markets to get beach picnic goodies"
+      ],
+      "recommendations": ["Rent a car in Lisbon and drive here, then stay a few nights"],
+      "image": "/ericiera.png",
+      "altText": "Fishermen's beach in Ericiera, Portugal"
+    }
+  ]
+}
