@@ -23,13 +23,11 @@ export default function Home() {
       <Typography variant="body1" gutterBottom sx={{ marginBottom: '16px' }}>
         I&apos;m a developer with a curiosity for streamlining how engineers engage with their core
         tooling and products. Problem solving and navigating rabbit holes is my specialty, but
-        documenting and teaching my learnings to others is what I&apos;m most excited about. I want
-        to make hard concepts simpler to understand, create communities that foster support and
-        growth, and continue to improve how we build technology.
+        making hard concepts simpler to understand for others is what I&apos;m most excited about.
       </Typography>
       <Typography variant="body1">
-        Outside of the office ~ I chase the sun, dabble in a few art forms, and surround myself with
-        incredibly loving human beings. I love to travel and am ALWAYS excited to give travel recs.
+        Outside of the office ~ I chase the sun, dabble in a few art forms, surround myself with
+        loving human beings, and love to travel!
       </Typography>
       <div className="columns-2 sm:columns-3 gap-4 my-8">
         <div className="relative h-40 mb-4">
@@ -92,10 +90,11 @@ export default function Home() {
           <strong>Building a supportive community for women</strong>
           <List sx={{ listStyleType: 'circle', listStylePosition: 'inside' }}>
             <ListItem sx={{ display: 'list-item' }}>
-              I co-lead a women&apos;s group with my good friend AliSan Diego, fostering emotional
-              support and growth through biweekly workshops on topics like financial literacy,
-              non-violent communication, and anatomy. We encourage our participants to take an
-              active role in the discussions and leading workshops their passionate about.
+              I co-lead a local women&apos;s group in San Diego with my good friend Ali. For the
+              past two years we have led workshops on topics ranging from financial literacy to
+              feminism to modern women&apos;s health science. We facilitate a space to learn,
+              support, and grow together as a community - reflecting on diverse perspectives and
+              leading with curiosity first.
             </ListItem>
           </List>
         </ListItem>
@@ -103,15 +102,17 @@ export default function Home() {
           <strong>Doing lots of art projects</strong>
           <List sx={{ listStyleType: 'circle', listStylePosition: 'inside' }}>
             <ListItem sx={{ display: 'list-item' }}>
-              I travel with a small watercolor kit to capture scenes and embrace the present moment
-              a bit more colorfully. At home I&apos;m working on a temperature blanket (the size of
-              my bed) mapping daily high temperatures to yarn colors.
+              Love to watercolor and tend to travel with a small kit to capture scenes and embrace
+              the present moment a bit more colorfully. At home I&apos;m working on a temperature
+              blanket (the size of my bed) mapping daily high temperatures to yarn colors.
             </ListItem>
           </List>
         </ListItem>
         <ListItem sx={{ display: 'list-item', pl: '0px', pr: '0px' }}>
-          <strong>Learning about health, relational dynamics, and morality</strong> - here&apos;s
-          some recs
+          <strong>
+            Learning about health, relational dynamics, morality, and the occasional fantasy series
+          </strong>{' '}
+          - here&apos;s some recs
           <List sx={{ listStyleType: 'circle', listStylePosition: 'inside' }}>
             <ListItem sx={{ display: 'list-item' }}>
               <i>Huberman Labs</i> - a health and science podcast led by Andrew Huberman to bring
@@ -126,6 +127,12 @@ export default function Home() {
               <i>Lying</i> - In such a little book, Sam Harris discusses the morality of lying and
               breaks down various applications and ethical dilemmas surrounding it
             </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <i>Throne of Glass series</i> - Sarah J. Maas creates this vivid and dynamic world
+              with magic, strong heorines, and complex series-long plot arcs that reveal kingdom
+              conspiracies and demand a balance of fighting for survival and sacraficing for the
+              greater good.
+            </ListItem>
           </List>
         </ListItem>
       </List>
@@ -133,18 +140,14 @@ export default function Home() {
         <Fab aria-label="github" href="https://github.com/ellamaolson" size="small">
           <GitHubIcon />
         </Fab>
-        <Fab
-          aria-label="linkedIn"
-          href="https://www.linkedin.com/in/elana-olson-96853892/"
-          size="small"
-        >
+        <Fab aria-label="linkedIn" href="https://www.linkedin.com/in/elanaolson" size="small">
           <LinkedInIcon />
-        </Fab>
-        <Fab aria-label="twitter" href="https://twitter.com/elanathellama" size="small">
-          <XIcon />
         </Fab>
         <Fab aria-label="Medium" href="https://medium.com/@elanaolson" size="small">
           <ArticleIcon />
+        </Fab>
+        <Fab aria-label="twitter" href="https://twitter.com/elanathellama" size="small">
+          <XIcon />
         </Fab>
       </Box>
     </>
