@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { StyledRoot } from './components/StyledRoot';
 import './globals.css';
@@ -20,6 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <Script id="gtm-init" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-TQ27FNXB');
+          `}
+        </Script>
+
         {/* Preconnect to external domains for better performance */}
         <link rel="preconnect" href="https://github.com" />
         <link rel="preconnect" href="https://www.linkedin.com" />
@@ -58,6 +69,14 @@ export default function RootLayout({
         <link rel="preload" as="image" href="/lisbon.jpeg" type="image/jpeg" />
       </head>
       <body className="font-inter">
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TQ27FNXB"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <AppRouterCacheProvider>
           <StyledRoot>{children}</StyledRoot>
         </AppRouterCacheProvider>
