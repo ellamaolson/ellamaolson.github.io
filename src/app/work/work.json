@@ -1,21 +1,33 @@
 {
   "work": [
     {
+      "company": "Career Break",
+      "title": "Personal Sabbatical",
+      "status": "Full-time",
+      "location": "remote",
+      "startDate": "1/1/25",
+      "endDate": "",
+      "description": "Focused on travel, health, and recharging after several years in a high-intensity role. Checkout my travel section to see where I've been recently. Currently exploring roles that align with my skills and passions in frontend development and technical content creation.",
+      "notes": [],
+      "relavantLinks": []
+    },
+    {
       "company": "Atlassian",
       "title": "Software Engineer",
       "status": "Full-time",
       "location": "remote",
       "startDate": "7/1/20",
       "endDate": "12/16/24",
-      "description": "I joined Atlassian's Confluence team and a new grad software engineer eager to tackle frontend development on an awesome product.",
+      "description": "I joined Atlassian's Confluence team as a new grad software engineer eager to tackle frontend development on an awesome product.",
       "notes": [
-        "Designed and implemented product components for Confluence with a focus on feature development (reactions, comments, onboarding suite) using React and TypeScript.",
-        "Authored technical documentation and internal guides for Confluence, enhancing adoption among developers and end-users.",
-        "Collaborated with product, data science, and engineering teams on negotiating project scope, analytics, and running A/B tests, iterating based on user feedback to drive feature success and deliver on time.",
-        "Created API documentation to support third-party integrations, streamlining collaboration with external partners.",
-        "Core product contributions on: collaborative features like reactions and comments, improving the onboarding suite, and running experiments for landing new customers."
+        "Led cross-functional efforts to develop product components for Confluence, integrating with UI components from Atlaskit and advocating for best practices across teams. Developed mostly with React and TypeScript, did large refactors of JavaScript with React with Redux",
+        "Developed technical guides and extensive documentation to educate internal developers on new features and architectural decisions.",
+        "Actively collaborated with designers, engineers, and product teams to ensure feature success, deploying projects to subsets of users for feedback and iteration to develop impactful projects on top business OKRs.",
+        "Core product contributions: collaborative features like reactions and comments, large legacy refactors of page comments, updating Atlaskit platform components, revamping the Confluence onboarding suite, running experiments for landing new customers."
       ],
-      "relavantLinks": []
+      "relavantLinks": [
+        "https://atlaskit.atlassian.com/packages/elements/reactions/example/reactions-dialog"
+      ]
     },
     {
       "company": "SJSU Research Foundation",
