@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
+import { Suspense } from 'react';
 import { StyledRoot } from './components/StyledRoot';
+import { GTMPageView } from './components/GTMPageView';
 import './globals.css';
 import './fonts.css';
 
@@ -77,9 +78,10 @@ export default function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
-        <AppRouterCacheProvider>
-          <StyledRoot>{children}</StyledRoot>
-        </AppRouterCacheProvider>
+        <Suspense fallback={null}>
+          <GTMPageView />
+        </Suspense>
+        <StyledRoot>{children}</StyledRoot>
       </body>
     </html>
   );
