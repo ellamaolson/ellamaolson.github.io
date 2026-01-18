@@ -7,6 +7,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
+
+import { Container } from '../components/ui/Container';
 import publicationsData from './publications.json';
 
 export default function Publications() {
@@ -16,7 +18,7 @@ export default function Publications() {
   });
 
   return (
-    <>
+    <Container maxWidth="wide">
       <Typography variant="h1">Things I have published</Typography>
       <List sx={{ width: '100%' }}>
         {sortedPubs.map((pub, index) => {
@@ -67,6 +69,6 @@ export default function Publications() {
           );
         })}
       </List>
-    </>
+    </Container>
   );
 }

@@ -8,6 +8,8 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Typography from '@mui/material/Typography';
 import CircularProgress from '@mui/material/CircularProgress';
+
+import { Container } from '../components/ui/Container';
 import { LoadableImage } from '../components/LoadableImage';
 import travelData from './travel.json';
 
@@ -38,7 +40,7 @@ export default function Travel() {
   };
 
   return (
-    <>
+    <Container maxWidth="wide">
       <Typography variant="h1" gutterBottom>
         Where have I traveled?
       </Typography>
@@ -128,6 +130,6 @@ export default function Travel() {
           </Card>
         ))}
       </Box>
-    </>
+    </Container>
   );
 }

@@ -12,6 +12,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
 
+import { Container } from '../components/ui/Container';
 import workData from './work.json';
 
 export default function Work() {
@@ -26,7 +27,7 @@ export default function Work() {
   };
 
   return (
-    <>
+    <Container maxWidth="wide">
       <Typography variant="h1">Resume</Typography>
       <Box sx={{ width: '100%' }} className="mb-8">
         <Stack
@@ -86,6 +87,6 @@ export default function Work() {
           <XIcon />
         </Fab>
       </Box>
-    </>
+    </Container>
   );
 }
