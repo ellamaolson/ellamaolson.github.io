@@ -16,9 +16,9 @@ export function Heading({
   const Tag = as || (`h${level}` as keyof JSX.IntrinsicElements);
   
   const sizeClasses = {
-    1: 'text-heading-1 font-medium mb-6',
-    2: 'text-heading-2 font-medium mb-4',
-    3: 'text-heading-3 font-medium mb-3',
+    1: 'text-heading-1 font-medium mb-6 font-editorial tracking-[-0.01em]',
+    2: 'text-heading-2 font-medium mb-4 font-editorial tracking-[-0.01em]',
+    3: 'text-heading-3 font-medium mb-3 font-editorial',
     4: 'text-lg font-medium mb-2',
     5: 'text-base font-medium mb-2',
     6: 'text-sm font-medium mb-1',

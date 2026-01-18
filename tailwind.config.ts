@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         inter: ['Inter', 'system-ui', 'sans-serif'],
+        // System serif for editorial warmth (no new font files)
+        editorial: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       },
       colors: {
         // Muted earth tone palette

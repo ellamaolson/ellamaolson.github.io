@@ -34,7 +34,9 @@ export function Button({
   const variantClasses = {
     primary: 'bg-olive-leaf text-salt hover:bg-opacity-90 focus:ring-olive-leaf',
     secondary: 'bg-antique text-noir hover:bg-opacity-90 focus:ring-antique',
-    outline: 'border border-antique/40 text-olive-leaf hover:bg-olive-leaf/5 hover:border-antique/60 focus:ring-olive-leaf',
+    // Default outline is optimized for dark (olive) sections: light text + subtle light border
+    outline:
+      'border border-salt/35 text-salt hover:bg-salt/10 hover:border-salt/50 focus:ring-salt/50',
     ghost: 'text-olive-leaf hover:bg-olive-leaf/10 focus:ring-olive-leaf',
   };
 

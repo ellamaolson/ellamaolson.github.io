@@ -4,120 +4,223 @@ import { Section } from './components/ui/Section';
 import { Container } from './components/ui/Container';
 import { Heading } from './components/ui/Heading';
 import { Button } from './components/ui/Button';
+import { Grid } from './components/ui/Grid';
 import { SocialLinks } from './components/ui/SocialLinks';
 import babyAlpacaImage from '../../public/holding-baby-alpaca.jpeg';
-import inkanRuinsImage from '../../public/pisac-ruins.jpeg';
 import sequoiaImage from '../../public/sequoia.jpeg';
 import lisbonImage from '../../public/lisbon.jpeg';
-import eatingImage from '../../public/eating-sm.jpeg';
 import elanaEliImage from '../../public/elana-eli.jpeg';
 import { LoadableImage } from './components/LoadableImage';
 
 export default function Home() {
   return (
     <>
-      {/* Hero Section - Two clear paths */}
-      <Section background="olive-leaf" padding="lg">
-        <Container maxWidth="content">
-          <div className="space-y-6">
-            <Heading level={1} className="text-salt">
-              Hi, I&apos;m Elana
-            </Heading>
-            <p className="text-body-large text-salt/95 max-w-reading">
-              I build calm, welcoming websites for small businesses—and I also contract as a frontend
-              engineer for teams who want clarity, maintainability, and thoughtful execution.
-            </p>
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Button as="link" href="/services" variant="secondary">
-                Small business website services
-              </Button>
-              <Button as="link" href="/contracting" variant="outline">
-                Frontend contract engineering
-              </Button>
-              <Button as="link" href="/contact" variant="ghost" className="text-salt hover:bg-salt/10">
-                Contact →
-              </Button>
+      {/* Hero: editorial, calm, lightly asymmetrical */}
+      <Section background="olive-leaf" padding="lg" className="relative overflow-hidden">
+        {/* Reference-inspired: soft image wash + gentle overlay (not a dramatic hero) */}
+        <div className="pointer-events-none absolute inset-0 opacity-[0.16]">
+          <div className="absolute inset-0 bg-gradient-to-b from-noir/35 via-noir/10 to-transparent" />
+          <div className="absolute -right-20 top-10 w-[520px] max-w-[70vw]">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-salt/10 bg-salt/5">
+              <LoadableImage
+                alt="Me standing under a Sequoia tree"
+                src={sequoiaImage}
+                className="w-full h-full"
+                objectPosition="top center"
+                priority={true}
+              />
             </div>
           </div>
+        </div>
+
+        <Container maxWidth="wide" className="relative">
+          <Grid variant="asymmetric" className="items-start">
+            <div className="space-y-6">
+              <p className="text-body-small tracking-[0.18em] uppercase text-salt/80">
+                Professional consultancy
+              </p>
+              <Heading
+                level={1}
+                className="text-salt text-balance text-4xl sm:text-5xl lg:text-6xl leading-[1.03]"
+              >
+                Calm, grounded web work for real people.
+              </Heading>
+              <p className="text-body-large text-salt/90 max-w-reading">
+                I build welcoming websites for small businesses—and I also contract as a frontend
+                engineer for teams who want clarity, maintainability, and thoughtful execution.
+              </p>
+
+              <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+                <Button as="link" href="/services" variant="secondary">
+                  Website services
+                </Button>
+                <Button as="link" href="/contracting" variant="outline" className="text-salt">
+                  Contract engineering
+                </Button>
+                <Button
+                  as="link"
+                  href="/contact"
+                  variant="ghost"
+                  className="text-salt hover:bg-salt/10"
+                >
+                  Contact →
+                </Button>
+              </div>
+            </div>
+
+            {/* Quiet detail column (reference-like negative space / rhythm) */}
+            <div className="mt-2 hidden md:block">
+              <div className="space-y-4">
+                <div className="border-l border-salt/30 pl-4">
+                  <p className="text-body-small text-salt/80">
+                    Based in San Diego. I like work that feels steady, clear, and kind to the humans
+                    on both sides.
+                  </p>
+                </div>
+                <div className="border-l border-salt/20 pl-4">
+                  <p className="text-body-small text-salt/75">
+                    Available for small projects and focused contract engagements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Grid>
         </Container>
       </Section>
 
-      {/* First Content Section - Warm credibility + human presence */}
+      {/* Credibility / approach: left-aligned reading, balanced with imagery */}
       <Section background="warm-sand" padding="lg">
-        <Container maxWidth="content">
-          <div className="space-y-8">
-            <div className="space-y-6 max-w-reading">
-              <p className="text-body-large text-noir leading-relaxed">
-                My work tends to be steady and practical: clear structure, calm typography, and
-                interfaces that feel easy to trust. I care a lot about how a site reads—not just how
-                it looks.
-              </p>
-              <p className="text-body text-noir/85 leading-relaxed">
-                Outside of the office, I chase the sun, paint a little, and keep collecting travel
-                moments that feel lived-in and real.
+        <Container maxWidth="wide">
+          <Grid variant="asymmetric" reverseOnDesktop>
+            <div className="space-y-5">
+              <Heading level={2} className="text-balance">
+                Warm clarity, not cleverness.
+              </Heading>
+              <div className="space-y-4 max-w-reading">
+                <p className="text-body-large text-noir/90 leading-relaxed">
+                  My work tends to be steady and practical: calm typography, clear structure, and
+                  interfaces that feel easy to trust.
+                </p>
+                <p className="text-body text-noir/80 leading-relaxed">
+                  I’m thoughtful about how things read, where attention goes, and what a visitor
+                  needs to feel comfortable saying “yes.”
+                </p>
+              </div>
+
+              <div className="pt-2">
+                <div className="border-l border-antique/60 pl-4 space-y-2 max-w-reading">
+                  <p className="text-body text-noir/85">
+                    <strong>For small businesses:</strong> welcoming pages, simple maintenance, and
+                    practical SEO.
+                  </p>
+                  <p className="text-body text-noir/85">
+                    <strong>For teams:</strong> React + TypeScript work that’s maintainable and kind
+                    to the next engineer.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Collage-style imagery (reference-inspired density + warmth) */}
+            <div className="grid grid-cols-6 gap-3 sm:gap-4">
+              <div className="col-span-3">
+                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-antique/50 bg-antique/35">
+                  <LoadableImage
+                    alt="Me holding a baby alpaca in Peru"
+                    src={babyAlpacaImage}
+                    className="w-full h-full"
+                    priority={true}
+                  />
+                </div>
+              </div>
+
+              <div className="col-span-3">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-antique/50 bg-antique/35">
+                  <LoadableImage
+                    alt="My brother Eli and I at Yosemite National Park"
+                    src={elanaEliImage}
+                    className="w-full h-full"
+                    priority={true}
+                  />
+                </div>
+              </div>
+
+              <div className="col-span-4">
+                <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-antique/50 bg-antique/35">
+                  <LoadableImage
+                    alt="Me in the old town of Lisbon, Portugal"
+                    src={lisbonImage}
+                    className="w-full h-full"
+                    priority={true}
+                  />
+                </div>
+              </div>
+
+              <div className="col-span-2 hidden sm:block">
+                <div className="relative aspect-square overflow-hidden rounded-2xl border border-antique/50 bg-antique/35">
+                  <LoadableImage
+                    alt="Me standing under a Sequoia tree"
+                    src={sequoiaImage}
+                    className="w-full h-full"
+                    objectPosition="top center"
+                    priority={true}
+                  />
+                </div>
+              </div>
+            </div>
+          </Grid>
+        </Container>
+      </Section>
+
+      {/* Showcase: how I can help, no card-grid; editorial lists */}
+      <Section background="salt" padding="lg">
+        <Container maxWidth="wide">
+          <Grid variant="split" className="items-start">
+            <div className="space-y-4 max-w-reading">
+              <Heading level={2}>How I can help</Heading>
+              <p className="text-body text-noir/80">
+                Two paths, same approach: calm structure, readable layouts, and honest communication.
               </p>
             </div>
 
-            {/* Photo Gallery - Lived-in, natural feel */}
-            <div className="columns-2 sm:columns-3 gap-4 mt-12">
-              <div className="relative h-40 mb-4 break-inside-avoid">
-                <LoadableImage
-                  alt="Me holding a baby alpaca in Peru"
-                  src={babyAlpacaImage}
-                  className="w-full h-full"
-                  priority={true}
-                />
+            <div className="space-y-8">
+              <div className="border-l border-olive-leaf/30 pl-5">
+                <p className="text-body-small tracking-wide text-noir/60">Small business</p>
+                <h3 className="text-heading-3 text-noir mt-1">Website services</h3>
+                <ul className="mt-3 space-y-2 text-body text-noir/85">
+                  <li>Marketing pages that read clearly and feel welcoming</li>
+                  <li>Light SEO structure: headings, semantics, internal linking</li>
+                  <li>Performance basics + long-term maintainability</li>
+                </ul>
+                <div className="mt-4">
+                  <Button as="link" href="/services" variant="ghost">
+                    Explore services →
+                  </Button>
+                </div>
               </div>
-              <div className="relative h-80 mb-4 sm:mb-0 break-inside-avoid">
-                <LoadableImage
-                  alt="Me enjoying the winds whipping through the mountains in the Inkan ruins of Pisac, Peru"
-                  src={inkanRuinsImage}
-                  className="w-full h-full"
-                  objectPosition="center"
-                  priority={true}
-                />
-              </div>
-              <div className="relative h-40 sm:h-80 sm:mb-4 break-inside-avoid">
-                <LoadableImage
-                  alt="Me standing under a Sequoia tree"
-                  src={sequoiaImage}
-                  className="w-full h-full"
-                  objectPosition="top center"
-                  priority={true}
-                />
-              </div>
-              <div className="relative h-40 mb-4 sm:mb-0 break-inside-avoid">
-                <LoadableImage
-                  alt="My brother Eli and I at Yosemite National Park"
-                  src={elanaEliImage}
-                  className="w-full h-full"
-                  priority={true}
-                />
-              </div>
-              <div className="relative h-40 mb-4 break-inside-avoid">
-                <LoadableImage
-                  alt="Eating doner kebab - yum!"
-                  src={eatingImage}
-                  className="w-full h-full"
-                  priority={true}
-                />
-              </div>
-              <div className="relative h-80 break-inside-avoid">
-                <LoadableImage
-                  alt="Me in the old town of Lisbon, Portugal"
-                  src={lisbonImage}
-                  className="w-full h-full"
-                  priority={true}
-                />
+
+              <div className="border-l border-olive-leaf/30 pl-5">
+                <p className="text-body-small tracking-wide text-noir/60">Teams</p>
+                <h3 className="text-heading-3 text-noir mt-1">Contract engineering</h3>
+                <ul className="mt-3 space-y-2 text-body text-noir/85">
+                  <li>React + TypeScript UI shipping and refactors</li>
+                  <li>Pragmatic design systems + reusable primitives</li>
+                  <li>Documentation, handoff, and long-term clarity</li>
+                </ul>
+                <div className="mt-4">
+                  <Button as="link" href="/contracting" variant="ghost">
+                    Explore contracting →
+                  </Button>
+                </div>
               </div>
             </div>
-          </div>
+          </Grid>
         </Container>
       </Section>
 
       {/* Current Focus Section */}
-      <Section background="salt" padding="lg">
-        <Container maxWidth="content">
+      <Section background="warm-sand" padding="lg">
+        <Container maxWidth="wide">
           <div className="space-y-8 max-w-reading">
             <Heading level={2} className="text-noir">
               What am I focusing on right now?
@@ -183,9 +286,13 @@ export default function Home() {
       </Section>
 
       {/* Social Links Section */}
-      <Section background="warm-sand" padding="md">
-        <Container maxWidth="content">
-          <div className="flex justify-center">
+      <Section background="antique" padding="md">
+        <Container maxWidth="wide">
+          <div className="flex items-center justify-between gap-6 flex-wrap">
+            <p className="text-body text-noir/75 max-w-reading">
+              If you’d like to collaborate, start with a short note—what you’re building, what’s
+              stuck, and what “good” looks like.
+            </p>
             <SocialLinks />
           </div>
         </Container>

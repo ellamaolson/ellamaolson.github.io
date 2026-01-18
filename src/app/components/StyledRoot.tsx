@@ -9,10 +9,12 @@ export function StyledRoot({
 }>) {
   return (
     <div className="flex flex-col min-h-screen">
-      <Container className="mt-8 mb-12">
+      <Container className="mt-8 mb-10">
         <NavigationBar />
-        <main>{children}</main>
       </Container>
+
+      {/* Pages control their own inner Container; sections can bleed full-width */}
+      <main className="flex-1">{children}</main>
       <Footer />
     </div>
   );
