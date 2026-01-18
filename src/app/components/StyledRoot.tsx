@@ -1,4 +1,5 @@
 import { NavigationBar } from './NavigationBar';
+import { Footer } from './Footer';
 import { Container } from './ui/Container';
 
 export function StyledRoot({
@@ -8,10 +9,11 @@ export function StyledRoot({
 }>) {
   return (
     <div className="flex flex-col min-h-screen">
-      <Container className="mt-8 mb-8">
+      <Container className="mt-8 mb-12">
         <NavigationBar />
         <main>{children}</main>
       </Container>
+      <Footer />
     </div>
   );
 }

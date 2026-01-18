@@ -77,9 +77,9 @@ const config: Config = {
         'content-sm': '1.5rem', // 24px - tighter content spacing
       },
       maxWidth: {
-        'reading': '65ch', // Optimal reading width
-        'content': '768px', // Content container max width
-        'wide': '1200px', // Wide container for hero sections
+        'reading': '65ch', // Optimal reading width for text blocks
+        'content': '80%', // Main layout width
+        'wide': '80%', // Hero/layout width
       },
     },
   },

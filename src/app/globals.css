@@ -61,10 +61,10 @@
   }
   
   .max-w-content {
-    max-width: 768px;
+    max-width: 80%;
   }
   
   .max-w-wide {
-    max-width: 1200px;
+    max-width: 80%;
   }
 }

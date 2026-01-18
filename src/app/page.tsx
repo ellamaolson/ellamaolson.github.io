@@ -3,6 +3,7 @@
 import { Section } from './components/ui/Section';
 import { Container } from './components/ui/Container';
 import { Heading } from './components/ui/Heading';
+import { Button } from './components/ui/Button';
 import { SocialLinks } from './components/ui/SocialLinks';
 import babyAlpacaImage from '../../public/holding-baby-alpaca.jpeg';
 import inkanRuinsImage from '../../public/pisac-ruins.jpeg';
@@ -15,7 +16,7 @@ import { LoadableImage } from './components/LoadableImage';
 export default function Home() {
   return (
     <>
-      {/* Hero Section - Warm and welcoming with green as main pop */}
+      {/* Hero Section - Two clear paths */}
       <Section background="olive-leaf" padding="lg">
         <Container maxWidth="content">
           <div className="space-y-6">
@@ -23,22 +24,37 @@ export default function Home() {
               Hi, I&apos;m Elana
             </Heading>
             <p className="text-body-large text-salt/95 max-w-reading">
-              I&apos;m a developer with a curiosity for streamlining how engineers engage with their core
-              tooling and products. Problem solving and navigating rabbit holes is my specialty, but
-              making hard concepts simpler to understand for others is what I&apos;m most excited about.
+              I build calm, welcoming websites for small businesses—and I also contract as a frontend
+              engineer for teams who want clarity, maintainability, and thoughtful execution.
             </p>
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+              <Button as="link" href="/services" variant="secondary">
+                Small business website services
+              </Button>
+              <Button as="link" href="/contracting" variant="outline">
+                Frontend contract engineering
+              </Button>
+              <Button as="link" href="/contact" variant="ghost" className="text-salt hover:bg-salt/10">
+                Contact →
+              </Button>
+            </div>
           </div>
         </Container>
       </Section>
 
-      {/* First Content Section - Personal introduction */}
+      {/* First Content Section - Warm credibility + human presence */}
       <Section background="warm-sand" padding="lg">
         <Container maxWidth="content">
           <div className="space-y-8">
             <div className="space-y-6 max-w-reading">
               <p className="text-body-large text-noir leading-relaxed">
-                Outside of the office ~ I chase the sun, dabble in a few art forms, surround myself with
-                loving human beings, and love to travel!
+                My work tends to be steady and practical: clear structure, calm typography, and
+                interfaces that feel easy to trust. I care a lot about how a site reads—not just how
+                it looks.
+              </p>
+              <p className="text-body text-noir/85 leading-relaxed">
+                Outside of the office, I chase the sun, paint a little, and keep collecting travel
+                moments that feel lived-in and real.
               </p>
             </div>
 
