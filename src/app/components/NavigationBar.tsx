@@ -62,7 +62,7 @@ export function NavigationBar() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="block px-4 py-3 text-body text-text-onDark/90 hover:text-text-onDark hover:bg-white/10 transition-colors duration-200 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                    className="block px-4 py-3 text-body text-text-onDark/90 hover:text-accent hover:bg-white/10 transition-colors duration-200 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
                   >
                     {item.name}
                   </Link>
@@ -79,7 +79,7 @@ export function NavigationBar() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="text-body text-text-onDark/85 hover:text-text-onDark transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                  className="text-body text-text-onDark/85 hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
                 >
                   {item.name}
                 </Link>
