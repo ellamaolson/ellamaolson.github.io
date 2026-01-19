@@ -14,62 +14,98 @@ const config: Config = {
         editorial: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       },
       colors: {
-        // Muted earth tone palette
-        salt: '#F1EBE4', // Warm sand / light stone
-        antique: '#D4C5A9', // Yellowish stone / warm beige
-        coffee: '#734E30', // Clay / terracotta (small accents only)
-        'olive-leaf': '#464831', // Olive / moss green (main pop of color)
-        noir: '#2E2F23', // Soft charcoal
-        'raisin-black': '#22231A', // Darkest charcoal
-        // Additional warm tones for variety
-        'warm-sand': '#F4EEE6', // Warm beige (warmer, less yellow)
-        'dusty-ochre': '#A68B5B', // Dusty ochre accent
-        'soft-clay': '#8B6F47', // Soft clay variant
+        /**
+         * Rooted Studio theme
+         * - Warm stone surfaces + charcoal text
+         * - Deep forest greens for structure (nav/footer/dark sections)
+         * - Ochre + rust as intentional accents (CTA/hover), used sparingly
+         */
+
+        /**
+         * Base palette (for reference only; prefer semantic tokens below).
+         * These are the foundational hues provided in the brief.
+         */
+        palette: {
+          // Dark / Structural
+          forest: '#242D1A', // Deep Forest Green: nav/footer/hero/dark sections
+          trunk: '#1B1C14', // Charcoal Trunk: headings + primary text
+          // Greens
+          olive: '#2E4A0D', // Olive Leaf: supportive green accent (links/active states)
+          moss: '#2F3416', // Mossed Bark: secondary deep green for depth
+          // Neutrals
+          stone: '#E7E4DC', // Warm Stone: default light surface
+          bark: '#726D6D', // Weathered Bark Grey: secondary text, subtle UI
+          // Accents
+          ochre: '#C2A23A', // Muted Ochre: primary CTA/highlight
+          rust: '#A15A2B', // Soft Rust: secondary accent/hover states
+        },
+
+        /**
+         * Semantic tokens (preferred)
+         * Usage examples:
+         * - `bg-surface` / `bg-surface-muted`
+         * - `text-primary` / `text-secondary`
+         * - `bg-brand` for structural dark sections
+         * - `text-onBrand` for readable text on dark sections
+         * - `bg-accent` for primary CTAs (sparingly)
+         */
+        surface: {
+          DEFAULT: '#E7E4DC', // Main light background surface
+          muted: '#DDD8CF', // Slightly darker stone for section rhythm
+          raised: '#F1EFE9', // Softened stone for subtle elevation (no stark white)
+          inverse: '#242D1A', // Dark surface (brand anchor)
+        },
+        text: {
+          primary: '#1B1C14', // Primary reading + headings on light surfaces
+          secondary: '#726D6D', // Secondary text, captions, metadata
+          onDark: '#E7E4DC', // Text on dark/brand surfaces
+          subtle: 'rgba(27, 28, 20, 0.72)', // Softer body text on light surfaces
+        },
+        brand: {
+          DEFAULT: '#242D1A', // Structural anchor: nav/footer/dark sections
+          olive: '#2E4A0D', // Green highlight (links/active states)
+          moss: '#2F3416', // Secondary dark green for depth
+        },
+        accent: {
+          DEFAULT: '#C2A23A', // Primary CTA/highlight (sparingly)
+          hover: '#A15A2B', // Secondary accent/hover states (sparingly)
+        },
+        border: {
+          subtle: 'rgba(27, 28, 20, 0.14)', // Light borders on stone surfaces
+          strong: 'rgba(27, 28, 20, 0.28)', // Stronger separators/dividers
+          onDark: 'rgba(231, 228, 220, 0.22)', // Borders on dark/brand sections
+        },
+
+        /**
+         * Legacy aliases (temporary)
+         * Keep existing classnames working until components are refactored to semantic tokens.
+         */
+        salt: '#E7E4DC', // alias -> surface (DEFAULT)
+        'warm-sand': '#E7E4DC', // alias -> surface (DEFAULT)
+        antique: '#DDD8CF', // alias -> surface (muted)
+        noir: '#1B1C14', // alias -> text.primary
+        'raisin-black': '#1B1C14', // alias -> text.primary (deep)
+        'olive-leaf': '#2E4A0D', // alias -> brand.olive
+        coffee: '#A15A2B', // alias -> accent.hover (rust)
+        'dusty-ochre': '#C2A23A', // alias -> accent (ochre)
+        'soft-clay': '#A15A2B', // alias -> accent.hover (rust)
       },
-      typography: {
-        // Typography scale for reading comfort
-        'display-1': {
-          fontSize: '3.5rem',
-          lineHeight: '1.1',
-          fontWeight: '500',
-          letterSpacing: '-0.02em',
-        },
-        'display-2': {
-          fontSize: '2.5rem',
-          lineHeight: '1.2',
-          fontWeight: '500',
-          letterSpacing: '-0.01em',
-        },
-        'heading-1': {
-          fontSize: '2rem',
-          lineHeight: '1.3',
-          fontWeight: '500',
-        },
-        'heading-2': {
-          fontSize: '1.5rem',
-          lineHeight: '1.4',
-          fontWeight: '500',
-        },
-        'heading-3': {
-          fontSize: '1.25rem',
-          lineHeight: '1.5',
-          fontWeight: '500',
-        },
-        'body-large': {
-          fontSize: '1.125rem',
-          lineHeight: '1.7',
-          fontWeight: '400',
-        },
-        body: {
-          fontSize: '1rem',
-          lineHeight: '1.6',
-          fontWeight: '400',
-        },
-        'body-small': {
-          fontSize: '0.875rem',
-          lineHeight: '1.5',
-          fontWeight: '400',
-        },
+      /**
+       * Type scale (editorial, calm, readable)
+       * Prefer left-aligned text blocks with generous line height.
+       */
+      fontSize: {
+        // Display / hero moments
+        display: ['3.5rem', { lineHeight: '1.02', letterSpacing: '-0.02em', fontWeight: '500' }],
+        'display-sm': ['2.75rem', { lineHeight: '1.06', letterSpacing: '-0.02em', fontWeight: '500' }],
+        // Headings
+        h1: ['2.25rem', { lineHeight: '1.12', letterSpacing: '-0.015em', fontWeight: '500' }],
+        h2: ['1.75rem', { lineHeight: '1.22', letterSpacing: '-0.01em', fontWeight: '500' }],
+        h3: ['1.25rem', { lineHeight: '1.35', fontWeight: '500' }],
+        // Body
+        lead: ['1.125rem', { lineHeight: '1.75' }],
+        body: ['1rem', { lineHeight: '1.7' }],
+        small: ['0.875rem', { lineHeight: '1.55' }],
       },
       spacing: {
         // Generous spacing for calm, welcoming feel
@@ -77,6 +113,9 @@ const config: Config = {
         'section-sm': '4rem', // 64px - for smaller sections
         'content': '2rem', // 32px - spacing within content blocks
         'content-sm': '1.5rem', // 24px - tighter content spacing
+        // Page rhythm helpers
+        'gutter': '1.25rem', // Default horizontal padding (mobile)
+        'gutter-lg': '2rem', // Default horizontal padding (desktop)
       },
       maxWidth: {
         'reading': '65ch', // Optimal reading width for text blocks

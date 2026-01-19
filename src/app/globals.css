@@ -4,9 +4,8 @@
 
 @layer base {
   body {
-    @apply bg-warm-sand text-noir font-inter;
-    /* Smooth, warm background - no harsh gradients */
-    background-color: #F4EEE6;
+    /* Rooted Studio defaults: warm stone surface + charcoal text */
+    @apply bg-surface text-text-primary font-inter;
   }
 }
 

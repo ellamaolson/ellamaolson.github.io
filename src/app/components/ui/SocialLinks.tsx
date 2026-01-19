@@ -44,7 +44,7 @@ export function SocialLinks({ className = '' }: { className?: string }) {
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2 text-olive-leaf hover:text-opacity-80 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-olive-leaf focus:ring-offset-2 rounded-md"
+          className="p-2 text-brand-olive hover:text-text-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-brand-olive focus:ring-offset-2 focus:ring-offset-surface rounded-md"
           aria-label={link.label}
         >
           {link.icon}

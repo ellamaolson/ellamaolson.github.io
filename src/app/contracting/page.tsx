@@ -7,13 +7,13 @@ import { Button } from '../components/ui/Button';
 export default function ContractingPage() {
   return (
     <>
-      <Section background="olive-leaf" padding="lg">
+      <Section background="brand" padding="lg">
         <Container>
           <div className="space-y-6">
-            <Heading level={1} className="text-salt">
+            <Heading level={1} className="text-text-onDark">
               Frontend contract engineering for teams that value clarity.
             </Heading>
-            <p className="text-body-large text-salt/95 max-w-reading">
+            <p className="text-body-large text-text-onDark/90 max-w-reading">
               React + TypeScript work that prioritizes maintainability, performance, and the humans
               who will own it after I’m gone.
             </p>
@@ -29,12 +29,12 @@ export default function ContractingPage() {
         </Container>
       </Section>
 
-      <Section background="warm-sand" padding="lg">
+      <Section background="surface" padding="lg">
         <Container>
           <div className="grid gap-10 md:grid-cols-2">
             <div className="space-y-4">
               <Heading level={2}>Where I help</Heading>
-              <ul className="space-y-3 text-body text-noir/90">
+              <ul className="space-y-3 text-body text-text-primary/85">
                 <li>
                   <strong>Shipping UI</strong>: clean component APIs, predictable styling, and good
                   defaults.
@@ -55,7 +55,7 @@ export default function ContractingPage() {
 
             <div className="space-y-4">
               <Heading level={2}>Working style</Heading>
-              <ul className="space-y-3 text-body text-noir/90">
+              <ul className="space-y-3 text-body text-text-primary/85">
                 <li>
                   <strong>Collaborative</strong>: I like pairing with designers/engineers and
                   documenting decisions.
@@ -73,13 +73,13 @@ export default function ContractingPage() {
 
           <div className="mt-12 max-w-reading space-y-4">
             <Heading level={3}>Relevant links</Heading>
-            <p className="text-body text-noir/90">
+            <p className="text-body text-text-primary/85">
               If you want deeper context, you can browse my{' '}
-              <Link className="text-olive-leaf hover:text-noir underline" href="/publications">
+              <Link className="text-brand-olive hover:text-text-primary underline" href="/publications">
                 publications
               </Link>{' '}
               or skim my{' '}
-              <Link className="text-olive-leaf hover:text-noir underline" href="/work">
+              <Link className="text-brand-olive hover:text-text-primary underline" href="/work">
                 work history
               </Link>
               .
@@ -88,11 +88,11 @@ export default function ContractingPage() {
         </Container>
       </Section>
 
-      <Section background="salt" padding="lg">
+      <Section background="surfaceMuted" padding="lg">
         <Container>
           <div className="space-y-6 max-w-reading">
             <Heading level={2}>Let’s talk scope</Heading>
-            <p className="text-body text-noir/90">
+            <p className="text-body text-text-primary/85">
               Send a short note with your timeline, team context, and the shape of the problem.
               I’ll reply with next steps and what I’d recommend.
             </p>

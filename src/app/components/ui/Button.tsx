@@ -29,18 +29,28 @@ export function Button({
   className = '',
   ...props
 }: ButtonProps) {
-  const baseClasses = 'inline-flex items-center justify-center font-medium transition-all duration-200 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2';
+  const baseClasses =
+    // Prefer calm color transitions (avoid animating borders/shadows).
+    'inline-flex items-center justify-center font-medium transition-colors duration-200 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-surface';
   
   const variantClasses = {
-    primary: 'bg-olive-leaf text-salt hover:bg-opacity-90 focus:ring-olive-leaf',
-    secondary: 'bg-antique text-noir hover:bg-opacity-90 focus:ring-antique',
-    // Outline for light backgrounds
+    /**
+     * Rooted Studio button system
+     * - primary: muted ochre CTA (sparingly), dark text for contrast
+     * - secondary: brand olive fill for secondary emphasis
+     * - outline: for light surfaces (olive text + subtle border)
+     * - outlineLight: for dark/brand sections (light text + subtle light border)
+     * - ghost: quiet text button on light surfaces
+     */
+    primary: 'bg-accent text-text-primary hover:bg-accent/90 focus:ring-accent',
+    secondary: 'bg-brand-olive text-text-onDark hover:bg-brand-olive/90 focus:ring-brand-olive',
     outline:
-      'border border-antique/50 text-olive-leaf hover:bg-olive-leaf/5 hover:border-antique/70 focus:ring-olive-leaf',
-    // Outline for dark/green backgrounds (light text)
+      // No border emphasis on hover; rely on text + surface shift.
+      'border border-border-strong text-brand-olive hover:text-text-primary hover:bg-surface-muted hover:border-transparent focus:ring-brand-olive',
     outlineLight:
-      'border border-salt/35 text-salt hover:bg-salt/10 hover:border-salt/50 focus:ring-salt/50',
-    ghost: 'text-olive-leaf hover:bg-olive-leaf/10 focus:ring-olive-leaf',
+      // No border emphasis on hover; rely on text + subtle overlay.
+      'border border-border-onDark text-text-onDark hover:bg-white/10 hover:border-transparent focus:ring-text-onDark',
+    ghost: 'text-brand-olive hover:bg-surface-muted focus:ring-brand-olive',
   };
 
   const sizeClasses = {

@@ -6,13 +6,13 @@ import { Button } from '../components/ui/Button';
 export default function ServicesPage() {
   return (
     <>
-      <Section background="olive-leaf" padding="lg">
+      <Section background="brand" padding="lg">
         <Container>
           <div className="space-y-6">
-            <Heading level={1} className="text-salt">
+            <Heading level={1} className="text-text-onDark">
               Websites for small businesses that feel human and work hard.
             </Heading>
-            <p className="text-body-large text-salt/95 max-w-reading">
+            <p className="text-body-large text-text-onDark/90 max-w-reading">
               Warm, grounded design with clear messaging, fast performance, and practical SEO—so
               people can find you and trust you.
             </p>
@@ -28,12 +28,12 @@ export default function ServicesPage() {
         </Container>
       </Section>
 
-      <Section background="warm-sand" padding="lg">
+      <Section background="surface" padding="lg">
         <Container>
           <div className="grid gap-10 md:grid-cols-2">
             <div className="space-y-4">
               <Heading level={2}>What I build</Heading>
-              <ul className="space-y-3 text-body text-noir/90">
+              <ul className="space-y-3 text-body text-text-primary/85">
                 <li>
                   <strong>Marketing sites</strong> with clear structure, calm typography, and thoughtful
                   conversions.
@@ -50,7 +50,7 @@ export default function ServicesPage() {
 
             <div className="space-y-4">
               <Heading level={2}>What you can expect</Heading>
-              <ul className="space-y-3 text-body text-noir/90">
+              <ul className="space-y-3 text-body text-text-primary/85">
                 <li>
                   <strong>Collaborative process</strong>—you’ll always know what’s happening and what
                   I need from you.
@@ -68,11 +68,11 @@ export default function ServicesPage() {
         </Container>
       </Section>
 
-      <Section background="salt" padding="lg">
+      <Section background="surfaceMuted" padding="lg">
         <Container>
           <div className="space-y-6 max-w-reading">
             <Heading level={2}>A simple process</Heading>
-            <ol className="space-y-3 text-body text-noir/90 list-decimal list-inside">
+            <ol className="space-y-3 text-body text-text-primary/85 list-decimal list-inside">
               <li>
                 <strong>Discovery</strong>: goals, audience, tone, and what “success” looks like.
               </li>

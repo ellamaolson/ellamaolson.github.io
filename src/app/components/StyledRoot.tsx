@@ -9,9 +9,11 @@ export function StyledRoot({
 }>) {
   return (
     <div className="flex flex-col min-h-screen">
-      <Container className="py-4">
-        <NavigationBar />
-      </Container>
+      <header className="bg-brand text-text-onDark border-b border-border-onDark">
+        <Container maxWidth="wide" className="py-4">
+          <NavigationBar />
+        </Container>
+      </header>
 
       {/* Pages control their own inner Container; sections can bleed full-width */}
       <main className="flex-1">{children}</main>

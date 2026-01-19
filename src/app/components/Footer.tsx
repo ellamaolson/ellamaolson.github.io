@@ -4,12 +4,12 @@ import { SocialLinks } from './ui/SocialLinks';
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-antique/40 bg-antique/40">
+    <footer className="mt-auto border-t border-border-onDark bg-brand text-text-onDark">
       <Container className="py-10">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="space-y-3">
-            <p className="text-body font-medium text-noir">Rooted Studio</p>
-            <p className="text-body-small text-noir/75 max-w-reading">
+            <p className="text-body font-medium text-text-onDark">Rooted Studio</p>
+            <p className="text-body-small text-text-onDark/75 max-w-reading">
               Calm, practical work—built for real people. Websites for small businesses and frontend
               engineering support for teams.
             </p>
@@ -17,23 +17,23 @@ export function Footer() {
 
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
             <div className="space-y-2">
-              <p className="text-body-small font-medium text-noir">Start here</p>
+              <p className="text-body-small font-medium text-text-onDark">Start here</p>
               <ul className="space-y-1">
                 <li>
-                  <Link className="text-body-small text-olive-leaf hover:text-noir" href="/services">
+                  <Link className="text-body-small text-text-onDark/80 hover:text-text-onDark" href="/services">
                     Website services
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="text-body-small text-olive-leaf hover:text-noir"
+                    className="text-body-small text-text-onDark/80 hover:text-text-onDark"
                     href="/contracting"
                   >
                     Contract engineering
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-body-small text-olive-leaf hover:text-noir" href="/contact">
+                  <Link className="text-body-small text-text-onDark/80 hover:text-text-onDark" href="/contact">
                     Contact
                   </Link>
                 </li>
@@ -41,21 +41,21 @@ export function Footer() {
             </div>
 
             <div className="space-y-2">
-              <p className="text-body-small font-medium text-noir">More</p>
+              <p className="text-body-small font-medium text-text-onDark">More</p>
               <ul className="space-y-1">
                 <li>
-                  <Link className="text-body-small text-noir/75 hover:text-noir" href="/about">
+                  <Link className="text-body-small text-text-onDark/70 hover:text-text-onDark" href="/about">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-body-small text-noir/75 hover:text-noir" href="/work">
+                  <Link className="text-body-small text-text-onDark/70 hover:text-text-onDark" href="/work">
                     Work
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="text-body-small text-noir/75 hover:text-noir"
+                    className="text-body-small text-text-onDark/70 hover:text-text-onDark"
                     href="/publications"
                   >
                     Publications
@@ -65,10 +65,10 @@ export function Footer() {
             </div>
 
             <div className="space-y-2">
-              <p className="text-body-small font-medium text-noir">Around</p>
+              <p className="text-body-small font-medium text-text-onDark">Around</p>
               <ul className="space-y-1">
                 <li>
-                  <Link className="text-body-small text-noir/75 hover:text-noir" href="/travel">
+                  <Link className="text-body-small text-text-onDark/70 hover:text-text-onDark" href="/travel">
                     Travel
                   </Link>
                 </li>
@@ -78,7 +78,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 text-body-small text-noir/60">
+        <div className="mt-10 text-body-small text-text-onDark/60">
           <p>© {new Date().getFullYear()} Rooted Studio</p>
         </div>
       </Container>

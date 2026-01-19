@@ -15,7 +15,7 @@ export function NavigationBar() {
         <div className="flex items-baseline justify-between gap-4 sm:justify-start">
           <Link
             href="/"
-            className="text-heading-3 font-medium text-noir hover:text-olive-leaf transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-olive-leaf focus:ring-offset-2 rounded px-1 py-1"
+            className="text-heading-3 font-medium text-text-onDark hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
             aria-label="Rooted Studio, home"
           >
             Rooted Studio
@@ -23,12 +23,12 @@ export function NavigationBar() {
         </div>
 
         <div className="flex flex-col gap-2 sm:items-end sm:ml-auto">
-          <ul className="flex flex-wrap items-center gap-2 sm:gap-4" aria-label="Primary navigation">
+          <ul className="flex flex-wrap items-center gap-4 sm:gap-6" aria-label="Primary navigation">
             {primaryNavItems.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="text-body text-olive-leaf hover:text-noir transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-olive-leaf focus:ring-offset-2 rounded px-2 py-1"
+                  className="text-body text-text-onDark/85 hover:text-text-onDark transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
                 >
                   {item.name}
                 </Link>
