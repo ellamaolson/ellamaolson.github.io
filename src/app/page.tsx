@@ -10,6 +10,7 @@ import babyAlpacaImage from '../../public/holding-baby-alpaca.jpeg';
 import sequoiaImage from '../../public/sequoia.jpeg';
 import lisbonImage from '../../public/lisbon.jpeg';
 import elanaEliImage from '../../public/elana-eli.jpeg';
+import elanaHeadshotImage from '../../public/elana-headshot.png';
 import { LoadableImage } from './components/LoadableImage';
 
 export default function Home() {
@@ -179,6 +180,84 @@ export default function Home() {
               <p className="text-body-small text-text-secondary max-w-reading">
                 Find harmony in your website and your work.
               </p>
+            </div>
+          </Grid>
+        </Container>
+      </Section>
+
+      {/* Section 4: About (warm trust + name association) */}
+      <Section background="brand" padding="lg" className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 bg-[radial-gradient(900px_circle_at_20%_10%,rgba(194,162,58,0.18),transparent_55%)]"
+          aria-hidden="true"
+        />
+        <Container maxWidth="wide" className="relative">
+          <Grid variant="split" className="items-center">
+            {/* Image: large portrait badge */}
+            <div className="flex flex-col items-center justify-center gap-4">
+              <div className="relative w-full max-w-[18rem] sm:max-w-[20rem] md:max-w-[22rem] lg:max-w-[24rem] mx-auto overflow-visible">
+                {/* Decorative rings */}
+                <div
+                  className="pointer-events-none absolute -inset-3 rounded-full border border-border-onDark/60"
+                  aria-hidden="true"
+                />
+                <div
+                  className="pointer-events-none absolute -inset-7 rounded-full border border-accent/35"
+                  aria-hidden="true"
+                />
+
+                <div className="relative aspect-square w-full overflow-hidden rounded-full border border-border-onDark bg-white/5">
+                  <LoadableImage
+                    alt="Elana Olson, founder of Rooted Studio"
+                    src={elanaHeadshotImage}
+                    className="w-full h-full rounded-full"
+                    priority={true}
+                  />
+                </div>
+              </div>
+
+            </div>
+
+            {/* Copy: warm trust + SEO signals (in a light card) */}
+            <div className="rounded-2xl bg-surface-raised text-text-primary border border-border-subtle p-6 sm:p-8">
+              <div className="space-y-3 max-w-reading">
+                <Heading level={2} className="text-text-primary">
+                  About Me
+                </Heading>
+              </div>
+
+              <div className="mt-6 space-y-4 max-w-reading">
+                <p className="text-body text-text-primary/85">
+                  Hi, I’m Elana Olson, founder of <strong>Rooted Studio</strong>—I design and build elegant
+                  websites that feel clear, warm, and easy to trust.
+                </p>
+                <p className="text-body text-text-primary/85">
+                  <strong>Grounded</strong> matters to me because your website is often a first
+                  conversation; when it’s steady and welcoming, people can relax, understand, and reach
+                  out with confidence.
+                </p>
+                <p className="text-body text-text-primary/85">
+                  I’m a professionally trained software engineer with 7+ years of experience building and
+                  maintaining production products used by millions—bringing that same care to structure,
+                  accessibility, and long-term maintainability.
+                </p>
+              </div>
+
+              <div className="mt-6 border-l border-border-strong pl-4 space-y-2 max-w-reading">
+                <p className="text-body text-text-primary/85">
+                  <strong>What you can expect:</strong> clear communication, reliable engineering, and a
+                  warm, human-centered process.
+                </p>
+              </div>
+
+              <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center">
+                <a
+                  href="/about"
+                  className="inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-text-primary transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                >
+                  Get to know me <span aria-hidden="true">→</span>
+                </a>
+              </div>
             </div>
           </Grid>
         </Container>
