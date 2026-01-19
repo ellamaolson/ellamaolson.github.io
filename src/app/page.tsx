@@ -110,6 +110,66 @@ export default function Home() {
         </Container>
       </Section>
 
+      {/* Section 3: What Makes Rooted Studio Different */}
+      <Section background="surfaceRaised" padding="lg">
+        <Container maxWidth="wide">
+          <Grid variant="asymmetric" className="items-start">
+            <div className="space-y-10">
+              <div className="space-y-3 max-w-reading">
+                <Heading level={2}>What makes Rooted Studio different</Heading>
+                <p className="text-body text-text-secondary">
+                Thoughtful websites,built by a  engineer who genuinely enjoys working with people.
+                </p>
+              </div>
+
+              <dl className="space-y-8 max-w-reading">
+                <div className="border-l border-border-strong pl-6">
+                  <dt className="font-editorial text-h3 text-text-primary">Engineering You Can Trust</dt>
+                  <dd className="mt-2 text-body text-text-primary/85">
+                  Professionally trained, with 7+ years of experience building and maintaining production-level software for millions of users.
+                  </dd>
+                </div>
+
+                <div className="border-l border-border-strong pl-6">
+                  <dt className="font-editorial text-h3 text-text-primary">Human-Centered Design</dt>
+                  <dd className="mt-2 text-body text-text-primary/85">
+                  I care just as much about how it feels to work together as I do about the final result.
+                  </dd>
+                </div>
+
+                <div className="border-l border-border-strong pl-6">
+                  <dt className="font-editorial text-h3 text-text-primary">Clarity Over Complexity</dt>
+                  <dd className="mt-2 text-body text-text-primary/85">
+                  I translate technical decisions into language that’s easy to understand and useful.
+                  </dd>
+                </div>
+
+                <div className="border-l border-border-strong pl-6">
+                  <dt className="font-editorial text-h3 text-text-primary">A Steady Partner</dt>
+                  <dd className="mt-2 text-body text-text-primary/85">
+                  From small businesses to large teams, I bring a calm, thoughtful, and collaborative approach.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
+            {/* Image space (quiet visual balance) */}
+            <div className="space-y-3">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-border-subtle bg-surface-muted">
+                <LoadableImage
+                  alt="Autumn oak photograph"
+                  src="/autumn%20oak.jpg"
+                  className="w-full h-full"
+                />
+              </div>
+              <p className="text-body-small text-text-secondary max-w-reading">
+                A quiet visual moment to balance the copy.
+              </p>
+            </div>
+          </Grid>
+        </Container>
+      </Section>
+
       {/* Credibility / approach: left-aligned reading, balanced with imagery */}
       <Section background="surface" padding="lg">
         <Container maxWidth="wide">
