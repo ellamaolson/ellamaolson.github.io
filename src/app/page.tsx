@@ -34,7 +34,7 @@ export default function Home() {
 
         <Container maxWidth="wide" className="relative min-h-screen">
           {/* Use padding for consistent alignment with the header container */}
-          <div className="pt-[32vh] space-y-6 max-w-[80ch]">
+          <div className="pt-[16vh] md:pt-[26vh] lg:pt-[28vh] space-y-6 max-w-[80ch]">
             <p className="text-body-small tracking-[0.18em] uppercase text-text-onDark/80">
               Professional consultancy
             </p>
@@ -73,7 +73,7 @@ export default function Home() {
               <Heading level={2}>Who I help</Heading>
               <p className="text-body text-text-secondary">
                 Different kinds of clients, same approach: calm structure, clear communication, and work
-                you can trust.
+                you can trust. Two paths, one steady process.
               </p>
             </div>
 
@@ -83,26 +83,40 @@ export default function Home() {
                   Small businesses & independent professionals
                 </h3>
                 <p className="text-body text-text-primary/85 max-w-reading">
-                  If your website feels outdated, unclear, or hard to manage, I’ll help you shape a warm,
-                  welcoming site that explains what you do and makes it easy for people to reach out.
+                If you’re looking for a clear, welcoming small business website that’s easy to manage and built to grow with you.
                 </p>
+                <ul className="mt-3 space-y-2 pl-5 list-disc text-body text-text-primary/85 max-w-reading">
+                  <li>Website creation & redesign</li>
+                  <li>SEO-ready structure</li>
+                  <li>Ongoing support & maintenance</li>
+                </ul>
                 <div className="pt-1">
-                  <Button as="link" href="/services" variant="outline">
-                    Explore website services
-                  </Button>
+                  <a
+                    href="/services"
+                    className="inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-text-primary transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                  >
+                    Explore website services <span aria-hidden="true">→</span>
+                  </a>
                 </div>
               </article>
 
-              <article className="space-y-4 border-l border-brand-moss/35 pl-6 md:pt-6">
+              <article className="space-y-4 border-l border-brand-moss/35 pl-6">
                 <h3 className="font-editorial text-h3 text-text-primary">Product teams & companies</h3>
                 <p className="text-body text-text-primary/85 max-w-reading">
-                  If you need extra frontend support, I can help you ship or refine React + TypeScript UI
-                  with a focus on clarity, maintainability, and smooth handoff to your team.
+                If you need a reliable contract frontend engineer to support or extend your product team.
                 </p>
+                <ul className="mt-3 space-y-2 pl-5 list-disc text-body text-text-primary/85 max-w-reading">
+                  <li>Frontend engineering (React / Angular)</li>
+                  <li>Scalable UI systems</li>
+                  <li>Clear handoff & collaboration</li>
+                </ul>
                 <div className="pt-1">
-                  <Button as="link" href="/contracting" variant="outline">
-                    Explore contract engineering
-                  </Button>
+                  <a
+                    href="/contracting"
+                    className="inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-text-primary transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                  >
+                    Explore contract engineering <span aria-hidden="true">→</span>
+                  </a>
                 </div>
               </article>
             </Grid>
@@ -118,7 +132,7 @@ export default function Home() {
               <div className="space-y-3 max-w-reading">
                 <Heading level={2}>What makes Rooted Studio different</Heading>
                 <p className="text-body text-text-secondary">
-                Thoughtful websites,built by a  engineer who genuinely enjoys working with people.
+                Thoughtful websites, built by a  engineer who truly gets people.
                 </p>
               </div>
 
@@ -147,14 +161,14 @@ export default function Home() {
                 <div className="border-l border-border-strong pl-6">
                   <dt className="font-editorial text-h3 text-text-primary">A Steady Partner</dt>
                   <dd className="mt-2 text-body text-text-primary/85">
-                  From small businesses to large teams, I bring a calm, thoughtful, and collaborative approach.
+                  From small businesses to large teams, I listen closely, adjust quickly, and communicate clearly.
                   </dd>
                 </div>
               </dl>
             </div>
 
             {/* Image space (quiet visual balance) */}
-            <div className="space-y-3">
+            <div className="hidden md:block space-y-3">
               <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-border-subtle bg-surface-muted">
                 <LoadableImage
                   alt="Autumn oak photograph"
@@ -163,7 +177,7 @@ export default function Home() {
                 />
               </div>
               <p className="text-body-small text-text-secondary max-w-reading">
-                A quiet visual moment to balance the copy.
+                Find harmony in your website and your work.
               </p>
             </div>
           </Grid>
@@ -247,52 +261,6 @@ export default function Home() {
                     objectPosition="top center"
                     priority={true}
                   />
-                </div>
-              </div>
-            </div>
-          </Grid>
-        </Container>
-      </Section>
-
-      {/* Showcase: how I can help, no card-grid; editorial lists */}
-      <Section background="surfaceMuted" padding="lg">
-        <Container maxWidth="wide">
-          <Grid variant="split" className="items-start">
-            <div className="space-y-4 max-w-reading">
-              <Heading level={2}>How I can help</Heading>
-              <p className="text-body text-text-secondary">
-                Two paths, same approach: calm structure, readable layouts, and honest communication.
-              </p>
-            </div>
-
-            <div className="space-y-8">
-              <div className="border-l border-brand-olive/35 pl-5">
-                <p className="text-body-small tracking-wide text-text-secondary">Small business</p>
-                <h3 className="text-heading-3 text-text-primary mt-1">Website services</h3>
-                <ul className="mt-3 space-y-2 text-body text-text-primary/85">
-                  <li>Marketing pages that read clearly and feel welcoming</li>
-                  <li>Light SEO structure: headings, semantics, internal linking</li>
-                  <li>Performance basics + long-term maintainability</li>
-                </ul>
-                <div className="mt-4">
-                  <Button as="link" href="/services" variant="ghost">
-                    Explore services →
-                  </Button>
-                </div>
-              </div>
-
-              <div className="border-l border-brand-olive/35 pl-5">
-                <p className="text-body-small tracking-wide text-text-secondary">Teams</p>
-                <h3 className="text-heading-3 text-text-primary mt-1">Contract engineering</h3>
-                <ul className="mt-3 space-y-2 text-body text-text-primary/85">
-                  <li>React + TypeScript UI shipping and refactors</li>
-                  <li>Pragmatic design systems + reusable primitives</li>
-                  <li>Documentation, handoff, and long-term clarity</li>
-                </ul>
-                <div className="mt-4">
-                  <Button as="link" href="/contracting" variant="ghost">
-                    Explore contracting →
-                  </Button>
                 </div>
               </div>
             </div>
