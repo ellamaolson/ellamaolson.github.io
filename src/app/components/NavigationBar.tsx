@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 export function NavigationBar() {
   const primaryNavItems = [
-    { href: '/', name: 'Home' },
     { href: '/services', name: 'Website services' },
     { href: '/contracting', name: 'Contract engineering' },
     { href: '/about', name: 'About' },

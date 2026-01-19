@@ -61,18 +61,18 @@ export function Footer() {
                     Publications
                   </Link>
                 </li>
-              </ul>
-            </div>
-
-            <div className="space-y-2">
-              <p className="text-body-small font-medium text-text-onDark">Around</p>
-              <ul className="space-y-1">
                 <li>
-                  <Link className="text-body-small text-text-onDark/70 hover:text-text-onDark" href="/travel">
+                  <Link
+                    className="text-body-small text-text-onDark/70 hover:text-text-onDark"
+                    href="/travel"
+                  >
                     Travel
                   </Link>
                 </li>
               </ul>
+            </div>
+
+            <div className="space-y-2">
               <SocialLinks className="pt-2" />
             </div>
           </div>
