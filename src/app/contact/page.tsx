@@ -20,10 +20,10 @@ export default function ContactPage() {
               <Button as="link" href="mailto:elanaolson@gmail.com" variant="secondary">
                 Email me
               </Button>
-              <Button as="link" href="/services" variant="outline">
+              <Button as="link" href="/services" variant="outlineLight">
                 Website services
               </Button>
-              <Button as="link" href="/contracting" variant="outline">
+              <Button as="link" href="/contracting" variant="outlineLight">
                 Contract engineering
               </Button>
             </div>

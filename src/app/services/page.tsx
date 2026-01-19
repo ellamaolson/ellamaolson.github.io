@@ -20,7 +20,7 @@ export default function ServicesPage() {
               <Button as="link" href="/contact" variant="secondary">
                 Ask about a project
               </Button>
-              <Button as="link" href="/about" variant="outline">
+              <Button as="link" href="/about" variant="outlineLight">
                 Learn how I work
               </Button>
             </div>

@@ -8,7 +8,7 @@ export function Footer() {
       <Container className="py-10">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="space-y-3">
-            <p className="text-body font-medium text-noir">Elana Olson</p>
+            <p className="text-body font-medium text-noir">Rooted Studio</p>
             <p className="text-body-small text-noir/75 max-w-reading">
               Calm, practical work—built for real people. Websites for small businesses and frontend
               engineering support for teams.
@@ -79,7 +79,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 text-body-small text-noir/60">
-          <p>© {new Date().getFullYear()} Elana Olson</p>
+          <p>© {new Date().getFullYear()} Rooted Studio</p>
         </div>
       </Container>
     </footer>

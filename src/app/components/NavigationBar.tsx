@@ -10,19 +10,19 @@ export function NavigationBar() {
   ];
 
   return (
-    <header className="mb-12">
-      <nav className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-        <div className="flex items-baseline justify-between gap-4">
+    <header className="mb-0">
+      <nav className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between w-full">
+        <div className="flex items-baseline justify-between gap-4 sm:justify-start">
           <Link
             href="/"
             className="text-heading-3 font-medium text-noir hover:text-olive-leaf transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-olive-leaf focus:ring-offset-2 rounded px-1 py-1"
-            aria-label="Elana Olson, home"
+            aria-label="Rooted Studio, home"
           >
-            Elana Olson
+            Rooted Studio
           </Link>
         </div>
 
-        <div className="flex flex-col gap-2 sm:items-end">
+        <div className="flex flex-col gap-2 sm:items-end sm:ml-auto">
           <ul className="flex flex-wrap items-center gap-2 sm:gap-4" aria-label="Primary navigation">
             {primaryNavItems.map((item) => (
               <li key={item.href}>

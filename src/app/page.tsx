@@ -15,76 +15,48 @@ import { LoadableImage } from './components/LoadableImage';
 export default function Home() {
   return (
     <>
-      {/* Hero: editorial, calm, lightly asymmetrical */}
-      <Section background="olive-leaf" padding="lg" className="relative overflow-hidden">
-        {/* Reference-inspired: soft image wash + gentle overlay (not a dramatic hero) */}
-        <div className="pointer-events-none absolute inset-0 opacity-[0.16]">
-          <div className="absolute inset-0 bg-gradient-to-b from-noir/35 via-noir/10 to-transparent" />
-          <div className="absolute -right-20 top-10 w-[520px] max-w-[70vw]">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-salt/10 bg-salt/5">
-              <LoadableImage
-                alt="Me standing under a Sequoia tree"
-                src={sequoiaImage}
-                className="w-full h-full"
-                objectPosition="top center"
-                priority={true}
-              />
+      {/* Hero: full-viewport background image with large overlay type */}
+      <Section background="transparent" padding="none" className="relative min-h-screen overflow-hidden">
+        {/* Put your leaf image at `public/hero-leaves.jpg` (fallback uses an existing image). */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            // First: primary hero image. Second: guaranteed fallback from /public.
+            backgroundImage: "url('/oak%20growing%20right.jpg'), url('/sequoia.jpeg')",
+          }}
+          aria-hidden="true"
+        />
+        {/* Gentle dark overlay for legibility (moody, not high-contrast) */}
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-raisin-black/80 via-raisin-black/45 to-raisin-black/20"
+          aria-hidden="true"
+        />
+
+        <Container maxWidth="wide" className="relative min-h-screen">
+          <div className="absolute left-0 top-[32vh] space-y-6 max-w-[80ch]">
+            <p className="text-body-small tracking-[0.18em] uppercase text-salt/80">
+              Professional consultancy
+            </p>
+            <h1 className="font-editorial text-salt text-balance text-5xl sm:text-6xl lg:text-7xl leading-[0.95]">
+              Grounded websites for growing businesses
+            </h1>
+            <p className="text-body-large text-salt/90 max-w-reading">
+              I build welcoming websites for small businesses—and I also contract as a frontend
+              engineer for teams who want clarity, maintainability, and thoughtful execution.
+            </p>
+
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+              <Button as="link" href="/services" variant="secondary">
+                Website services
+              </Button>
+              <Button as="link" href="/contracting" variant="outlineLight">
+                Contract engineering
+              </Button>
+              <Button as="link" href="/contact" variant="ghost" className="text-salt hover:bg-salt/10">
+                Contact →
+              </Button>
             </div>
           </div>
-        </div>
-
-        <Container maxWidth="wide" className="relative">
-          <Grid variant="asymmetric" className="items-start">
-            <div className="space-y-6">
-              <p className="text-body-small tracking-[0.18em] uppercase text-salt/80">
-                Professional consultancy
-              </p>
-              <Heading
-                level={1}
-                className="text-salt text-balance text-4xl sm:text-5xl lg:text-6xl leading-[1.03]"
-              >
-                Calm, grounded web work for real people.
-              </Heading>
-              <p className="text-body-large text-salt/90 max-w-reading">
-                I build welcoming websites for small businesses—and I also contract as a frontend
-                engineer for teams who want clarity, maintainability, and thoughtful execution.
-              </p>
-
-              <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-                <Button as="link" href="/services" variant="secondary">
-                  Website services
-                </Button>
-                <Button as="link" href="/contracting" variant="outline" className="text-salt">
-                  Contract engineering
-                </Button>
-                <Button
-                  as="link"
-                  href="/contact"
-                  variant="ghost"
-                  className="text-salt hover:bg-salt/10"
-                >
-                  Contact →
-                </Button>
-              </div>
-            </div>
-
-            {/* Quiet detail column (reference-like negative space / rhythm) */}
-            <div className="mt-2 hidden md:block">
-              <div className="space-y-4">
-                <div className="border-l border-salt/30 pl-4">
-                  <p className="text-body-small text-salt/80">
-                    Based in San Diego. I like work that feels steady, clear, and kind to the humans
-                    on both sides.
-                  </p>
-                </div>
-                <div className="border-l border-salt/20 pl-4">
-                  <p className="text-body-small text-salt/75">
-                    Available for small projects and focused contract engagements.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Grid>
         </Container>
       </Section>
 

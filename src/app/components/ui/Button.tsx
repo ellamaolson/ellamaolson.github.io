@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 interface BaseButtonProps {
   children: ReactNode;
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+  variant?: 'primary' | 'secondary' | 'outline' | 'outlineLight' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
   className?: string;
 }
@@ -34,8 +34,11 @@ export function Button({
   const variantClasses = {
     primary: 'bg-olive-leaf text-salt hover:bg-opacity-90 focus:ring-olive-leaf',
     secondary: 'bg-antique text-noir hover:bg-opacity-90 focus:ring-antique',
-    // Default outline is optimized for dark (olive) sections: light text + subtle light border
+    // Outline for light backgrounds
     outline:
+      'border border-antique/50 text-olive-leaf hover:bg-olive-leaf/5 hover:border-antique/70 focus:ring-olive-leaf',
+    // Outline for dark/green backgrounds (light text)
+    outlineLight:
       'border border-salt/35 text-salt hover:bg-salt/10 hover:border-salt/50 focus:ring-salt/50',
     ghost: 'text-olive-leaf hover:bg-olive-leaf/10 focus:ring-olive-leaf',
   };

@@ -21,7 +21,7 @@ export default function ContractingPage() {
               <Button as="link" href="/contact" variant="secondary">
                 Check availability
               </Button>
-              <Button as="link" href="/work" variant="outline">
+              <Button as="link" href="/work" variant="outlineLight">
                 View experience
               </Button>
             </div>

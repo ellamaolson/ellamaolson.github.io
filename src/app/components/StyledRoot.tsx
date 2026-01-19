@@ -9,7 +9,7 @@ export function StyledRoot({
 }>) {
   return (
     <div className="flex flex-col min-h-screen">
-      <Container className="mt-8 mb-10">
+      <Container className="py-4">
         <NavigationBar />
       </Container>
 
