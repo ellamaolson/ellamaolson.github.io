@@ -16,7 +16,7 @@ export default function Home() {
       <Section background="transparent" padding="none" className="relative min-h-screen overflow-hidden">
         {/* Put your leaf image at `public/hero-leaves.jpg` (fallback uses an existing image). */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-brand bg-cover bg-center bg-no-repeat"
           style={{
             // First: primary hero image. Second: guaranteed fallback from /public.
             backgroundImage: "url('/oak%20growing%20right.jpg')",

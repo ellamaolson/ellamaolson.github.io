@@ -7,15 +7,24 @@ import { Button } from '../components/ui/Button';
 export default function ContractingPage() {
   return (
     <>
-      <Section background="brand" padding="lg">
-        <Container>
+      <Section background="transparent" padding="none" className="relative overflow-hidden min-h-[50vh] flex items-end">
+        <div
+          className="absolute inset-0 bg-brand bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/meadow.jpg')" }}
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-text-primary/65 via-text-primary/35 to-text-primary/70"
+          aria-hidden="true"
+        />
+        <Container className="relative py-10 sm:py-14">
           <div className="space-y-6">
             <Heading level={1} className="text-text-onDark">
               Frontend contract engineering for teams that value clarity.
             </Heading>
             <p className="text-body-large text-text-onDark/90 max-w-reading">
-              React + TypeScript work that prioritizes maintainability, performance, and the humans
-              who will own it after I’m gone.
+              React + TypeScript work that prioritizes maintainability, performance, and the humans who will
+              own it after I’m gone.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button as="link" href="/contact" variant="secondary">

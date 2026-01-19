@@ -6,15 +6,24 @@ import { Button } from '../components/ui/Button';
 export default function ServicesPage() {
   return (
     <>
-      <Section background="brand" padding="lg">
-        <Container>
+      <Section background="transparent" padding="none" className="relative overflow-hidden min-h-[50vh] flex items-end">
+        <div
+          className="absolute inset-0 bg-brand bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/poppy.jpg')" }}
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-text-primary/65 via-text-primary/35 to-text-primary/70"
+          aria-hidden="true"
+        />
+        <Container className="relative py-10 sm:py-14">
           <div className="space-y-6">
             <Heading level={1} className="text-text-onDark">
               Websites for small businesses that feel human and work hard.
             </Heading>
             <p className="text-body-large text-text-onDark/90 max-w-reading">
-              Warm, grounded design with clear messaging, fast performance, and practical SEO—so
-              people can find you and trust you.
+              Warm, grounded design with clear messaging, fast performance, and practical SEO—so people can
+              find you and trust you.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button as="link" href="/contact" variant="secondary">
