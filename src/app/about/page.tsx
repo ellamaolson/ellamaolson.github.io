@@ -1,7 +1,6 @@
 import { Section } from '../components/ui/Section';
 import { Container } from '../components/ui/Container';
 import { Heading } from '../components/ui/Heading';
-import { Button } from '../components/ui/Button';
 import { Grid } from '../components/ui/Grid';
 import { LoadableImage } from '../components/LoadableImage';
 import babyAlpacaImage from '../../../public/holding-baby-alpaca.jpeg';

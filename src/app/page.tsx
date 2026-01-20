@@ -39,7 +39,7 @@ export default function Home() {
               Grounded websites for growing businesses
             </h1>
             <p className="text-body-large text-text-onDark/90 max-w-reading">
-            I help small businesses shape welcoming websites, and support product teams with clear, maintainable frontend engineering.
+            I help small businesses create welcoming websites, and support product teams with clear, maintainable frontend engineering.
             </p>
 
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
@@ -67,7 +67,7 @@ export default function Home() {
         <Container maxWidth="wide">
           <div className="space-y-10">
             <div className="max-w-reading space-y-3">
-              <Heading level={2}>Who I help</Heading>
+              <Heading level={2}>Who I work with</Heading>
               <p className="text-body text-text-secondary">
               Different needs, the same steady approach — clear structure, open communication, and work you can rely on.
               </p>
@@ -77,7 +77,7 @@ export default function Home() {
               <article className="group space-y-4 border-l border-brand-olive/35 pl-6 transition-colors duration-200 hover:border-brand-olive/60">
                 <h3 className="font-editorial text-h3 text-text-primary">Small Businesses & Independent Professionals</h3>
                 <p className="text-body text-text-primary/85 max-w-reading">
-                You want a website that feels welcoming and easy to understand — one that clearly explains what you do and makes it simple for the right people to reach out.
+                You want a website that feels welcoming and easy to understand — one that beautifully explains what you do and makes it simple for the right people to reach out.
                 I’m a great fit if you’re looking for small business website design that’s thoughtful, readable, and built to grow with you.
                 </p>
                 <div className="pt-1">
@@ -130,7 +130,7 @@ export default function Home() {
               <div className="space-y-3 max-w-reading">
                 <Heading level={2}>What makes Rooted Studio different</Heading>
                 <p className="text-body text-text-secondary">
-                Thoughtful websites, built by a  engineer who truly gets people.
+                Thoughtful websites, built by a  engineer who loves working with people.
                 </p>
               </div>
 
@@ -209,9 +209,7 @@ export default function Home() {
                   <div className="px-6 py-8 sm:px-8 sm:py-10">
                     <div className="space-y-3">
                       <Heading level={2}>My services</Heading>
-                      <p className="text-body text-text-secondary">
-                        A few focused ways I can support you—designed to feel clear, steady, and easy to say yes to.
-                      </p>
+                      
                     </div>
 
                     <ul className="mt-8 divide-y divide-border-subtle" aria-label="Services overview">
@@ -228,7 +226,7 @@ export default function Home() {
                               Website Design &amp; Redesign (Small Businesses)
                             </h3>
                             <p className="text-body text-text-secondary">
-                              Small business website design and website redesign that reads clearly, feels welcoming,
+                              Small business website design and website redesign that reads clearly (with SEO in mind), feels welcoming,
                               and stays easy to manage as you grow.
                             </p>
                             <a
@@ -258,7 +256,7 @@ export default function Home() {
                           <div className="space-y-3">
                             <h3 className="font-editorial text-h3 text-text-primary">Ongoing Website Care &amp; Retainers</h3>
                             <p className="text-body text-text-secondary">
-                              Calm, reliable website support for updates, improvements, and maintenance—so your site
+                              Reliable website support for updates, improvements, and maintenance—so your site
                               stays current without becoming another thing to worry about.
                             </p>
                             <a
@@ -287,17 +285,17 @@ export default function Home() {
                           </div>
                           <div className="space-y-3">
                             <h3 className="font-editorial text-h3 text-text-primary">
-                              Frontend Engineering Support (React / Angular)
+                              Frontend Engineering (React / Angular)
                             </h3>
                             <p className="text-body text-text-secondary">
-                              Frontend engineering support for product teams—React or Angular work that’s maintainable,
+                              Frontend engineering for product teams—React or Angular work that’s maintainable,
                               well-communicated, and easy to hand off.
                             </p>
                             <a
                               href="/contracting"
                               className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
                             >
-                              Frontend engineering support{' '}
+                              Contract engineering {' '}
                               <span
                                 aria-hidden="true"
                                 className="transition-transform duration-200 group-hover:translate-x-1"
@@ -464,7 +462,7 @@ export default function Home() {
                 variant="primary"
                 className="border-2 border-white/80 hover:border-white bg-accent/80 hover:bg-accent/70"
               >
-                Schedule our call
+                Schedule a call
               </Button>
             </div>
           </div>
@@ -519,14 +517,13 @@ export default function Home() {
                   websites that feel clear, warm, and easy to trust.
                 </p>
                 <p className="text-body text-text-onDark/90">
-                  <strong>Grounded</strong> matters to me because your website is often a first
-                  conversation; when it’s steady and welcoming, people can relax, understand, and reach
+                  Your website is often the first conversation you have with your clients; when it’s 
+                  welcoming and grounded in a clear message, people can relax, understand, and reach
                   out with confidence.
                 </p>
                 <p className="text-body text-text-onDark/90">
-                  I’m a professionally trained software engineer with 7+ years of experience building and
-                  maintaining production products used by millions—bringing that same care to structure,
-                  accessibility, and long-term maintainability.
+                  I’m a professionally trained software engineer with years of experience building and
+                  maintaining production products—ensuring consistency, accessibility, and long-term maintainability.
                 </p>
               </div>
 

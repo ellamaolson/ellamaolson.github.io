@@ -10,8 +10,7 @@ export function Footer() {
           <div className="space-y-3">
             <p className="text-body font-medium text-text-onDark">Rooted Studio</p>
             <p className="text-body-small text-text-onDark/75 max-w-reading">
-              Calm, practical work—built for real people. Websites for small businesses and frontend
-              engineering support for teams.
+              Web design and engineering for small businesses and teams.
             </p>
           </div>
 
@@ -73,7 +72,7 @@ export function Footer() {
             </div>
 
             <div className="space-y-2">
-              <SocialLinks className="pt-2" />
+              <SocialLinks className="pt-2 [&_a]:text-white [&_a:hover]:text-accent [&_a]:focus:ring-accent [&_a]:focus:ring-offset-brand [&_a]:focus:ring-offset-2" />
             </div>
           </div>
         </div>

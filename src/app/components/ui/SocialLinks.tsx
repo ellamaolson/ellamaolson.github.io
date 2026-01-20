@@ -1,7 +1,6 @@
 import { GitHubIcon } from '../icons/GitHubIcon';
 import { LinkedInIcon } from '../icons/LinkedInIcon';
 import { MediumIcon } from '../icons/MediumIcon';
-import { XIcon } from '../icons/XIcon';
 
 interface SocialLink {
   href: string;
@@ -24,11 +23,6 @@ const socialLinks: SocialLink[] = [
     href: 'https://medium.com/@elanaolson',
     label: 'Medium',
     icon: <MediumIcon />,
-  },
-  {
-    href: 'https://twitter.com/elanathellama',
-    label: 'Twitter/X',
-    icon: <XIcon />,
   },
 ];
 

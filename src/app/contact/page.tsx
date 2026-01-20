@@ -39,12 +39,36 @@ export default function ContactPage() {
                   What to include
                 </Heading>
                 <ul className="space-y-3 text-body text-text-onDark/85 list-disc list-inside">
-                  <li>What service you’re interested in (Website support or Contract engineering))</li>
+                  <li>What service you’re interested in - Website support or Contract engineering</li>
                   <li>Timeline and urgency</li>
                   <li>Links to anything relevant (site, repo, mockups)</li>
                   <li>Preferred contact method</li>
                 </ul>
               </div>
+
+              {/* Other ways to reach me (left column) */}
+              <section className="pt-[30rem] max-w-reading" aria-label="Other ways to reach me">
+                <div className="space-y-4 text-text-onDark/90">
+                  <p className="text-body">
+                    If you have a question before you’re ready to book a call, email me at{' '}
+                    <a
+                      className="text-text-onDark underline underline-offset-4 decoration-border-onDark/60 hover:text-accent transition-colors duration-200"
+                      href="mailto:elanaolson@gmail.com"
+                    >
+                      elanaolson@gmail.com
+                    </a>
+                    .
+                  </p>
+
+                  <div>
+                    <Button as="link" href="mailto:elanaolson@gmail.com" variant="secondary">
+                      Email me
+                    </Button>
+                  </div>
+
+                  <SocialLinks className="pt-2 [&_a]:text-text-onDark/80 [&_a:hover]:text-accent [&_a]:focus:ring-accent [&_a]:focus:ring-offset-brand [&_a]:focus:ring-offset-2" />
+                </div>
+              </section>
             </div>
 
             {/* Calendly */}
@@ -66,30 +90,6 @@ export default function ContactPage() {
                   minWidth={320}
                 />
               </div>
-
-              {/* Secondary contact options (below Calendly) */}
-              <section className="pt-2" aria-label="Other ways to reach me">
-                <div className="space-y-4 max-w-reading text-text-onDark/90">
-                  <p className="text-body">
-                    If you have a question before you’re ready to book a call, email me at {' '}
-                    <a
-                      className="text-text-onDark underline underline-offset-4 decoration-border-onDark/60 hover:text-accent transition-colors duration-200"
-                      href="mailto:elanaolson@gmail.com"
-                    >
-                      elanaolson@gmail.com
-                    </a>
-                    .
-                  </p>
-
-                  <div>
-                    <Button as="link" href="mailto:elanaolson@gmail.com" variant="secondary">
-                      Email me
-                    </Button>
-                  </div>
-
-                  <SocialLinks className="pt-2 [&_a]:text-text-onDark/80 [&_a:hover]:text-accent [&_a]:focus:ring-accent [&_a]:focus:ring-offset-brand [&_a]:focus:ring-offset-2" />
-                </div>
-              </section>
             </div>
           </div>
         </Container>

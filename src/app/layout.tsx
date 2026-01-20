@@ -6,6 +6,8 @@ import { GTMPageView } from './components/GTMPageView';
 import './globals.css';
 import './fonts.css';
 
+const CALENDLY_WIDGET_SRC = 'https://assets.calendly.com/assets/external/widget.js';
+
 export const metadata: Metadata = {
   title: 'Elana Olson',
   description: 'Engineer who loves traveling and painting',
@@ -35,8 +37,8 @@ export default function RootLayout({
         {/* Preconnect to external domains for better performance */}
         <link rel="preconnect" href="https://github.com" />
         <link rel="preconnect" href="https://www.linkedin.com" />
-        <link rel="preconnect" href="https://twitter.com" />
         <link rel="preconnect" href="https://medium.com" />
+        <link rel="preconnect" href="https://assets.calendly.com" />
 
         {/* Preload critical fonts for better performance */}
         <link
@@ -62,12 +64,12 @@ export default function RootLayout({
         />
 
         {/* Preload critical images for better performance */}
-        <link rel="preload" as="image" href="/holding-baby-alpaca.jpeg" type="image/jpeg" />
-        <link rel="preload" as="image" href="/pisac-ruins.jpeg" type="image/jpeg" />
-        <link rel="preload" as="image" href="/sequoia.jpeg" type="image/jpeg" />
-        <link rel="preload" as="image" href="/elana-eli.jpeg" type="image/jpeg" />
-        <link rel="preload" as="image" href="/eating-sm.jpeg" type="image/jpeg" />
-        <link rel="preload" as="image" href="/lisbon.jpeg" type="image/jpeg" />
+        <link
+          rel="preload"
+          as="image"
+          href="/oak%20growing%20right.jpg"
+          fetchPriority="high"
+        />
       </head>
       <body className="font-inter">
         <noscript>
@@ -82,6 +84,9 @@ export default function RootLayout({
           <GTMPageView />
         </Suspense>
         <StyledRoot>{children}</StyledRoot>
+
+        {/* Load Calendly widget script at end of body */}
+        <Script src={CALENDLY_WIDGET_SRC} strategy="lazyOnload" async />
       </body>
     </html>
   );
