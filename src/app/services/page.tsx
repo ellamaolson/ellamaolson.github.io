@@ -98,7 +98,7 @@ export default function ServicesPage() {
                           Starting Package
                         </Heading>
                         <p className="font-medium text-text-primary/80 text-body-small italic">
-                           Without SEO copy or custom images
+                           No SEO copy or custom images
                         </p>
                         <p>
                           <span className="font-medium text-text-primary/80">Investment:</span> $1,200 / €1,100
@@ -179,7 +179,7 @@ export default function ServicesPage() {
                           Single Page Redesign
                         </Heading>
                         <p className="font-medium text-text-primary/80 text-body-small italic">
-                          With SEO copy &amp; images
+                          No SEO copy or custom images
                         </p>
                         <p>
                           <span className="font-medium text-text-primary/80">Investment:</span> $400 / €350
