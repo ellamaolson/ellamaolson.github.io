@@ -10,7 +10,7 @@ import { GitHubIcon } from '../components/icons/GitHubIcon';
 export default function ContractingPage() {
   return (
     <>
-      <Section background="transparent" padding="none" className="relative overflow-hidden min-h-[96vh]">
+      <Section background="transparent" padding="none" className="relative overflow-hidden min-h-[140vh] sm:min-h-[96vh]">
         <div
           className="absolute inset-0 bg-brand bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/green-moutnain.jpg')" }}
@@ -20,7 +20,7 @@ export default function ContractingPage() {
           className="absolute inset-0 bg-gradient-to-b from-text-primary/65 via-text-primary/35 to-text-primary/70"
           aria-hidden="true"
         />
-        <Container maxWidth="wide" className="relative min-h-[96vh]">
+        <Container maxWidth="wide" className="relative min-h-[140vh] sm:min-h-[96vh]">
           <div className="pt-[14vh] md:pt-[18vh] space-y-12">
             <div className="mx-auto w-full md:w-[80%] space-y-6">
               <Header level={1} className="text-text-onDark">
@@ -47,7 +47,7 @@ export default function ContractingPage() {
               </header>
 
               <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:items-start">
-                <div className="max-w-reading space-y-3 lg:pl-6">
+                <div className="max-w-full sm:max-w-reading space-y-3 lg:pl-6">
                   <Header level={5} className="font-bold text-base mb-1">Offerings</Header>
                   <ul className="space-y-3 text-body text-text-primary/85 list-disc list-inside">
                     <li>Frontend feature development</li>

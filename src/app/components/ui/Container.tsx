@@ -12,9 +12,9 @@ export function Container({
   maxWidth = 'content' 
 }: ContainerProps) {
   const maxWidthClasses = {
-    content: 'max-w-content',
-    reading: 'max-w-reading',
-    wide: 'max-w-wide',
+    content: 'max-w-full sm:max-w-content',
+    reading: 'max-w-full sm:max-w-reading',
+    wide: 'max-w-full sm:max-w-wide',
     full: 'max-w-full',
   };
 

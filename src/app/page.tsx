@@ -70,7 +70,7 @@ export default function Home() {
             <div className="max-w-reading space-y-3">
               <Header level={2}>Who I work with</Header>
               <Paragraph className="text-text-secondary">
-              Different needs, the same steady approach — clear structure, open communication, and work you can rely on.
+              Different needs, the same steady approach — see which offering is right for you.
               </Paragraph>
             </div>
 
@@ -78,8 +78,7 @@ export default function Home() {
               <article className="group space-y-4 border-l border-brand-olive/35 pl-6 transition-colors duration-200 hover:border-brand-olive/60">
                 <Header level={3}>Small Businesses & Independent Professionals</Header>
                 <Paragraph className="text-text-primary/85 max-w-reading">
-                You want a website that feels welcoming and easy to understand — one that beautifully explains what you do and makes it simple for the right people to reach out.
-                I’m a great fit if you’re looking for small business website design that’s thoughtful, readable, and built to grow with you.
+                You want a website that feels welcoming and easy to understand — one that eloquently explains what you do and makes it simple for the right people to reach out.
                 </Paragraph>
                 <div className="pt-1">
                   <a
@@ -100,8 +99,7 @@ export default function Home() {
               <article className="group space-y-4 border-l border-brand-moss/35 pl-6 transition-colors duration-200 hover:border-brand-moss/60">
                 <Header level={3}>Product Teams & Companies</Header>
                 <Paragraph className="text-text-primary/85 max-w-reading">
-                You need an experienced contract frontend engineer who can step in, ship clean UI, and leave things better than they found them.
-                I support teams working in React or Angular, with a focus on clarity, maintainability, and communication that keeps projects calm and predictable
+                You want an experienced frontend engineer who can step in, ship clean UI, build fast in React or Angular, and will leave things better than when they found them.
                 </Paragraph>
                 <div className="pt-1">
                   <a
@@ -175,9 +173,7 @@ export default function Home() {
                   className="w-full h-full"
                 />
               </div>
-              <Paragraph variant="p3" className="text-text-secondary max-w-reading">
-                Find harmony in your website and your work.
-              </Paragraph>
+              
             </div>
           </Grid>
         </Container>
@@ -227,7 +223,7 @@ export default function Home() {
                               Website Design &amp; Redesign (Small Businesses)
                             </Header>
                             <Paragraph className="text-text-secondary">
-                              Small business website design and website redesign that reads clearly (with SEO in mind), feels welcoming,
+                              Small business website design and website redesign that looks beautiful, feels welcoming,
                               and stays easy to manage as you grow.
                             </Paragraph>
                             <a
@@ -289,8 +285,7 @@ export default function Home() {
                               Frontend Engineering (React / Angular)
                             </Header>
                             <Paragraph className="text-text-secondary">
-                              Frontend engineering for product teams—React or Angular work that’s maintainable,
-                              well-communicated, and easy to hand off.
+                              Frontend engineering for product teams — work that’s fast, maintainable, and easy to hand off.
                             </Paragraph>
                             <a
                               href="/contracting"
@@ -331,7 +326,7 @@ export default function Home() {
 
             <nav aria-label="How we work" className="py-4 sm:py-6">
               <ol className="flex flex-col gap-8 sm:flex-row sm:flex-nowrap sm:items-stretch sm:justify-center sm:gap-4 mx-auto">
-                <li className="sm:flex-1 sm:max-w-[9.25rem] md:max-w-[10.5rem] lg:max-w-[12rem]">
+                <li className="sm:flex-1 sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
                   <div className="relative h-full min-h-[14.5rem] sm:min-h-[18rem] rounded-[1.85rem] border-2 border-border-strong/25 bg-[rgb(161_90_43/0.30)] p-6 sm:p-6 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
                     <div className="relative z-10 space-y-3 text-left">
                       <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
@@ -361,7 +356,7 @@ export default function Home() {
                   →
                 </li>
 
-                <li className="sm:flex-1 sm:max-w-[9.25rem] md:max-w-[10.5rem] lg:max-w-[12rem]">
+                <li className="sm:flex-1 sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
                   <div className="relative h-full min-h-[14.5rem] sm:min-h-[18rem] rounded-[1.75rem] border-2 border-border-strong/25 bg-[rgb(213_125_71/0.32)] p-6 sm:p-6 sm:-translate-y-1 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
                     <div className="relative z-10 space-y-3 text-left">
                       <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
@@ -395,7 +390,7 @@ export default function Home() {
                   →
                 </li>
 
-                <li className="sm:flex-1 sm:max-w-[9.25rem] md:max-w-[10.5rem] lg:max-w-[12rem]">
+                <li className="sm:flex-1 sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
                   <div className="relative h-full min-h-[14.5rem] sm:min-h-[18rem] rounded-[1.9rem] border-2 border-border-strong/25 bg-[rgb(194_162_58/0.38)] p-6 sm:p-6 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
                     <div className="relative z-10 space-y-3 text-left">
                       <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
@@ -426,7 +421,7 @@ export default function Home() {
                   →
                 </li>
 
-                <li className="sm:flex-1 sm:max-w-[9.25rem] md:max-w-[10.5rem] lg:max-w-[12rem]">
+                <li className="sm:flex-1 sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
                   <div className="relative h-full min-h-[14.5rem] sm:min-h-[18rem] rounded-[1.8rem] border-2 border-border-strong/25 bg-[rgb(46_74_13/0.28)] p-6 sm:p-6 sm:translate-y-1 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
                     <div className="relative z-10 space-y-3 text-left">
                       <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">

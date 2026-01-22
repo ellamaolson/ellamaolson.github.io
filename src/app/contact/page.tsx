@@ -57,17 +57,29 @@ export default function ContactPage() {
                   Contact me
                 </Header>
                 <Paragraph variant="p1" className="text-text-onDark">
-                  If you’re interested in working together, let’s chat. Book a free 30-minute call and we can discuss your project.
+                  If you're interested in working together, let's chat. Book a free 30-minute call and we can discuss your project.
                 </Paragraph>
+              </div>
+
+              {/* Schedule a call (mobile: above What to include) */}
+              <div className="lg:hidden space-y-4 text-text-onDark">
+                <Button
+                  as="button"
+                  onClick={handleScheduleClick}
+                  variant="primary"
+                  className="bg-[#c2a23a] hover:bg-[#a8922e] text-white border-[#c2a23a]"
+                >
+                  Book a call with me
+                </Button>
               </div>
 
               <div className="space-y-4 max-w-reading text-text-onDark">
                 <Header level={2} className="text-text-onDark">
                   What to include
                 </Header>
-                <ul className="space-y-3 text-body text-text-onDark/85 list-disc list-inside">
+                <ul className="space-y-3 text-body text-text-onDark list-disc list-inside">
                   <li>
-                    What service you’re interested in:
+                    What service you're interested in:
                     <ul className="mt-2 pl-12 list-disc list-outside space-y-1">
                       <li>Website Creation</li>
                       <li>WebPage Redesign</li>
@@ -85,7 +97,7 @@ export default function ContactPage() {
               <Section className="hidden lg:block pt-[13rem] max-w-reading" aria-label="Other ways to reach me">
                 <div className="space-y-4 text-text-onDark">
                   <Paragraph className="text-text-onDark">
-                    If you have a question before you’re ready to book a call, email me at{' '}
+                    If you have a question before you're ready to book a call, email me at{' '}
                     <a
                       className="text-text-onDark underline underline-offset-4 decoration-border-onDark/60 hover:text-accent transition-colors duration-200"
                       href="mailto:elanaolson@gmail.com"
@@ -102,10 +114,31 @@ export default function ContactPage() {
                   </div>
                 </div>
               </Section>
+
+              {/* Other ways to reach me (mobile: below What to include) */}
+              <Section className="lg:hidden pt-8" aria-label="Other ways to reach me">
+                <div className="space-y-4 max-w-reading text-text-onDark">
+                  <Paragraph className="text-text-onDark">
+                    If you have a question before you're ready to book a call, email me at{' '}
+                    <a
+                      className="text-text-onDark underline underline-offset-4 decoration-border-onDark/60 hover:text-accent transition-colors duration-200"
+                      href="mailto:elanaolson@gmail.com"
+                    >
+                      elanaolson@gmail.com
+                    </a>
+                  </Paragraph>
+
+                  <div>
+                    <Button as="link" href="mailto:elanaolson@gmail.com" variant="secondary">
+                      Email me
+                    </Button>
+                  </div>
+                </div>
+              </Section>
             </div>
 
-            {/* Calendly Badge Widget */}
-            <div className="space-y-4 pt-[8.5rem]">
+            {/* Calendly Badge Widget (desktop: right column) */}
+            <div className="hidden lg:block space-y-4 pt-[8.5rem]">
               <div className="space-y-4 text-text-onDark">
                 <div className="space-y-2">
                   <Header level={2} className="text-text-onDark">
@@ -125,27 +158,6 @@ export default function ContactPage() {
                   Book a call with me
                 </Button>
               </div>
-
-              {/* Other ways to reach me (mobile: below Calendly) */}
-              <Section className="lg:hidden pt-[0.67rem]" aria-label="Other ways to reach me">
-                <div className="space-y-4 max-w-reading text-text-onDark">
-                  <Paragraph className="text-text-onDark">
-                    If you have a question before you’re ready to book a call, email me at{' '}
-                    <a
-                      className="text-text-onDark underline underline-offset-4 decoration-border-onDark/60 hover:text-accent transition-colors duration-200"
-                      href="mailto:elanaolson@gmail.com"
-                    >
-                      elanaolson@gmail.com
-                    </a>
-                  </Paragraph>
-
-                  <div>
-                    <Button as="link" href="mailto:elanaolson@gmail.com" variant="secondary">
-                      Email me
-                    </Button>
-                  </div>
-                </div>
-              </Section>
             </div>
           </div>
         </Container>
@@ -153,4 +165,3 @@ export default function ContactPage() {
     </>
   );
 }
-
