@@ -22,6 +22,19 @@ interface ButtonAsLink extends Omit<BaseButtonProps, 'children'>, Omit<AnchorHTM
 
 type ButtonProps = ButtonAsButton | ButtonAsLink;
 
+/**
+ * Button component - semantic button with variant system
+ * 
+ * Uses semantic tokens for colors, spacing, and typography.
+ * Supports both button and link variants.
+ * 
+ * Variants:
+ * - primary: Accent color CTA (use sparingly)
+ * - secondary: Brand olive for secondary emphasis
+ * - outline: For light surfaces with border
+ * - outlineLight: For dark/brand sections
+ * - ghost: Text-only button
+ */
 export function Button({
   children,
   variant = 'primary',
@@ -29,9 +42,10 @@ export function Button({
   className = '',
   ...props
 }: ButtonProps) {
+  // Base styles: semantic font, spacing, transitions
+  // Prefer calm color transitions (avoid animating borders/shadows)
   const baseClasses =
-    // Prefer calm color transitions (avoid animating borders/shadows).
-    'inline-flex items-center justify-center font-medium transition-colors duration-200 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-surface';
+    'inline-flex items-center justify-center font-body font-medium transition-colors duration-200 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-surface';
   
   const variantClasses = {
     /**

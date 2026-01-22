@@ -1,6 +1,7 @@
 import { Container } from '../components/ui/Container';
 import { Section } from '../components/ui/Section';
-import { Heading } from '../components/ui/Heading';
+import { Header } from '../components/ui/Header';
+import { Paragraph } from '../components/ui/Paragraph';
 import { SocialLinks } from '../components/ui/SocialLinks';
 import workData from './work.json';
 
@@ -20,11 +21,11 @@ export default function Work() {
       <Section background="surfaceMuted" padding="lg">
         <Container maxWidth="wide">
           <div className="space-y-4 max-w-reading">
-            <Heading level={1}>Work</Heading>
-            <p className="text-body text-text-secondary">
+            <Header level={1}>Work</Header>
+            <Paragraph className="text-text-secondary">
               A few roles and projects I’ve been part of—focused on frontend engineering, systems work, and
               clear communication.
-            </p>
+            </Paragraph>
           </div>
         </Container>
       </Section>
@@ -39,17 +40,17 @@ export default function Work() {
               return (
                 <article key={`${work.company}-${work.title}-${index}`} className="space-y-4">
                   <header className="space-y-2">
-                    <h2 className="font-editorial text-h2 text-text-primary">{work.company}</h2>
-                    <p className="text-h3 text-text-primary">{work.title}</p>
-                    <p className="text-body-small text-text-secondary">
+                    <Header level={2}>{work.company}</Header>
+                    <Header level={3}>{work.title}</Header>
+                    <Paragraph variant="p3" className="text-text-secondary">
                       {startDate} – {endDate}
                       {work.location ? <span> · {work.location}</span> : null}
                       {work.status ? <span> · {work.status}</span> : null}
-                    </p>
+                    </Paragraph>
                   </header>
 
                   {work.description ? (
-                    <p className="text-body text-text-primary/85 max-w-reading">{work.description}</p>
+                    <Paragraph className="text-text-primary/85 max-w-reading">{work.description}</Paragraph>
                   ) : null}
 
                   {work.notes?.length ? (
@@ -62,9 +63,9 @@ export default function Work() {
 
                   {work.relavantLinks?.length ? (
                     <div className="space-y-2 max-w-reading">
-                      <p className="text-body-small font-medium tracking-[0.14em] uppercase text-text-secondary">
+                      <Paragraph variant="p3" className="font-medium tracking-[0.14em] uppercase text-text-secondary">
                         Links
-                      </p>
+                      </Paragraph>
                       <ul className="space-y-2">
                         {work.relavantLinks.map((link, linkIndex) => (
                           <li key={linkIndex}>
@@ -95,10 +96,10 @@ export default function Work() {
       <Section background="surfaceMuted" padding="md">
         <Container maxWidth="wide">
           <div className="flex items-center justify-between gap-6 flex-wrap">
-            <p className="text-body text-text-secondary max-w-reading">
+            <Paragraph className="text-text-secondary max-w-reading">
               If you’d like to collaborate, start with a short note—what you’re building, what’s stuck, and
               what “good” looks like.
-            </p>
+            </Paragraph>
             <SocialLinks />
           </div>
         </Container>

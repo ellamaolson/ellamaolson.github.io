@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { Container } from './ui/Container';
+import { Paragraph } from './ui/Paragraph';
+import { Header } from './ui/Header';
 import { SocialLinks } from './ui/SocialLinks';
 
 export function Footer() {
@@ -8,31 +10,31 @@ export function Footer() {
       <Container className="py-10">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="space-y-3">
-            <p className="text-body font-medium text-text-onDark">Rooted Studio</p>
-            <p className="text-body-small text-text-onDark/75 max-w-reading">
+            <Paragraph className="text-[2rem] font-medium text-text-onDark font-heading">Rooted Studio</Paragraph>
+            <Paragraph variant="p3" className="text-text-onDark max-w-reading">
               Web design and engineering for small businesses and teams.
-            </p>
+            </Paragraph>
           </div>
 
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
             <div className="space-y-2">
-              <p className="text-body-small font-medium text-text-onDark">Start here</p>
+              <Header level={5} className="text-text-onDark">Start here</Header>
               <ul className="space-y-1">
                 <li>
-                  <Link className="text-body-small text-text-onDark/80 hover:text-text-onDark" href="/services">
+                  <Link className="text-small text-text-onDark hover:text-text-onDark" href="/services">
                     Website services
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="text-body-small text-text-onDark/80 hover:text-text-onDark"
+                    className="text-small text-text-onDark hover:text-text-onDark"
                     href="/contracting"
                   >
                     Contract engineering
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-body-small text-text-onDark/80 hover:text-text-onDark" href="/contact">
+                  <Link className="text-small text-text-onDark hover:text-text-onDark" href="/contact">
                     Contact
                   </Link>
                 </li>
@@ -40,21 +42,21 @@ export function Footer() {
             </div>
 
             <div className="space-y-2">
-              <p className="text-body-small font-medium text-text-onDark">More</p>
+              <Header level={5} className="text-text-onDark">More</Header>
               <ul className="space-y-1">
                 <li>
-                  <Link className="text-body-small text-text-onDark/70 hover:text-text-onDark" href="/about">
+                  <Link className="text-small text-text-onDark hover:text-text-onDark" href="/about">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-body-small text-text-onDark/70 hover:text-text-onDark" href="/work">
+                  <Link className="text-small text-text-onDark hover:text-text-onDark" href="/work">
                     Work
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="text-body-small text-text-onDark/70 hover:text-text-onDark"
+                    className="text-small text-text-onDark hover:text-text-onDark"
                     href="/publications"
                   >
                     Publications
@@ -62,7 +64,7 @@ export function Footer() {
                 </li>
                 <li>
                   <Link
-                    className="text-body-small text-text-onDark/70 hover:text-text-onDark"
+                    className="text-small text-text-onDark hover:text-text-onDark"
                     href="/travel"
                   >
                     Travel
@@ -77,8 +79,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 text-body-small text-text-onDark/60">
-          <p>© {new Date().getFullYear()} Rooted Studio</p>
+        <div className="mt-10">
+          <Paragraph variant="p3" className="text-text-onDark">© {new Date().getFullYear()} Rooted Studio</Paragraph>
         </div>
       </Container>
     </footer>

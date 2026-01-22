@@ -1,6 +1,7 @@
 import { Section } from '../components/ui/Section';
 import { Container } from '../components/ui/Container';
-import { Heading } from '../components/ui/Heading';
+import { Header } from '../components/ui/Header';
+import { Paragraph } from '../components/ui/Paragraph';
 import { Grid } from '../components/ui/Grid';
 import { LoadableImage } from '../components/LoadableImage';
 import babyAlpacaImage from '../../../public/holding-baby-alpaca.jpeg';
@@ -15,16 +16,16 @@ export default function AboutPage() {
       <Section background="transparent" padding="md" className="bg-palette-ochre">
         <Container>
           <div className="space-y-6 max-w-reading">
-            <Heading level={1}>About</Heading>
-            <p className="text-body-large text-text-primary/90">
+            <Header level={1}>About</Header>
+            <Paragraph variant="p1" className="text-text-primary/90">
               I care about work that feels steady and human: clear writing, thoughtful structure, and calm UI
               that helps people understand what they’re looking at.
-            </p>
-            <p className="text-body text-text-primary/85">
+            </Paragraph>
+            <Paragraph className="text-text-primary/85">
               I’m happiest when I’m simplifying complex ideas—whether that’s turning a messy UI into a clean
               component system, or helping a small business describe their offer in a way that feels honest
               and easy to trust.
-            </p>
+            </Paragraph>
           </div>
         </Container>
       </Section>
@@ -34,59 +35,59 @@ export default function AboutPage() {
         <Container maxWidth="wide">
           <Grid variant="asymmetric" reverseOnDesktop>
             <div className="space-y-5">
-              <Heading level={2} className="text-balance">
+              <Header level={2} className="text-balance">
                  Warm clarity: a friendly tone and precise structure.
-              </Heading>
+              </Header>
               <div className="space-y-4 max-w-reading">
-                <p className="text-body-large text-text-primary/90 leading-relaxed">
+                <Paragraph variant="p1" className="text-text-primary/90 leading-relaxed">
                   My work tends to be steady and practical: calm typography, clear structure, and
                   interfaces that feel easy to trust.
-                </p>
-                <p className="text-body text-text-secondary leading-relaxed">
+                </Paragraph>
+                <Paragraph className="text-text-secondary leading-relaxed">
                   I’m thoughtful about how things read, where attention goes, and what a visitor
                   needs to feel comfortable saying “yes.”
-                </p>
+                </Paragraph>
               </div>
 
               <div className="pt-2">
                 <div className="border-l border-border-strong pl-4 space-y-2 max-w-reading">
-                  <p className="text-body text-text-primary/85">
+                  <Paragraph className="text-text-primary/85">
                     <strong>For small businesses:</strong> welcoming pages, simple maintenance, and
                     practical SEO.
-                  </p>
-                  <p className="text-body text-text-primary/85">
+                  </Paragraph>
+                  <Paragraph className="text-text-primary/85">
                     <strong>For teams:</strong> React + TypeScript work that’s maintainable and kind
                     to the next engineer.
-                  </p>
+                  </Paragraph>
                 </div>
               </div>
 
               {/* Spacer beats parent `space-y-*` specificity */}
               <div className="h-20 md:h-32" aria-hidden="true" />
-              <Heading level={2} className="text-balance">
+              <Header level={2} className="text-balance">
                 Strong engineering, sites built for the long run.
-              </Heading>
+              </Header>
               <div className="space-y-4 max-w-reading">
-                <p className="text-body-large text-text-primary/90 leading-relaxed">
+                <Paragraph variant="p1" className="text-text-primary/90 leading-relaxed">
                   My work tends to be steady and practical: calm typography, clear structure, and
                   interfaces that feel easy to trust.
-                </p>
-                <p className="text-body text-text-secondary leading-relaxed">
+                </Paragraph>
+                <Paragraph className="text-text-secondary leading-relaxed">
                   I’m thoughtful about how things read, where attention goes, and what a visitor
                   needs to feel comfortable saying “yes.”
-                </p>
+                </Paragraph>
               </div>
 
               <div className="pt-2">
                 <div className="border-l border-border-strong pl-4 space-y-2 max-w-reading">
-                  <p className="text-body text-text-primary/85">
+                  <Paragraph className="text-text-primary/85">
                     <strong>For small businesses:</strong> welcoming pages, simple maintenance, and
                     practical SEO.
-                  </p>
-                  <p className="text-body text-text-primary/85">
+                  </Paragraph>
+                  <Paragraph className="text-text-primary/85">
                     <strong>For teams:</strong> React + TypeScript work that’s maintainable and kind
                     to the next engineer.
-                  </p>
+                  </Paragraph>
                 </div>
               </div>
             </div>
@@ -146,42 +147,42 @@ export default function AboutPage() {
       <Section background="surface" padding="lg">
         <Container maxWidth="wide">
           <div className="space-y-8 max-w-reading">
-            <Heading level={2} className="text-text-primary">
+            <Header level={2}>
               What am I focusing on right now?
-            </Heading>
+            </Header>
             
             <div className="space-y-8">
               <div className="space-y-3">
-                <h3 className="text-heading-3 font-medium text-text-primary">
+                <Header level={3}>
                   Building a supportive community for women
-                </h3>
-                <p className="text-body text-text-primary/85 leading-relaxed">
+                </Header>
+                <Paragraph className="text-text-primary/85 leading-relaxed">
                   I co-lead a local women&apos;s group in San Diego with my good friend Ali. For the
                   past two years we have led workshops on topics ranging from financial literacy to
                   feminism to modern women&apos;s health science. We facilitate a space to learn,
                   support, and grow together as a community - reflecting on diverse perspectives and
                   leading with curiosity first.
-                </p>
+                </Paragraph>
               </div>
 
               <div className="space-y-3">
-                <h3 className="text-heading-3 font-medium text-text-primary">
+                <Header level={3}>
                   Doing lots of art projects
-                </h3>
-                <p className="text-body text-text-primary/85 leading-relaxed">
+                </Header>
+                <Paragraph className="text-text-primary/85 leading-relaxed">
                   Love to watercolor and tend to travel with a small kit to capture scenes and embrace
                   the present moment a bit more colorfully. At home I&apos;m working on a temperature
                   blanket (the size of my bed) mapping daily high temperatures to yarn colors.
-                </p>
+                </Paragraph>
               </div>
 
               <div className="space-y-3">
-                <h3 className="text-heading-3 font-medium text-text-primary">
+                <Header level={3}>
                   Learning about health, relational dynamics, morality, and the occasional fantasy series
-                </h3>
-                <p className="text-body text-text-primary/85 leading-relaxed mb-4">
+                </Header>
+                <Paragraph className="text-text-primary/85 leading-relaxed mb-4">
                   Here&apos;s some recs:
-                </p>
+                </Paragraph>
                 <ul className="space-y-3 list-disc list-inside text-body text-text-primary/85 ml-4">
                   <li>
                     <em>Huberman Labs</em> - a health and science podcast led by Andrew Huberman to bring

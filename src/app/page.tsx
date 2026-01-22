@@ -2,7 +2,8 @@
 
 import { Section } from './components/ui/Section';
 import { Container } from './components/ui/Container';
-import { Heading } from './components/ui/Heading';
+import { Header } from './components/ui/Header';
+import { Paragraph } from './components/ui/Paragraph';
 import { Button } from './components/ui/Button';
 import { Grid } from './components/ui/Grid';
 import { LoadableImage } from './components/LoadableImage';
@@ -32,15 +33,15 @@ export default function Home() {
         <Container maxWidth="wide" className="relative min-h-screen">
           {/* Use padding for consistent alignment with the header container */}
           <div className="pt-[16vh] md:pt-[26vh] lg:pt-[28vh] space-y-6 max-w-[80ch]">
-            <p className="text-body-small tracking-[0.18em] uppercase text-text-onDark/80">
+            <Paragraph variant="p3" className="tracking-[0.18em] uppercase text-text-onDark">
               Professional consultancy
-            </p>
-            <h1 className="font-editorial text-text-onDark text-balance text-5xl sm:text-6xl lg:text-7xl leading-[0.95]">
+            </Paragraph>
+            <Header level={1} className="text-text-onDark text-balance text-5xl sm:text-6xl lg:text-7xl leading-[0.95]">
               Grounded websites for growing businesses
-            </h1>
-            <p className="text-body-large text-text-onDark/90 max-w-reading">
+            </Header>
+            <Paragraph variant="p1" className="text-text-onDark max-w-reading">
             I help small businesses create welcoming websites, and support product teams with clear, maintainable frontend engineering.
-            </p>
+            </Paragraph>
 
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
               <Button as="link" href="/services" variant="secondary">
@@ -67,19 +68,19 @@ export default function Home() {
         <Container maxWidth="wide">
           <div className="space-y-10">
             <div className="max-w-reading space-y-3">
-              <Heading level={2}>Who I work with</Heading>
-              <p className="text-body text-text-secondary">
+              <Header level={2}>Who I work with</Header>
+              <Paragraph className="text-text-secondary">
               Different needs, the same steady approach — clear structure, open communication, and work you can rely on.
-              </p>
+              </Paragraph>
             </div>
 
             <Grid variant="split" className="items-start">
               <article className="group space-y-4 border-l border-brand-olive/35 pl-6 transition-colors duration-200 hover:border-brand-olive/60">
-                <h3 className="font-editorial text-h3 text-text-primary">Small Businesses & Independent Professionals</h3>
-                <p className="text-body text-text-primary/85 max-w-reading">
+                <Header level={3}>Small Businesses & Independent Professionals</Header>
+                <Paragraph className="text-text-primary/85 max-w-reading">
                 You want a website that feels welcoming and easy to understand — one that beautifully explains what you do and makes it simple for the right people to reach out.
                 I’m a great fit if you’re looking for small business website design that’s thoughtful, readable, and built to grow with you.
-                </p>
+                </Paragraph>
                 <div className="pt-1">
                   <a
                     href="/services"
@@ -97,11 +98,11 @@ export default function Home() {
               </article>
 
               <article className="group space-y-4 border-l border-brand-moss/35 pl-6 transition-colors duration-200 hover:border-brand-moss/60">
-                <h3 className="font-editorial text-h3 text-text-primary">Product Teams & Companies</h3>
-                <p className="text-body text-text-primary/85 max-w-reading">
+                <Header level={3}>Product Teams & Companies</Header>
+                <Paragraph className="text-text-primary/85 max-w-reading">
                 You need an experienced contract frontend engineer who can step in, ship clean UI, and leave things better than they found them.
                 I support teams working in React or Angular, with a focus on clarity, maintainability, and communication that keeps projects calm and predictable
-                </p>
+                </Paragraph>
                 <div className="pt-1">
                   <a
                     href="/contracting"
@@ -128,36 +129,36 @@ export default function Home() {
           <Grid variant="asymmetric" className="items-start">
             <div className="space-y-10">
               <div className="space-y-3 max-w-reading">
-                <Heading level={2}>What makes Rooted Studio different</Heading>
-                <p className="text-body text-text-secondary">
+                <Header level={2}>What makes Rooted Studio different</Header>
+                <Paragraph className="text-text-secondary">
                 Thoughtful websites, built by a  engineer who loves working with people.
-                </p>
+                </Paragraph>
               </div>
 
               <dl className="space-y-8 max-w-reading">
                 <div className="border-l border-border-strong pl-6">
-                  <dt className="font-editorial text-h3 text-text-primary">Engineering You Can Trust</dt>
+                  <dt className="font-heading text-h3 text-text-primary">Engineering You Can Trust</dt>
                   <dd className="mt-2 text-body text-text-primary/85">
                   Professionally trained, with 7+ years of experience building and maintaining production-level software for millions of users.
                   </dd>
                 </div>
 
                 <div className="border-l border-border-strong pl-6">
-                  <dt className="font-editorial text-h3 text-text-primary">Human-Centered Design</dt>
+                  <dt className="font-heading text-h3 text-text-primary">Human-Centered Design</dt>
                   <dd className="mt-2 text-body text-text-primary/85">
                   I care just as much about how it feels to work together as I do about the final result.
                   </dd>
                 </div>
 
                 <div className="border-l border-border-strong pl-6">
-                  <dt className="font-editorial text-h3 text-text-primary">Clarity Over Complexity</dt>
+                  <dt className="font-heading text-h3 text-text-primary">Clarity Over Complexity</dt>
                   <dd className="mt-2 text-body text-text-primary/85">
                   I translate technical decisions into language that’s easy to understand and useful.
                   </dd>
                 </div>
 
                 <div className="border-l border-border-strong pl-6">
-                  <dt className="font-editorial text-h3 text-text-primary">A Steady Partner</dt>
+                  <dt className="font-heading text-h3 text-text-primary">A Steady Partner</dt>
                   <dd className="mt-2 text-body text-text-primary/85">
                   From small businesses to large teams, I listen closely, adjust quickly, and communicate clearly.
                   </dd>
@@ -174,9 +175,9 @@ export default function Home() {
                   className="w-full h-full"
                 />
               </div>
-              <p className="text-body-small text-text-secondary max-w-reading">
+              <Paragraph variant="p3" className="text-text-secondary max-w-reading">
                 Find harmony in your website and your work.
-              </p>
+              </Paragraph>
             </div>
           </Grid>
         </Container>
@@ -208,7 +209,7 @@ export default function Home() {
                 <div className="rounded-[1.75rem] border border-border-onDark bg-surface/90 text-text-primary">
                   <div className="px-6 py-8 sm:px-8 sm:py-10">
                     <div className="space-y-3">
-                      <Heading level={2}>My services</Heading>
+                      <Header level={2}>My services</Header>
                       
                     </div>
 
@@ -222,13 +223,13 @@ export default function Home() {
                             </span>
                           </div>
                           <div className="space-y-3">
-                            <h3 className="font-editorial text-h3 text-text-primary">
+                            <Header level={3}>
                               Website Design &amp; Redesign (Small Businesses)
-                            </h3>
-                            <p className="text-body text-text-secondary">
+                            </Header>
+                            <Paragraph className="text-text-secondary">
                               Small business website design and website redesign that reads clearly (with SEO in mind), feels welcoming,
                               and stays easy to manage as you grow.
-                            </p>
+                            </Paragraph>
                             <a
                               href="/services"
                               className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
@@ -254,11 +255,11 @@ export default function Home() {
                             </span>
                           </div>
                           <div className="space-y-3">
-                            <h3 className="font-editorial text-h3 text-text-primary">Ongoing Website Care &amp; Retainers</h3>
-                            <p className="text-body text-text-secondary">
+                            <Header level={3}>Ongoing Website Care &amp; Retainers</Header>
+                            <Paragraph className="text-text-secondary">
                               Reliable website support for updates, improvements, and maintenance—so your site
                               stays current without becoming another thing to worry about.
-                            </p>
+                            </Paragraph>
                             <a
                               href="/services"
                               className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
@@ -284,13 +285,13 @@ export default function Home() {
                             </span>
                           </div>
                           <div className="space-y-3">
-                            <h3 className="font-editorial text-h3 text-text-primary">
+                            <Header level={3}>
                               Frontend Engineering (React / Angular)
-                            </h3>
-                            <p className="text-body text-text-secondary">
+                            </Header>
+                            <Paragraph className="text-text-secondary">
                               Frontend engineering for product teams—React or Angular work that’s maintainable,
                               well-communicated, and easy to hand off.
-                            </p>
+                            </Paragraph>
                             <a
                               href="/contracting"
                               className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
@@ -320,12 +321,12 @@ export default function Home() {
         <Container maxWidth="wide">
           <div className="max-w-wide space-y-8 mx-auto text-center">
             <div className="space-y-2">
-              <Heading level={2} className="mx-auto">
+              <Header level={2} className="mx-auto">
                 How it works
-              </Heading>
-              <p className="text-body-small text-text-secondary/85">
+              </Header>
+              <Paragraph variant="p3" className="text-text-secondary/85">
                 Let’s grow your vision into something real — together.
-              </p>
+              </Paragraph>
             </div>
 
             <nav aria-label="How we work" className="py-4 sm:py-6">
@@ -347,8 +348,8 @@ export default function Home() {
                           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.52a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.56-1.06a2 2 0 0 1 2.11-.45c.82.24 1.66.42 2.52.54A2 2 0 0 1 22 16.92z" />
                         </svg>
                       </div>
-                      <h3 className="font-editorial text-h3 text-text-primary">Free 30-minute call</h3>
-                      <p className="text-body text-text-secondary">Low-pressure, just to see if it’s a fit.</p>
+                      <Header level={3}>Free 30-minute call</Header>
+                      <Paragraph className="text-text-secondary">Low-pressure, just to see if it’s a fit.</Paragraph>
                     </div>
                   </div>
                 </li>
@@ -381,8 +382,8 @@ export default function Home() {
                           <circle cx="12" cy="17" r="1" />
                         </svg>
                       </div>
-                      <h3 className="font-editorial text-h3 text-text-primary">Align on details</h3>
-                      <p className="text-body text-text-secondary">Scope, timeline, and what “good” means.</p>
+                      <Header level={3}>Align on details</Header>
+                      <Paragraph className="text-text-secondary">Scope, timeline, and what “good” means.</Paragraph>
                     </div>
                   </div>
                 </li>
@@ -412,8 +413,8 @@ export default function Home() {
                           <path d="M14 7h7v7" />
                         </svg>
                       </div>
-                      <h3 className="font-editorial text-h3 text-text-primary">Build together</h3>
-                      <p className="text-body text-text-secondary">Clear check-ins, steady progress.</p>
+                      <Header level={3}>Build together</Header>
+                      <Paragraph className="text-text-secondary">Clear check-ins, steady progress.</Paragraph>
                     </div>
                   </div>
                 </li>
@@ -447,8 +448,8 @@ export default function Home() {
                           <path d="M12 22v-2.4" />
                         </svg>
                       </div>
-                      <h3 className="font-editorial text-h3 text-text-primary">Launch & wrap up</h3>
-                      <p className="text-body text-text-secondary">We ship—then support, or close cleanly.</p>
+                      <Header level={3}>Launch & wrap up</Header>
+                      <Paragraph className="text-text-secondary">We ship—then support, or close cleanly.</Paragraph>
                     </div>
                   </div>
                 </li>
@@ -506,38 +507,38 @@ export default function Home() {
             {/* Copy: dark brand card for contrast + trust */}
             <div className="rounded-2xl bg-[rgb(36_45_26/0.86)] text-text-onDark border border-border-onDark p-6 sm:p-8">
               <div className="space-y-3 max-w-reading">
-                <Heading level={2} className="text-text-onDark">
+                <Header level={2} className="text-text-onDark">
                   About Me
-                </Heading>
+                </Header>
               </div>
 
               <div className="mt-6 space-y-4 max-w-reading">
-                <p className="text-body text-text-onDark/90">
+                <Paragraph className="text-text-onDark">
                   Hi, I’m Elana Olson, founder of <strong>Rooted Studio</strong>—I design and build elegant
                   websites that feel clear, warm, and easy to trust.
-                </p>
-                <p className="text-body text-text-onDark/90">
+                </Paragraph>
+                <Paragraph className="text-text-onDark">
                   Your website is often the first conversation you have with your clients; when it’s 
                   welcoming and grounded in a clear message, people can relax, understand, and reach
                   out with confidence.
-                </p>
-                <p className="text-body text-text-onDark/90">
+                </Paragraph>
+                <Paragraph className="text-text-onDark">
                   I’m a professionally trained software engineer with years of experience building and
                   maintaining production products—ensuring consistency, accessibility, and long-term maintainability.
-                </p>
+                </Paragraph>
               </div>
 
               <div className="mt-6 border-l border-border-onDark pl-4 space-y-2 max-w-reading">
-                <p className="text-body text-text-onDark/90">
+                <Paragraph className="text-text-onDark">
                   <strong>What you can expect:</strong> clear communication, reliable engineering, and a
                   warm, human-centered process.
-                </p>
+                </Paragraph>
               </div>
 
               <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center">
                 <a
                   href="/about"
-                  className="inline-flex items-baseline gap-2 text-body font-medium text-text-onDark/90 hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                  className="inline-flex items-baseline gap-2 text-body font-medium text-text-onDark hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
                 >
                   Get to know me <span aria-hidden="true">→</span>
                 </a>

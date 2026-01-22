@@ -1,11 +1,38 @@
+'use client';
+
 import { Section } from '../components/ui/Section';
 import { Container } from '../components/ui/Container';
-import { Heading } from '../components/ui/Heading';
+import { Header } from '../components/ui/Header';
+import { Paragraph } from '../components/ui/Paragraph';
 import { Button } from '../components/ui/Button';
-import { SocialLinks } from '../components/ui/SocialLinks';
-import { CalendlyEmbed } from '../components/CalendlyEmbed';
+
+declare global {
+  interface Window {
+    Calendly?: {
+      initBadgeWidget: (options: {
+        url: string;
+        text: string;
+        color: string;
+        textColor: string;
+        branding: boolean;
+      }) => void;
+      initPopupWidget: (options: { url: string }) => void;
+    };
+  }
+}
 
 export default function ContactPage() {
+  const handleScheduleClick = () => {
+    if (window.Calendly?.initPopupWidget) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/elanaolson/30min',
+      });
+    } else {
+      // Fallback: open in new tab if script not loaded
+      window.open('https://calendly.com/elanaolson/30min', '_blank');
+    }
+  };
+
   return (
     <>
       <Section background="transparent" padding="none" className="relative min-h-screen overflow-hidden">
@@ -26,18 +53,18 @@ export default function ContactPage() {
             {/* Text */}
             <div className="flex flex-col gap-6">
               <div className="space-y-4 max-w-reading text-text-onDark">
-                <Heading level={1} className="text-text-onDark">
+                <Header level={1} className="text-text-onDark">
                   Contact me
-                </Heading>
-                <p className="text-body-large text-text-onDark/90">
+                </Header>
+                <Paragraph variant="p1" className="text-text-onDark">
                   If you’re interested in working together, let’s chat. Book a free 30-minute call and we can discuss your project.
-                </p>
+                </Paragraph>
               </div>
 
               <div className="space-y-4 max-w-reading text-text-onDark">
-                <Heading level={2} className="text-text-onDark">
+                <Header level={2} className="text-text-onDark">
                   What to include
-                </Heading>
+                </Header>
                 <ul className="space-y-3 text-body text-text-onDark/85 list-disc list-inside">
                   <li>
                     What service you’re interested in:
@@ -55,9 +82,9 @@ export default function ContactPage() {
               </div>
 
               {/* Other ways to reach me (desktop: left column) */}
-              <section className="hidden lg:block pt-[30rem] max-w-reading" aria-label="Other ways to reach me">
-                <div className="space-y-4 text-text-onDark/90">
-                  <p className="text-body">
+              <Section className="hidden lg:block pt-[13rem] max-w-reading" aria-label="Other ways to reach me">
+                <div className="space-y-4 text-text-onDark">
+                  <Paragraph className="text-text-onDark">
                     If you have a question before you’re ready to book a call, email me at{' '}
                     <a
                       className="text-text-onDark underline underline-offset-4 decoration-border-onDark/60 hover:text-accent transition-colors duration-200"
@@ -66,43 +93,43 @@ export default function ContactPage() {
                       elanaolson@gmail.com
                     </a>
                     .
-                  </p>
+                  </Paragraph>
 
                   <div>
                     <Button as="link" href="mailto:elanaolson@gmail.com" variant="secondary">
                       Email me
                     </Button>
                   </div>
-
-                  <SocialLinks className="pt-2 [&_a]:text-text-onDark/80 [&_a:hover]:text-accent [&_a]:focus:ring-accent [&_a]:focus:ring-offset-brand [&_a]:focus:ring-offset-2" />
                 </div>
-              </section>
+              </Section>
             </div>
 
-            {/* Calendly */}
-            <div className="space-y-4">
-              <div className="space-y-2 text-text-onDark">
-                <Heading level={2} className="text-text-onDark">
-                  Schedule a call
-                </Heading>
-                <p className="text-body text-text-onDark/85 max-w-reading">
-                  Ready for a quick call? Grab a free 30-minute slot.
-                </p>
-              </div>
-
-              <div className="overflow-hidden rounded-2xl border border-border-onDark bg-white/10 backdrop-blur-sm">
-                <CalendlyEmbed
-                  url="https://calendly.com/elanaolson/30min?primary_color=c2a23a"
-                  // Fit within viewport on larger screens; still scrollable on small screens if needed.
-                  height="min(700px, calc(100vh - 240px))"
-                  minWidth={320}
-                />
+            {/* Calendly Badge Widget */}
+            <div className="space-y-4 pt-[8.5rem]">
+              <div className="space-y-4 text-text-onDark">
+                <div className="space-y-2">
+                  <Header level={2} className="text-text-onDark">
+                    Schedule a call
+                  </Header>
+                  <Paragraph className="text-text-onDark max-w-reading">
+                    Ready for a quick call? Schedule a free 30-minute slot to discuss your business needs and see where I can help.
+                  </Paragraph>
+                </div>
+                
+                <Button
+                  as="button"
+                  onClick={handleScheduleClick}
+                  variant="primary"
+                  className="bg-[#c2a23a] hover:bg-[#a8922e] text-white border-[#c2a23a]"
+                >
+                  Book a call with me
+                </Button>
               </div>
 
               {/* Other ways to reach me (mobile: below Calendly) */}
-              <section className="lg:hidden pt-6" aria-label="Other ways to reach me">
-                <div className="space-y-4 max-w-reading text-text-onDark/90">
-                  <p className="text-body">
+              <Section className="lg:hidden pt-[0.67rem]" aria-label="Other ways to reach me">
+                <div className="space-y-4 max-w-reading text-text-onDark">
+                  <Paragraph className="text-text-onDark">
                     If you have a question before you’re ready to book a call, email me at{' '}
                     <a
                       className="text-text-onDark underline underline-offset-4 decoration-border-onDark/60 hover:text-accent transition-colors duration-200"
@@ -110,18 +137,15 @@ export default function ContactPage() {
                     >
                       elanaolson@gmail.com
                     </a>
-                    .
-                  </p>
+                  </Paragraph>
 
                   <div>
                     <Button as="link" href="mailto:elanaolson@gmail.com" variant="secondary">
                       Email me
                     </Button>
                   </div>
-
-                  <SocialLinks className="pt-2 [&_a]:text-text-onDark/80 [&_a:hover]:text-accent [&_a]:focus:ring-accent [&_a]:focus:ring-offset-brand [&_a]:focus:ring-offset-2" />
                 </div>
-              </section>
+              </Section>
             </div>
           </div>
         </Container>

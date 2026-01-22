@@ -3,7 +3,8 @@ import { useState, useEffect } from 'react';
 
 import { Container } from '../components/ui/Container';
 import { Section } from '../components/ui/Section';
-import { Heading } from '../components/ui/Heading';
+import { Header } from '../components/ui/Header';
+import { Paragraph } from '../components/ui/Paragraph';
 import { LoadableImage } from '../components/LoadableImage';
 import travelData from './travel.json';
 
@@ -38,11 +39,11 @@ export default function Travel() {
       <Section background="surfaceMuted" padding="lg">
         <Container maxWidth="wide">
           <div className="space-y-4 max-w-reading">
-            <Heading level={1}>Travel</Heading>
-            <p className="text-body text-text-secondary">
+            <Header level={1}>Travel</Header>
+            <Paragraph className="text-text-secondary">
               I’ve been fortunate to explore some incredible places around the world. Here’s a map of where
               I’ve been, plus a few standout (sometimes lesser-known) recommendations.
-            </p>
+            </Paragraph>
           </div>
         </Container>
       </Section>
@@ -92,20 +93,20 @@ export default function Travel() {
 
                 <div className="space-y-4">
                   <header className="space-y-2">
-                    <h2 className="font-editorial text-h2 text-text-primary">
+                    <Header level={2}>
                       {destination?.city}, {destination?.country}{' '}
                       <span aria-hidden="true">{destination?.emoji || ''}</span>
-                    </h2>
-                    <p className="text-body-small text-text-secondary">{destination?.location}</p>
+                    </Header>
+                    <Paragraph variant="p3" className="text-text-secondary">{destination?.location}</Paragraph>
                   </header>
 
-                  <p className="text-body text-text-primary/85 max-w-reading">{destination?.description}</p>
+                  <Paragraph className="text-text-primary/85 max-w-reading">{destination?.description}</Paragraph>
 
                   {destination?.highlights?.length ? (
                     <div className="space-y-2 max-w-reading">
-                      <p className="text-body-small font-medium tracking-[0.14em] uppercase text-text-secondary">
+                      <Paragraph variant="p3" className="font-medium tracking-[0.14em] uppercase text-text-secondary">
                         Highlights
-                      </p>
+                      </Paragraph>
                       <ul className="list-disc pl-5 space-y-1 text-body text-text-primary/85">
                         {destination.highlights.map((highlight, highlightIndex) => (
                           <li key={highlightIndex}>{highlight}</li>
@@ -116,9 +117,9 @@ export default function Travel() {
 
                   {destination?.recommendations?.length ? (
                     <div className="space-y-2 max-w-reading">
-                      <p className="text-body-small font-medium tracking-[0.14em] uppercase text-text-secondary">
+                      <Paragraph variant="p3" className="font-medium tracking-[0.14em] uppercase text-text-secondary">
                         Recommendations
-                      </p>
+                      </Paragraph>
                       <ul className="list-disc pl-5 space-y-1 text-body text-text-primary/85">
                         {destination.recommendations.map((rec, recIndex) => (
                           <li key={recIndex}>{rec}</li>

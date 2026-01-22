@@ -1,6 +1,7 @@
 import { Container } from '../components/ui/Container';
 import { Section } from '../components/ui/Section';
-import { Heading } from '../components/ui/Heading';
+import { Header } from '../components/ui/Header';
+import { Paragraph } from '../components/ui/Paragraph';
 import publicationsData from './publications.json';
 
 export default function Publications() {
@@ -14,10 +15,10 @@ export default function Publications() {
       <Section background="surfaceMuted" padding="lg">
         <Container maxWidth="wide">
           <div className="space-y-4 max-w-reading">
-            <Heading level={1}>Publications</Heading>
-            <p className="text-body text-text-secondary">
+            <Header level={1}>Publications</Header>
+            <Paragraph className="text-text-secondary">
               Writing and talks—mostly frontend engineering, React/Next.js, and Angular.
-            </p>
+            </Paragraph>
           </div>
         </Container>
       </Section>
@@ -51,7 +52,7 @@ export default function Publications() {
                     </div>
 
                     <div className="space-y-2">
-                      <h2 className="font-editorial text-h3 text-text-primary">
+                      <Header level={2}>
                         <a
                           href={pub.link}
                           className="hover:text-accent transition-colors duration-200 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
@@ -60,11 +61,11 @@ export default function Publications() {
                         >
                           {pub.title}
                         </a>
-                      </h2>
+                      </Header>
 
-                      <p className="text-body text-text-primary/85 max-w-reading">{pub.description}</p>
+                      <Paragraph className="text-text-primary/85 max-w-reading">{pub.description}</Paragraph>
 
-                      <p className="text-body-small text-text-secondary">
+                      <Paragraph variant="p3" className="text-text-secondary">
                         Published {pubDate} ·{' '}
                         <a
                           href={pub.siteUrl}
@@ -74,7 +75,7 @@ export default function Publications() {
                         >
                           {pubSite}
                         </a>
-                      </p>
+                      </Paragraph>
                     </div>
                   </div>
                 </li>

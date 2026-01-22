@@ -39,6 +39,17 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.linkedin.com" />
         <link rel="preconnect" href="https://medium.com" />
         <link rel="preconnect" href="https://assets.calendly.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* Calendly badge widget CSS */}
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+        
+        {/* Critical fonts */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+          rel="stylesheet"
+        />
 
         {/* Preload critical fonts for better performance */}
         <link
@@ -71,7 +82,7 @@ export default function RootLayout({
           fetchPriority="high"
         />
       </head>
-      <body className="font-inter">
+      <body className="font-body">
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TQ27FNXB"
