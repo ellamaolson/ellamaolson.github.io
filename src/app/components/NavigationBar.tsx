@@ -14,9 +14,9 @@ export function NavigationBar() {
         <Link
           href="/"
           className="text-[1.5rem] font-medium text-text-onDark hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80 font-heading"
-          aria-label="Rooted Studio, home"
+          aria-label="Elana Olson home"
         >
-          Rooted Studio
+          Elana Olson
         </Link>
 
         {/* Mobile: hamburger + dropdown */}

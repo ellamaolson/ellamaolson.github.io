@@ -10,7 +10,7 @@ export function Footer() {
       <Container className="py-10">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="space-y-3">
-            <Paragraph className="text-[2rem] font-medium text-text-onDark font-heading">Rooted Studio</Paragraph>
+            <Paragraph className="text-[2rem] font-medium text-text-onDark font-heading">Elana Olson</Paragraph>
             <Paragraph variant="p3" className="text-text-onDark max-w-reading">
               Web design and engineering for small businesses and teams.
             </Paragraph>
@@ -80,7 +80,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10">
-          <Paragraph variant="p3" className="text-text-onDark">© {new Date().getFullYear()} Rooted Studio</Paragraph>
+          <Paragraph variant="p3" className="text-text-onDark">© {new Date().getFullYear()} Elana Olson</Paragraph>
         </div>
       </Container>
     </footer>

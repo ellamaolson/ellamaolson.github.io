@@ -13,31 +13,27 @@ import elanaHeadshotImage from '../../public/elana-headshot.png';
 export default function Home() {
   return (
     <>
-      {/* Hero: full-viewport background image with large overlay type */}
+      {/* Hero Section: full-viewport background image with large overlay type */}
       <Section background="transparent" padding="none" className="relative min-h-screen overflow-hidden">
-        {/* Put your leaf image at `public/hero-leaves.jpg` (fallback uses an existing image). */}
         <div
           className="absolute inset-0 bg-brand bg-cover bg-center bg-no-repeat"
           style={{
-            // First: primary hero image. Second: guaranteed fallback from /public.
             backgroundImage: "url('/oak%20growing%20right.jpg')",
           }}
           aria-hidden="true"
         />
-        {/* Gentle dark overlay for legibility (moody, not high-contrast) */}
         <div
           className="absolute inset-0 bg-gradient-to-b from-text-primary/85 via-brand/55 to-brand/25"
           aria-hidden="true"
         />
 
         <Container maxWidth="wide" className="relative min-h-screen">
-          {/* Use padding for consistent alignment with the header container */}
-          <div className="pt-[16vh] md:pt-[26vh] lg:pt-[28vh] space-y-6 max-w-[80ch]">
+          <div className="pt-[16vh] md:pt-[26vh] lg:pt-[28vh] space-y-6 max-w-[95vw] md:max-w-[90vw] lg:max-w-[85vw]">
             <Paragraph variant="p3" className="tracking-[0.18em] uppercase text-text-onDark">
               Professional consultancy
             </Paragraph>
             <Header level={1} className="text-text-onDark text-balance text-5xl sm:text-6xl lg:text-7xl leading-[0.95]">
-              Grounded websites for growing businesses
+              Smart, Scalable Web Development for the New Era
             </Header>
             <Paragraph variant="p1" className="text-text-onDark max-w-reading">
             I help small businesses create welcoming websites, and support product teams with clear, maintainable frontend engineering.
@@ -63,7 +59,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* Section 2: Who You Help */}
+      {/* Section 2: Who I Help */}
       <Section background="surfaceMuted" padding="lg">
         <Container maxWidth="wide">
           <div className="space-y-10">
@@ -121,13 +117,13 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* Section 3: What Makes Rooted Studio Different */}
+      {/* Section 3: What Makes Elana Olson Different */}
       <Section background="surfaceRaised" padding="lg">
         <Container maxWidth="wide">
           <Grid variant="asymmetric" className="items-start">
             <div className="space-y-10">
               <div className="space-y-3 max-w-reading">
-                <Header level={2}>What makes Rooted Studio different</Header>
+                <Header level={2}>What makes working with me different</Header>
                 <Paragraph className="text-text-secondary">
                 Thoughtful websites, built by a  engineer who loves working with people.
                 </Paragraph>
@@ -164,7 +160,6 @@ export default function Home() {
               </dl>
             </div>
 
-            {/* Image space (quiet visual balance) */}
             <div className="hidden md:block space-y-3">
               <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-border-subtle bg-surface-muted">
                 <LoadableImage
@@ -181,13 +176,11 @@ export default function Home() {
 
       {/* Section 4: My Services (primary conversion + SEO anchor) */}
       <Section background="transparent" padding="lg" className="relative overflow-hidden">
-        {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/moon.jpg')" }}
           aria-hidden="true"
         />
-        {/* Overlay for legibility */}
         <div
           className="absolute inset-0 bg-gradient-to-b from-text-primary/70 via-text-primary/55 to-text-primary/65"
           aria-hidden="true"
@@ -199,7 +192,6 @@ export default function Home() {
 
         <Container maxWidth="wide" className="relative">
           <div className="min-h-[70vh] flex items-center justify-center">
-            {/* Fun bordered overlay */}
             <div className="w-full max-w-reading">
               <div className="rounded-[2rem] border border-accent/45 bg-white/10 p-1 shadow-2xl backdrop-blur-sm">
                 <div className="rounded-[1.75rem] border border-border-onDark bg-surface/90 text-text-primary">
@@ -467,17 +459,14 @@ export default function Home() {
 
       {/* Section 6: About (light surface + dark card for contrast) */}
       <Section background="surfaceRaised" padding="lg" className="relative overflow-hidden">
-        {/* Subtle warmth without going dark */}
         <div
           className="absolute inset-0 bg-[radial-gradient(900px_circle_at_20%_10%,rgba(194,162,58,0.14),transparent_55%)]"
           aria-hidden="true"
         />
         <Container maxWidth="wide" className="relative">
           <Grid variant="split" className="items-center md:gap-20">
-            {/* Image: large portrait badge */}
             <div className="flex flex-col items-center justify-center gap-4">
               <div className="relative w-full max-w-[18rem] sm:max-w-[20rem] md:max-w-[22rem] lg:max-w-[24rem] mx-auto overflow-visible">
-                {/* Decorative rings */}
                 <div
                   className="pointer-events-none absolute -inset-3 rounded-full border border-[rgb(36_45_26/0.35)]"
                   aria-hidden="true"
@@ -489,7 +478,7 @@ export default function Home() {
 
                 <div className="relative aspect-square w-full overflow-hidden rounded-full border border-border-strong bg-surface-raised">
                   <LoadableImage
-                    alt="Elana Olson, founder of Rooted Studio"
+                    alt="Elana Olson, founder of Elana Olson web development"
                     src={elanaHeadshotImage}
                     className="w-full h-full rounded-full"
                     priority={true}
@@ -509,7 +498,7 @@ export default function Home() {
 
               <div className="mt-6 space-y-4 max-w-reading">
                 <Paragraph className="text-text-onDark">
-                  Hi, I’m Elana Olson, founder of <strong>Rooted Studio</strong>—I design and build elegant
+                  Hi, I’m Elana Olson —I design and build elegant
                   websites that feel clear, warm, and easy to trust.
                 </Paragraph>
                 <Paragraph className="text-text-onDark">

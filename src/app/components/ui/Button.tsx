@@ -49,7 +49,7 @@ export function Button({
   
   const variantClasses = {
     /**
-     * Rooted Studio button system
+     * Elana Olson button system
      * - primary: muted ochre CTA (sparingly), dark text for contrast
      * - secondary: brand olive fill for secondary emphasis
      * - outline: for light surfaces (olive text + subtle border)

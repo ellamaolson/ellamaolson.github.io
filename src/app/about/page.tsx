@@ -14,7 +14,6 @@ import elanaNetherlandsImage from '../../../public/elana-netherlands.jpeg';
 export default function AboutPage() {
   return (
     <>
-      {/* Header */}
       <Section background="transparent" padding="md" className="relative overflow-hidden min-h-screen">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -22,7 +21,7 @@ export default function AboutPage() {
           aria-hidden="true"
         />
         <div
-          className="absolute inset-0 bg-[#A15A2B]/90"
+          className="absolute inset-0 bg-[#242D1A]/80"
           aria-hidden="true"
         />
         <div
@@ -31,7 +30,7 @@ export default function AboutPage() {
           aria-hidden="true"
         />
         <Container className="relative" maxWidth="wide">
-          <div className="space-y-6 max-w-reading mb-12">
+          <div className="space-y-6 max-w-reading mx-auto text-center py-20">
             <Header level={1} className="text-text-onDark">Hi, I&apos;m Elana</Header>
             <Paragraph variant="p1" className="text-text-onDark">
               I&rsquo;m a software engineer turned independent website creator, helping small businesses and
@@ -92,12 +91,12 @@ export default function AboutPage() {
           </div>
 
           <div className="space-y-4 max-w-reading">
-            <div className="mb-16">
+            <div>
               <Header level={2} className="text-text-onDark">
                 Where people and technology meet
               </Header>
               <div className="space-y-4">
-                <Paragraph variant="p1" className="leading-relaxed text-text-onDark">
+                <Paragraph variant="p2" className="leading-relaxed text-text-onDark">
                 I know “people person” isn’t what most folks picture when I say I’m a software 
                 engineer — but working with people is my favorite part of the job. I work at the 
                 intersection of both worlds: understanding people deeply and digging into the details 
@@ -105,29 +104,32 @@ export default function AboutPage() {
                 </Paragraph>
               </div>
             </div>
-            <div className="mb-16">
-              <Header level={2} className="mt-16 text-text-onDark">
+            <div>
+              <Header level={2} className="mt-28 text-text-onDark">
                 How I got here (and why it works)
               </Header>
               <div className="space-y-4">
-                <Paragraph variant="p1" className="text-text-onDark leading-relaxed">
-                I studied Software Engineering at San José State University and have worked across 
-                startups and larger organizations, where I found my home in frontend development. 
-                Today, I work directly with small businesses and product teams — designing and building 
-                thoughtful, maintainable websites and offering contract frontend support when teams need it.
-                My goal is simple: bring steady engineering, clear structure, and good energy to every project.
+                <Paragraph variant="p2" className="text-text-onDark leading-relaxed">
+                I studied Software Engineering at San José State University where I discovered my love
+                for web development when building projects for my classes. I then worked at a few different 
+                companies - small and large - building websites and products for millions of users. Today, I work directly with small businesses and dev teams, building beautiful websites and 
+                products that attract customers and help business grow.  
+                </Paragraph>
+                <Paragraph variant="p2" className="text-text-onDark leading-relaxed">
+                My goal is simple: <span className="font-bold italic">bring steady engineering, clear structure, and good energy to every project and team.</span>
                 </Paragraph>
               </div>
             </div>
-            <div className="mb-16">
-              <Header level={2} className="mt-16 text-text-onDark">
+            <div>
+              <Header level={2} className="mt-28 text-text-onDark">
                 Me outside of work
               </Header>
               <div className="space-y-4">
-                <Paragraph variant="p1" className="text-text-onDark leading-relaxed">
+                <Paragraph variant="p2" className="text-text-onDark leading-relaxed">
                 I seek out opportunities to engage in my local communities. I co-lead a local women’s 
-                group and volunteer at a sustainability oriented community kitchen - these spaces 
-                ground me and remind me why I care so much about people, process, and creating things that genuinely serve.
+                group and volunteer at a sustainability oriented community kitchen weekly. These spaces 
+                ground me and remind me why I care so much about people, process, and creating things 
+                that genuinely serve. I also love to read, crochet, hike, and travel the world.
                 </Paragraph>
               </div>
             </div>
@@ -140,7 +142,7 @@ export default function AboutPage() {
                 variant="outlineLight"
                 className="bg-transparent"
               >
-                Contact →
+                Contact me →
               </Button>
           </div>
         </Container>

@@ -20,7 +20,7 @@ const config: Config = {
       },
       colors: {
         /**
-         * Rooted Studio theme
+         * Elana Olson theme
          * - Warm stone surfaces + charcoal text
          * - Deep forest greens for structure (nav/footer/dark sections)
          * - Ochre + rust as intentional accents (CTA/hover), used sparingly
