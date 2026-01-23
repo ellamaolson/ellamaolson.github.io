@@ -95,7 +95,7 @@ export default function Home() {
               <article className="group space-y-4 border-l border-brand-moss/35 pl-6 transition-colors duration-200 hover:border-brand-moss/60">
                 <Header level={3}>Product Teams & Companies</Header>
                 <Paragraph className="text-text-primary/85 max-w-reading">
-                You want an experienced frontend engineer who can step in, ship clean UI, build fast in React or Angular, and will leave things better than when they found them.
+                You want an experienced frontend engineer who can step in, ship clean UI, build fast in React or Angular, and will leave things better than before.
                 </Paragraph>
                 <div className="pt-1">
                   <a
@@ -125,7 +125,7 @@ export default function Home() {
               <div className="space-y-3 max-w-reading">
                 <Header level={2}>What makes working with me different</Header>
                 <Paragraph className="text-text-secondary">
-                Thoughtful websites, built by a  engineer who loves working with people.
+                Thoughtful websites, built by an engineer who loves working with people.
                 </Paragraph>
               </div>
 
@@ -140,22 +140,20 @@ export default function Home() {
                 <div className="border-l border-border-strong pl-6">
                   <dt className="font-heading text-h3 text-text-primary">Human-Centered Design</dt>
                   <dd className="mt-2 text-body text-text-primary/85">
-                  I care just as much about how it feels to work together as I do about the final result.
-                  </dd>
+                  A process that values clear communication, mutual respect, and a positive working relationship as much as the final outcome.                  </dd>
                 </div>
 
                 <div className="border-l border-border-strong pl-6">
                   <dt className="font-heading text-h3 text-text-primary">Clarity Over Complexity</dt>
                   <dd className="mt-2 text-body text-text-primary/85">
-                  I translate technical decisions into language that’s easy to understand and useful.
-                  </dd>
+                  Technical decisions are translated into straightforward, practical language that supports real business goals.                  </dd>
                 </div>
 
                 <div className="border-l border-border-strong pl-6">
                   <dt className="font-heading text-h3 text-text-primary">A Steady Partner</dt>
                   <dd className="mt-2 text-body text-text-primary/85">
-                  From small businesses to large teams, I listen closely, adjust quickly, and communicate clearly.
-                  </dd>
+                  
+                  Support for both small businesses and large teams, with an approach grounded in attentive listening, adaptability, and clear communication.                  </dd>
                 </div>
               </dl>
             </div>

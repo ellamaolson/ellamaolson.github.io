@@ -1,12 +1,24 @@
+'use client';
+
 import Link from 'next/link';
+import { useRef } from 'react';
 
 export function NavigationBar() {
+  const menuDetailsRef = useRef<HTMLDetailsElement>(null);
+  
   const primaryNavItems = [
     { href: '/services', name: 'Website services' },
     { href: '/contracting', name: 'Contract engineering' },
     { href: '/about', name: 'About' },
     { href: '/contact', name: 'Contact' },
   ];
+
+  const handleLinkClick = () => {
+    // Close the menu when a link is clicked
+    if (menuDetailsRef.current) {
+      menuDetailsRef.current.removeAttribute('open');
+    }
+  };
 
   return (
     <header className="mb-0">
@@ -20,7 +32,7 @@ export function NavigationBar() {
         </Link>
 
         {/* Mobile: hamburger + dropdown */}
-        <details className="group relative sm:hidden">
+        <details ref={menuDetailsRef} className="group relative sm:hidden">
           <summary
             className="list-none inline-flex items-center justify-center rounded-md p-2 text-text-onDark/90 hover:text-text-onDark hover:bg-white/10 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 focus-visible:ring-offset-2 focus-visible:ring-offset-brand [&::-webkit-details-marker]:hidden"
             aria-label="Open primary navigation"
@@ -61,6 +73,7 @@ export function NavigationBar() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
+                    onClick={handleLinkClick}
                     className="block px-4 py-3 text-[1.1rem] text-text-onDark/90 hover:text-accent hover:bg-white/10 transition-colors duration-200 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80 font-heading"
                   >
                     {item.name}
