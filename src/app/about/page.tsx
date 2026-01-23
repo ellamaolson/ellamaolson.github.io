@@ -47,6 +47,7 @@ export default function AboutPage() {
                     alt="Visiting Seville, Spain"
                     src={elanaSpainImage}
                     className="w-full h-full"
+                    priority={true}
                   />
                 </div>
                 <div className="relative aspect-square overflow-hidden rounded-2xl bg-surface-raised">
@@ -54,6 +55,7 @@ export default function AboutPage() {
                     alt="Walking the canals in Utrecht, Netherlands"
                     src={elanaNetherlandsImage}
                     className="w-full h-full"
+                    priority={true}
                   />
                 </div>
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-surface-raised">
