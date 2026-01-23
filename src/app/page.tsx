@@ -1,155 +1,538 @@
 'use client';
-import ArticleIcon from '@mui/icons-material/Article';
-import Box from '@mui/material/Box';
-import Fab from '@mui/material/Fab';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import Typography from '@mui/material/Typography';
-import XIcon from '@mui/icons-material/X';
-import babyAlpacaImage from '../../public/holding-baby-alpaca.jpeg';
-import inkanRuinsImage from '../../public/pisac-ruins.jpeg';
-import sequoiaImage from '../../public/sequoia.jpeg';
-import lisbonImage from '../../public/lisbon.jpeg';
-import eatingImage from '../../public/eating-sm.jpeg';
-import elanaEliImage from '../../public/elana-eli.jpeg';
+
+import { Section } from './components/ui/Section';
+import { Container } from './components/ui/Container';
+import { Header } from './components/ui/Header';
+import { Paragraph } from './components/ui/Paragraph';
+import { Button } from './components/ui/Button';
+import { Grid } from './components/ui/Grid';
 import { LoadableImage } from './components/LoadableImage';
+
+import elanaHeadshotImage from '../../public/elana-headshot.png';
 
 export default function Home() {
   return (
     <>
-      <Typography variant="h1">Hiya, I&apos;m Elana</Typography>
-      <Typography variant="body1" gutterBottom sx={{ marginBottom: '16px' }}>
-        I&apos;m a developer with a curiosity for streamlining how engineers engage with their core
-        tooling and products. Problem solving and navigating rabbit holes is my specialty, but
-        making hard concepts simpler to understand for others is what I&apos;m most excited about.
-      </Typography>
-      <Typography variant="body1">
-        Outside of the office ~ I chase the sun, dabble in a few art forms, surround myself with
-        loving human beings, and love to travel!
-      </Typography>
-      <div className="columns-2 sm:columns-3 gap-4 my-8">
-        <div className="relative h-40 mb-4">
-          <LoadableImage
-            alt="Me holding a baby alpaca in Peru"
-            src={babyAlpacaImage}
-            className="w-full h-full"
-            priority={true}
-          />
-        </div>
-        <div className="relative h-80 mb-4 sm:mb-0">
-          <LoadableImage
-            alt="Me enjoying the winds whipping through the mountains in the Inkan ruins of Pisac, Peru"
-            src={inkanRuinsImage}
-            className="w-full h-full"
-            objectPosition="center"
-            priority={true}
-          />
-        </div>
-        <div className="relative h-40 sm:h-80 sm:mb-4">
-          <LoadableImage
-            alt="Me standing under a Sequoia tree"
-            src={sequoiaImage}
-            className="w-full h-full"
-            objectPosition="top center"
-            priority={true}
-          />
-        </div>
-        <div className="relative h-40 mb-4 sm:mb-0">
-          <LoadableImage
-            alt="My brother Eli and I at Yosemite National Park"
-            src={elanaEliImage}
-            className="w-full h-full"
-            priority={true}
-          />
-        </div>
-        <div className="relative h-40 mb-4">
-          <LoadableImage
-            alt="Eating doner kebab - yum!"
-            src={eatingImage}
-            className="w-full h-full"
-            priority={true}
-          />
-        </div>
-        <div className="relative h-80">
-          <LoadableImage
-            alt="Me in the old town of Lisbon, Portugal"
-            src={lisbonImage}
-            className="w-full h-full"
-            priority={true}
-          />
-        </div>
-      </div>
+      {/* Hero Section: full-viewport background image with large overlay type */}
+      <Section background="transparent" padding="none" className="relative min-h-screen overflow-hidden">
+        <div
+          className="absolute inset-0 bg-brand bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/oak%20growing%20right.jpg')",
+          }}
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-text-primary/85 via-brand/55 to-brand/25"
+          aria-hidden="true"
+        />
 
-      <Typography variant="h2" gutterBottom>
-        What am I focussing on right now?
-      </Typography>
-      <List sx={{ listStyleType: 'none', listStylePosition: 'inside', marginBottom: '32px' }}>
-        <ListItem sx={{ display: 'list-item', pl: '0px', pr: '0px' }}>
-          <strong>Building a supportive community for women</strong>
-          <List sx={{ listStyleType: 'circle', listStylePosition: 'inside' }}>
-            <ListItem sx={{ display: 'list-item' }}>
-              I co-lead a local women&apos;s group in San Diego with my good friend Ali. For the
-              past two years we have led workshops on topics ranging from financial literacy to
-              feminism to modern women&apos;s health science. We facilitate a space to learn,
-              support, and grow together as a community - reflecting on diverse perspectives and
-              leading with curiosity first.
-            </ListItem>
-          </List>
-        </ListItem>
-        <ListItem sx={{ display: 'list-item', pl: '0px', pr: '0px' }}>
-          <strong>Doing lots of art projects</strong>
-          <List sx={{ listStyleType: 'circle', listStylePosition: 'inside' }}>
-            <ListItem sx={{ display: 'list-item' }}>
-              Love to watercolor and tend to travel with a small kit to capture scenes and embrace
-              the present moment a bit more colorfully. At home I&apos;m working on a temperature
-              blanket (the size of my bed) mapping daily high temperatures to yarn colors.
-            </ListItem>
-          </List>
-        </ListItem>
-        <ListItem sx={{ display: 'list-item', pl: '0px', pr: '0px' }}>
-          <strong>
-            Learning about health, relational dynamics, morality, and the occasional fantasy series
-          </strong>{' '}
-          - here&apos;s some recs
-          <List sx={{ listStyleType: 'circle', listStylePosition: 'inside' }}>
-            <ListItem sx={{ display: 'list-item' }}>
-              <i>Huberman Labs</i> - a health and science podcast led by Andrew Huberman to bring
-              scientific findings and tools to the general public
-            </ListItem>
-            <ListItem sx={{ display: 'list-item' }}>
-              <i>Us: Getting Past You and Me to Build a More Loving Relationship</i> - Terrance Real
-              approaches realtional dynamimcs with an &quot;us&quot; way of thinking, instead of
-              handling lifes challenges from a &quot;you&quot; and &quot;me&quot; perspective
-            </ListItem>
-            <ListItem sx={{ display: 'list-item' }}>
-              <i>Lying</i> - In such a little book, Sam Harris discusses the morality of lying and
-              breaks down various applications and ethical dilemmas surrounding it
-            </ListItem>
-            <ListItem sx={{ display: 'list-item' }}>
-              <i>Throne of Glass series</i> - Sarah J. Maas creates this vivid and dynamic world
-              with magic, strong heorines, and complex series-long plot arcs that reveal kingdom
-              conspiracies and demand a balance of fighting for survival and sacraficing for the
-              greater good.
-            </ListItem>
-          </List>
-        </ListItem>
-      </List>
-      <Box sx={{ '& > :not(style)': { m: 1 }, display: 'flex', justifyContent: 'space-between' }}>
-        <Fab aria-label="github" href="https://github.com/ellamaolson" size="small">
-          <GitHubIcon />
-        </Fab>
-        <Fab aria-label="linkedIn" href="https://www.linkedin.com/in/elanaolson" size="small">
-          <LinkedInIcon />
-        </Fab>
-        <Fab aria-label="Medium" href="https://medium.com/@elanaolson" size="small">
-          <ArticleIcon />
-        </Fab>
-        <Fab aria-label="twitter" href="https://twitter.com/elanathellama" size="small">
-          <XIcon />
-        </Fab>
-      </Box>
+        <Container maxWidth="wide" className="relative min-h-screen">
+          <div className="pt-[16vh] md:pt-[26vh] lg:pt-[28vh] space-y-6 max-w-[95vw] md:max-w-[90vw] lg:max-w-[85vw]">
+            <Paragraph variant="p3" className="tracking-[0.18em] uppercase text-text-onDark">
+              Professional consultancy
+            </Paragraph>
+            <Header level={1} className="text-text-onDark text-balance text-5xl sm:text-6xl lg:text-7xl leading-[0.95]">
+              Smart, Scalable Web Development for the New Era
+            </Header>
+            <Paragraph variant="p1" className="text-text-onDark max-w-reading">
+            I help small businesses create welcoming websites, and support product teams with clear, maintainable frontend engineering.
+            </Paragraph>
+
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+              <Button as="link" href="/services" variant="secondary">
+                Website services
+              </Button>
+              <Button as="link" href="/contracting" variant="outlineLight">
+                Contract engineering
+              </Button>
+              <Button
+                as="link"
+                href="/contact"
+                variant="outlineLight"
+                className="bg-transparent"
+              >
+                Contact →
+              </Button>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Section 2: Who I Help */}
+      <Section background="surfaceMuted" padding="lg">
+        <Container maxWidth="wide">
+          <div className="space-y-10">
+            <div className="max-w-reading space-y-3">
+              <Header level={2}>Who I work with</Header>
+              <Paragraph className="text-text-secondary">
+              Different needs, the same steady approach — see which offering is right for you.
+              </Paragraph>
+            </div>
+
+            <Grid variant="split" className="items-start">
+              <article className="group space-y-4 border-l border-brand-olive/35 pl-6 transition-colors duration-200 hover:border-brand-olive/60">
+                <Header level={3}>Small Businesses & Independent Professionals</Header>
+                <Paragraph className="text-text-primary/85 max-w-reading">
+                You want a website that feels welcoming and easy to understand — one that eloquently explains what you do and makes it simple for the right people to reach out.
+                </Paragraph>
+                <div className="pt-1">
+                  <a
+                    href="/services"
+                    className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                  >
+                    Explore website services{' '}
+                    <span
+                      aria-hidden="true"
+                      className="transition-transform duration-200 group-hover:translate-x-1"
+                    >
+                      →
+                    </span>
+                  </a>
+                </div>
+              </article>
+
+              <article className="group space-y-4 border-l border-brand-moss/35 pl-6 transition-colors duration-200 hover:border-brand-moss/60">
+                <Header level={3}>Product Teams & Companies</Header>
+                <Paragraph className="text-text-primary/85 max-w-reading">
+                You want an experienced frontend engineer who can step in, ship clean UI, build fast in React or Angular, and will leave things better than when they found them.
+                </Paragraph>
+                <div className="pt-1">
+                  <a
+                    href="/contracting"
+                    className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                  >
+                    Explore contract engineering{' '}
+                    <span
+                      aria-hidden="true"
+                      className="transition-transform duration-200 group-hover:translate-x-1"
+                    >
+                      →
+                    </span>
+                  </a>
+                </div>
+              </article>
+            </Grid>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Section 3: What Makes Elana Olson Different */}
+      <Section background="surfaceRaised" padding="lg">
+        <Container maxWidth="wide">
+          <Grid variant="asymmetric" className="items-start">
+            <div className="space-y-10">
+              <div className="space-y-3 max-w-reading">
+                <Header level={2}>What makes working with me different</Header>
+                <Paragraph className="text-text-secondary">
+                Thoughtful websites, built by a  engineer who loves working with people.
+                </Paragraph>
+              </div>
+
+              <dl className="space-y-8 max-w-reading">
+                <div className="border-l border-border-strong pl-6">
+                  <dt className="font-heading text-h3 text-text-primary">Engineering You Can Trust</dt>
+                  <dd className="mt-2 text-body text-text-primary/85">
+                  Professionally trained, with 7+ years of experience building and maintaining production-level software for millions of users.
+                  </dd>
+                </div>
+
+                <div className="border-l border-border-strong pl-6">
+                  <dt className="font-heading text-h3 text-text-primary">Human-Centered Design</dt>
+                  <dd className="mt-2 text-body text-text-primary/85">
+                  I care just as much about how it feels to work together as I do about the final result.
+                  </dd>
+                </div>
+
+                <div className="border-l border-border-strong pl-6">
+                  <dt className="font-heading text-h3 text-text-primary">Clarity Over Complexity</dt>
+                  <dd className="mt-2 text-body text-text-primary/85">
+                  I translate technical decisions into language that’s easy to understand and useful.
+                  </dd>
+                </div>
+
+                <div className="border-l border-border-strong pl-6">
+                  <dt className="font-heading text-h3 text-text-primary">A Steady Partner</dt>
+                  <dd className="mt-2 text-body text-text-primary/85">
+                  From small businesses to large teams, I listen closely, adjust quickly, and communicate clearly.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
+            <div className="hidden md:block space-y-3">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-border-subtle bg-surface-muted">
+                <LoadableImage
+                  alt="Autumn oak photograph"
+                  src="/autumn%20oak.jpg"
+                  className="w-full h-full"
+                />
+              </div>
+              
+            </div>
+          </Grid>
+        </Container>
+      </Section>
+
+      {/* Section 4: My Services (primary conversion + SEO anchor) */}
+      <Section background="transparent" padding="lg" className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/moon.jpg')" }}
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-text-primary/70 via-text-primary/55 to-text-primary/65"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0 bg-[radial-gradient(900px_circle_at_60%_30%,rgba(194,162,58,0.18),transparent_55%)]"
+          aria-hidden="true"
+        />
+
+        <Container maxWidth="wide" className="relative">
+          <div className="min-h-[70vh] flex items-center justify-center">
+            <div className="w-full max-w-reading">
+              <div className="rounded-[2rem] border border-accent/45 bg-white/10 p-1 shadow-2xl backdrop-blur-sm">
+                <div className="rounded-[1.75rem] border border-border-onDark bg-surface/90 text-text-primary">
+                  <div className="px-6 py-8 sm:px-8 sm:py-10">
+                    <div className="space-y-3">
+                      <Header level={2}>My services</Header>
+                      
+                    </div>
+
+                    <ul className="mt-8 divide-y divide-border-subtle" aria-label="Services overview">
+                      <li className="py-8">
+                        <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
+                          <div className="shrink-0 pt-1">
+                            <span className="inline-flex items-center gap-3 text-small tracking-[0.18em] uppercase text-text-secondary">
+                              <span className="h-2 w-2 rounded-full bg-accent/80" aria-hidden="true" />
+                              01
+                            </span>
+                          </div>
+                          <div className="space-y-3">
+                            <Header level={3}>
+                              Website Design &amp; Redesign (Small Businesses)
+                            </Header>
+                            <Paragraph className="text-text-secondary">
+                              Small business website design and website redesign that looks beautiful, feels welcoming,
+                              and stays easy to manage as you grow.
+                            </Paragraph>
+                            <a
+                              href="/services"
+                              className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                            >
+                              Website design services{' '}
+                              <span
+                                aria-hidden="true"
+                                className="transition-transform duration-200 group-hover:translate-x-1"
+                              >
+                                →
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li className="py-8">
+                        <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
+                          <div className="shrink-0 pt-1">
+                            <span className="inline-flex items-center gap-3 text-small tracking-[0.18em] uppercase text-text-secondary">
+                              <span className="h-2 w-2 rounded-full bg-accent/80" aria-hidden="true" />
+                              02
+                            </span>
+                          </div>
+                          <div className="space-y-3">
+                            <Header level={3}>Ongoing Website Care &amp; Retainers</Header>
+                            <Paragraph className="text-text-secondary">
+                              Reliable website support for updates, improvements, and maintenance—so your site
+                              stays current without becoming another thing to worry about.
+                            </Paragraph>
+                            <a
+                              href="/services"
+                              className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                            >
+                              Website care &amp; retainers{' '}
+                              <span
+                                aria-hidden="true"
+                                className="transition-transform duration-200 group-hover:translate-x-1"
+                              >
+                                →
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li className="py-8">
+                        <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
+                          <div className="shrink-0 pt-1">
+                            <span className="inline-flex items-center gap-3 text-small tracking-[0.18em] uppercase text-text-secondary">
+                              <span className="h-2 w-2 rounded-full bg-accent/80" aria-hidden="true" />
+                              03
+                            </span>
+                          </div>
+                          <div className="space-y-3">
+                            <Header level={3}>
+                              Frontend Engineering (React / Angular)
+                            </Header>
+                            <Paragraph className="text-text-secondary">
+                              Frontend engineering for product teams — work that’s fast, maintainable, and easy to hand off.
+                            </Paragraph>
+                            <a
+                              href="/contracting"
+                              className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                            >
+                              Contract engineering {' '}
+                              <span
+                                aria-hidden="true"
+                                className="transition-transform duration-200 group-hover:translate-x-1"
+                              >
+                                →
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Section 5: How it works (step menu + CTA) */}
+      <Section background="surface" padding="md">
+        <Container maxWidth="wide">
+          <div className="max-w-wide space-y-8 mx-auto text-center">
+            <div className="space-y-2">
+              <Header level={2} className="mx-auto">
+                How it works
+              </Header>
+              <Paragraph variant="p3" className="text-text-secondary/85">
+                Let’s grow your vision into something real — together.
+              </Paragraph>
+            </div>
+
+            <nav aria-label="How we work" className="py-4 sm:py-6">
+              <ol className="flex flex-col gap-8 sm:flex-row sm:flex-nowrap sm:items-stretch sm:justify-center sm:gap-4 mx-auto">
+                <li className="sm:flex-1 sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
+                  <div className="relative h-full min-h-[14.5rem] sm:min-h-[18rem] rounded-[1.85rem] border-2 border-border-strong/25 bg-[rgb(161_90_43/0.30)] p-6 sm:p-6 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
+                    <div className="relative z-10 space-y-3 text-left">
+                      <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-7 w-7"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.52a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.56-1.06a2 2 0 0 1 2.11-.45c.82.24 1.66.42 2.52.54A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                      </div>
+                      <Header level={3}>Free 30-minute call</Header>
+                      <Paragraph className="text-text-secondary">Low-pressure, just to see if it’s a fit.</Paragraph>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  className="hidden sm:flex items-center justify-center text-4xl md:text-5xl leading-none text-text-secondary/35"
+                  aria-hidden="true"
+                >
+                  →
+                </li>
+
+                <li className="sm:flex-1 sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
+                  <div className="relative h-full min-h-[14.5rem] sm:min-h-[18rem] rounded-[1.75rem] border-2 border-border-strong/25 bg-[rgb(213_125_71/0.32)] p-6 sm:p-6 sm:-translate-y-1 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
+                    <div className="relative z-10 space-y-3 text-left">
+                      <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-7 w-7"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          aria-hidden="true"
+                        >
+                          {/* Yin-yang (balance / alignment) */}
+                          <circle cx="12" cy="12" r="10" />
+                          <path d="M12 2a5 5 0 0 1 0 10a5 5 0 0 0 0 10" />
+                          <circle cx="12" cy="7" r="1" />
+                          <circle cx="12" cy="17" r="1" />
+                        </svg>
+                      </div>
+                      <Header level={3}>Align on details</Header>
+                      <Paragraph className="text-text-secondary">Scope, timeline, and what “good” means.</Paragraph>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  className="hidden sm:flex items-center justify-center text-4xl md:text-5xl leading-none text-text-secondary/35"
+                  aria-hidden="true"
+                >
+                  →
+                </li>
+
+                <li className="sm:flex-1 sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
+                  <div className="relative h-full min-h-[14.5rem] sm:min-h-[18rem] rounded-[1.9rem] border-2 border-border-strong/25 bg-[rgb(194_162_58/0.38)] p-6 sm:p-6 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
+                    <div className="relative z-10 space-y-3 text-left">
+                      <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-7 w-7"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="M3 17l6-6 4 4 8-8" />
+                          <path d="M14 7h7v7" />
+                        </svg>
+                      </div>
+                      <Header level={3}>Build together</Header>
+                      <Paragraph className="text-text-secondary">Clear check-ins, steady progress.</Paragraph>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  className="hidden sm:flex items-center justify-center text-4xl md:text-5xl leading-none text-text-secondary/35"
+                  aria-hidden="true"
+                >
+                  →
+                </li>
+
+                <li className="sm:flex-1 sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
+                  <div className="relative h-full min-h-[14.5rem] sm:min-h-[18rem] rounded-[1.8rem] border-2 border-border-strong/25 bg-[rgb(46_74_13/0.28)] p-6 sm:p-6 sm:translate-y-1 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
+                    <div className="relative z-10 space-y-3 text-left">
+                      <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-7 w-7"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          aria-hidden="true"
+                        >
+                          {/* Rocket (launch) */}
+                          <path d="M12 2c3.2 2.1 5 5.7 5 9.7 0 6-5 10.3-5 10.3S7 17.7 7 11.7c0-4 1.8-7.6 5-9.7z" />
+                          <circle cx="12" cy="11" r="1.6" />
+                          <path d="M7.5 14.5 5 16.5" />
+                          <path d="M16.5 14.5 19 16.5" />
+                          <path d="M12 22v-2.4" />
+                        </svg>
+                      </div>
+                      <Header level={3}>Launch & wrap up</Header>
+                      <Paragraph className="text-text-secondary">We ship—then support, or close cleanly.</Paragraph>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </nav>
+
+            <div className="flex justify-center">
+              <Button
+                as="link"
+                href="/contact"
+                variant="primary"
+                className="border-2 border-white/80 hover:border-white bg-accent/80 hover:bg-accent/70"
+              >
+                Schedule a call
+              </Button>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Section 6: About (light surface + dark card for contrast) */}
+      <Section background="surfaceRaised" padding="lg" className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 bg-[radial-gradient(900px_circle_at_20%_10%,rgba(194,162,58,0.14),transparent_55%)]"
+          aria-hidden="true"
+        />
+        <Container maxWidth="wide" className="relative">
+          <Grid variant="split" className="items-center md:gap-20">
+            <div className="flex flex-col items-center justify-center gap-4">
+              <div className="relative w-full max-w-[18rem] sm:max-w-[20rem] md:max-w-[22rem] lg:max-w-[24rem] mx-auto overflow-visible">
+                <div
+                  className="pointer-events-none absolute -inset-3 rounded-full border border-[rgb(36_45_26/0.35)]"
+                  aria-hidden="true"
+                />
+                <div
+                  className="pointer-events-none absolute -inset-10 rounded-full blur-[12px] opacity-90 bg-[radial-gradient(circle,rgba(241_239_233/0)_50%,rgba(36_45_26/0.62)_58%,rgba(36_45_26/0.20)_72%,rgba(241_239_233/0)_92%)]"
+                  aria-hidden="true"
+                />
+
+                <div className="relative aspect-square w-full overflow-hidden rounded-full border border-border-strong bg-surface-raised">
+                  <LoadableImage
+                    alt="Elana Olson, founder of Elana Olson web development"
+                    src={elanaHeadshotImage}
+                    className="w-full h-full rounded-full"
+                    priority={true}
+                  />
+                </div>
+              </div>
+
+            </div>
+
+            {/* Copy: dark brand card for contrast + trust */}
+            <div className="rounded-2xl bg-[rgb(36_45_26/0.86)] text-text-onDark border border-border-onDark p-6 sm:p-8">
+              <div className="space-y-3 max-w-reading">
+                <Header level={2} className="text-text-onDark">
+                  About Me
+                </Header>
+              </div>
+
+              <div className="mt-6 space-y-4 max-w-reading">
+                <Paragraph className="text-text-onDark">
+                  Hi, I’m Elana Olson —I design and build elegant
+                  websites that feel clear, warm, and easy to trust.
+                </Paragraph>
+                <Paragraph className="text-text-onDark">
+                  Your website is often the first conversation you have with your clients; when it’s 
+                  welcoming and grounded in a clear message, people can relax, understand, and reach
+                  out with confidence.
+                </Paragraph>
+                <Paragraph className="text-text-onDark">
+                  I’m a professionally trained software engineer with years of experience building and
+                  maintaining production products—ensuring consistency, accessibility, and long-term maintainability.
+                </Paragraph>
+              </div>
+
+              <div className="mt-6 border-l border-border-onDark pl-4 space-y-2 max-w-reading">
+                <Paragraph className="text-text-onDark">
+                  <strong>What you can expect:</strong> clear communication, reliable engineering, and a
+                  warm, human-centered process.
+                </Paragraph>
+              </div>
+
+              <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center">
+                <a
+                  href="/about"
+                  className="inline-flex items-baseline gap-2 text-body font-medium text-text-onDark hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                >
+                  Get to know me <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </Grid>
+        </Container>
+      </Section>
+
+      
     </>
   );
 }

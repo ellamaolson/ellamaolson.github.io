@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
+import { Suspense } from 'react';
 import { StyledRoot } from './components/StyledRoot';
+import { GTMPageView } from './components/GTMPageView';
 import './globals.css';
 import './fonts.css';
+
+const CALENDLY_WIDGET_SRC = 'https://assets.calendly.com/assets/external/widget.js';
 
 export const metadata: Metadata = {
   title: 'Elana Olson',
@@ -34,8 +37,19 @@ export default function RootLayout({
         {/* Preconnect to external domains for better performance */}
         <link rel="preconnect" href="https://github.com" />
         <link rel="preconnect" href="https://www.linkedin.com" />
-        <link rel="preconnect" href="https://twitter.com" />
         <link rel="preconnect" href="https://medium.com" />
+        <link rel="preconnect" href="https://assets.calendly.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* Calendly badge widget CSS */}
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+        
+        {/* Critical fonts */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+          rel="stylesheet"
+        />
 
         {/* Preload critical fonts for better performance */}
         <link
@@ -60,15 +74,40 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
 
-        {/* Preload critical images for better performance */}
-        <link rel="preload" as="image" href="/holding-baby-alpaca.jpeg" type="image/jpeg" />
-        <link rel="preload" as="image" href="/pisac-ruins.jpeg" type="image/jpeg" />
-        <link rel="preload" as="image" href="/sequoia.jpeg" type="image/jpeg" />
-        <link rel="preload" as="image" href="/elana-eli.jpeg" type="image/jpeg" />
-        <link rel="preload" as="image" href="/eating-sm.jpeg" type="image/jpeg" />
-        <link rel="preload" as="image" href="/lisbon.jpeg" type="image/jpeg" />
+        {/* Preload critical hero images for better performance */}
+        <link
+          rel="preload"
+          as="image"
+          href="/oak%20growing%20right.jpg"
+          fetchPriority="high"
+        />
+        {/* Preload other critical hero images */}
+        <link
+          rel="preload"
+          as="image"
+          href="/sunset-forest.jpg"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/green-moutnain.jpg"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/la-jolla.jpg"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/flowers-growing.jpg"
+          fetchPriority="high"
+        />
       </head>
-      <body className="font-inter">
+      <body className="font-body">
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TQ27FNXB"
@@ -77,9 +116,13 @@ export default function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
-        <AppRouterCacheProvider>
-          <StyledRoot>{children}</StyledRoot>
-        </AppRouterCacheProvider>
+        <Suspense fallback={null}>
+          <GTMPageView />
+        </Suspense>
+        <StyledRoot>{children}</StyledRoot>
+
+        {/* Load Calendly widget script at end of body */}
+        <Script src={CALENDLY_WIDGET_SRC} strategy="lazyOnload" async />
       </body>
     </html>
   );
