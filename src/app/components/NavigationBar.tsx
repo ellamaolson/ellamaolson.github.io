@@ -25,6 +25,7 @@ export function NavigationBar() {
       <nav className="flex items-center justify-between gap-4 w-full">
         <Link
           href="/"
+          onClick={handleLinkClick}
           className="text-[1.5rem] font-medium text-text-onDark hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80 font-heading"
           aria-label="Elana Olson home"
         >
@@ -69,17 +70,24 @@ export function NavigationBar() {
 
           <div className="absolute right-0 mt-3 w-[min(18rem,calc(100vw-2.5rem))] overflow-hidden rounded-xl border border-border-onDark bg-brand shadow-lg z-50">
             <ul className="py-2" aria-label="Primary navigation">
-              {primaryNavItems.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    onClick={handleLinkClick}
-                    className="block px-4 py-3 text-[1.1rem] text-text-onDark/90 hover:text-accent hover:bg-white/10 transition-colors duration-200 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80 font-heading"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
+              {primaryNavItems.map((item) => {
+                const isContact = item.href === '/contact';
+                return (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      onClick={handleLinkClick}
+                      className={
+                        isContact
+                          ? 'block px-4 py-3 text-[1.1rem] text-accent hover:text-accent/90 transition-colors duration-200 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80 font-heading'
+                          : 'block px-4 py-3 text-[1.1rem] text-text-onDark/90 hover:text-accent hover:bg-white/10 transition-colors duration-200 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80 font-heading'
+                      }
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </details>

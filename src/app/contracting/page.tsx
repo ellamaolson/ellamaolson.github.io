@@ -10,45 +10,53 @@ import { GitHubIcon } from '../components/icons/GitHubIcon';
 export default function ContractingPage() {
   return (
     <>
-      <Section background="transparent" padding="none" className="relative overflow-hidden min-h-[140vh] sm:min-h-[96vh]">
+      <Section
+        background="transparent"
+        padding="none"
+        className="relative overflow-visible sm:overflow-hidden min-h-[calc(140vh+20px)] sm:min-h-[96vh]"
+      >
         <div
-          className="absolute inset-0 bg-brand bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bottom-[-20px] sm:bottom-0 bg-brand bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/green-moutnain.jpg')" }}
           aria-hidden="true"
         />
         <div
-          className="absolute inset-0 bg-gradient-to-b from-text-primary/65 via-text-primary/35 to-text-primary/70"
+          className="absolute inset-0 bottom-[-20px] sm:bottom-0 bg-gradient-to-b from-text-primary/65 via-text-primary/35 to-text-primary/70"
           aria-hidden="true"
         />
-        <Container maxWidth="wide" className="relative min-h-[140vh] sm:min-h-[96vh]">
-          <div className="pt-[14vh] md:pt-[18vh] space-y-12">
+        <Container maxWidth="wide" className="relative min-h-[calc(140vh+20px)] sm:min-h-[96vh]">
+          <div className="pt-[14vh] md:pt-[18vh] space-y-12 pb-5">
             <div className="mx-auto w-full md:w-[80%] space-y-6">
               <Header level={1} className="text-text-onDark">
                 Contract Frontend Engineering
               </Header>
               <Paragraph variant="p1" className="text-text-onDark max-w-reading">
-                Reliable senior-level execution for product teams—calm communication, strong code quality, and work you can ship.
+                Reliable senior-level execution for product teams—calm communication, strong code
+                quality, and work you can ship.
               </Paragraph>
               <Paragraph className="text-text-onDark max-w-none italic">
-                I have 7+ years as a frontend software engineer, including shipping production features used by millions of users and
-                working on numerous large-scale codebases.
+                I have 7+ years as a frontend software engineer, including shipping production
+                features used by millions of users and working on numerous large-scale codebases.
               </Paragraph>
             </div>
 
             {/* Offerings card (overlaid within the hero viewport) */}
-            <article className="mx-auto w-full md:w-[80%] rounded-2xl border border-border-onDark bg-surface-raised/95 p-6 sm:p-8 shadow-lg backdrop-blur-sm">
+            <article className="mx-auto w-full md:w-[80%] rounded-2xl border border-border-onDark bg-surface-raised/95 p-6 sm:p-8 shadow-lg backdrop-blur-sm mb-10">
               <header className="text-center">
                 <Header level={2} className="mb-2">
                   What I offer
                 </Header>
                 <Paragraph className="mx-auto max-w-reading text-text-secondary">
-                  A service-oriented way of working: clear scope, steady execution, and code that’s easy to maintain.
+                  A service-oriented way of working: clear scope, steady execution, and code that’s
+                  easy to maintain.
                 </Paragraph>
               </header>
 
               <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:items-start">
                 <div className="max-w-full sm:max-w-reading space-y-3 lg:pl-6">
-                  <Header level={5} className="font-bold text-base mb-1">Offerings</Header>
+                  <Header level={5} className="font-bold text-base mb-1">
+                    Offerings
+                  </Header>
                   <ul className="space-y-3 text-body text-text-primary/85 list-disc list-inside">
                     <li>Frontend feature development</li>
                     <li>UI architecture, refactors, and design systems</li>
@@ -59,7 +67,9 @@ export default function ContractingPage() {
                 </div>
 
                 <div className="max-w-reading space-y-3">
-                  <Header level={5} className="font-bold text-base mb-1">Technical stack</Header>
+                  <Header level={5} className="font-bold text-base mb-1">
+                    Technical stack
+                  </Header>
                   <ul className="grid grid-cols-1 gap-2 text-body text-text-primary/85 sm:grid-cols-2">
                     <li>JavaScript (JS)</li>
                     <li>TypeScript (TS)</li>
@@ -76,10 +86,15 @@ export default function ContractingPage() {
               <footer className="mt-8 border-t border-border-subtle pt-6">
                 <div className="grid gap-4 sm:grid-cols-[1fr_auto] sm:items-center">
                   <Paragraph className="text-text-secondary">
-                   I do hourly and project-based contracts, contact me for a quote.
+                    I do hourly and project-based contracts, contact me for a quote.
                   </Paragraph>
                   <div className="sm:pl-4">
-                    <Button as="link" href="/contact" variant="secondary" className="w-full sm:w-auto">
+                    <Button
+                      as="link"
+                      href="/contact"
+                      variant="primary"
+                      className="w-full sm:w-auto"
+                    >
                       Inquire
                     </Button>
                   </div>
@@ -129,9 +144,15 @@ export default function ContractingPage() {
                     aria-hidden="true"
                   />
                   <div className="space-y-0.5">
-                    <Header level={4} className="font-[700] italic">BS in Software Engineering</Header>
-                    <Paragraph className="text-text-primary/85">San Jose State University</Paragraph>
-                    <Paragraph variant="p3" className="text-text-secondary">Graduated Cum Laude, May 2020</Paragraph>
+                    <Header level={4} className="font-[700] italic">
+                      BS in Software Engineering
+                    </Header>
+                    <Paragraph className="text-text-primary/85">
+                      San Jose State University
+                    </Paragraph>
+                    <Paragraph variant="p3" className="text-text-secondary">
+                      Graduated Cum Laude, May 2020
+                    </Paragraph>
                   </div>
                 </div>
               </div>
@@ -139,7 +160,7 @@ export default function ContractingPage() {
               <ul className="pt-2 space-y-3 text-body text-text-primary/85 list-disc list-inside">
                 <li>SJSU Research Foundation — STEM Mentor to high school students</li>
                 <li>
-                Senior Thesis Project — Degree Planning Assistant
+                  Senior Thesis Project — Degree Planning Assistant
                   <a
                     className="ml-2 inline-flex align-middle items-center justify-center text-brand-olive hover:text-accent transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 focus-visible:ring-offset-2 focus-visible:ring-offset-surface rounded"
                     href="https://github.com/DPA-SJSU/Degree-Planning-Assistant"
@@ -180,7 +201,8 @@ export default function ContractingPage() {
                 </Header>
               </div>
               <Paragraph className="text-text-primary/85">
-                Senior frontend engineering across numerous small and large-scale codebases—shipping production features used by millions.
+                Senior frontend engineering across numerous small and large-scale codebases—shipping
+                production features used by millions.
               </Paragraph>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
@@ -193,8 +215,12 @@ export default function ContractingPage() {
                     aria-hidden="true"
                   />
                   <div className="space-y-0.5">
-                    <Header level={4} className="font-medium">Atlassian - Software Engineer</Header>
-                    <Paragraph variant="p3" className="text-text-secondary">Jul 2020 – Dec 2024</Paragraph>
+                    <Header level={4} className="font-medium">
+                      Atlassian - Software Engineer
+                    </Header>
+                    <Paragraph variant="p3" className="text-text-secondary">
+                      Jul 2020 – Dec 2024
+                    </Paragraph>
                   </div>
                 </li>
 
@@ -208,8 +234,12 @@ export default function ContractingPage() {
                     aria-hidden="true"
                   />
                   <div className="space-y-0.5">
-                    <Header level={4} className="font-medium">Google (Angular) - Developer Relations</Header>
-                    <Paragraph variant="p3" className="text-text-secondary">May 2018 - Sept 2019</Paragraph>
+                    <Header level={4} className="font-medium">
+                      Google (Angular) - Developer Relations
+                    </Header>
+                    <Paragraph variant="p3" className="text-text-secondary">
+                      May 2018 - Sept 2019
+                    </Paragraph>
                   </div>
                 </li>
 
@@ -223,15 +253,22 @@ export default function ContractingPage() {
                     aria-hidden="true"
                   />
                   <div className="space-y-0.5">
-                    <Header level={4} className="font-medium">Tappity - Frontend Intern</Header>
-                    <Paragraph variant="p3" className="text-text-secondary">Jan 2017 – Nov 2017</Paragraph>
+                    <Header level={4} className="font-medium">
+                      Tappity - Frontend Intern
+                    </Header>
+                    <Paragraph variant="p3" className="text-text-secondary">
+                      Jan 2017 – Nov 2017
+                    </Paragraph>
                   </div>
                 </li>
               </ul>
 
               <ul className="mt-4 space-y-2 text-body text-text-primary/85">
                 <li>
-                  <Link className="text-brand-olive hover:text-accent underline underline-offset-4" href="/work">
+                  <Link
+                    className="text-brand-olive hover:text-accent underline underline-offset-4"
+                    href="/work"
+                  >
                     Work experience →
                   </Link>
                 </li>
@@ -245,7 +282,6 @@ export default function ContractingPage() {
                     LinkedIn →
                   </a>
                 </li>
-                
               </ul>
             </div>
 
@@ -278,7 +314,8 @@ export default function ContractingPage() {
                 </Header>
               </div>
               <Paragraph className="text-text-primary/85">
-                Technical articles and conference talks on Angular, React, and Next.js—written for working engineers.
+                Technical articles and conference talks on Angular, React, and Next.js—written for
+                working engineers.
               </Paragraph>
               <ul className="mt-2 space-y-2 text-body text-text-primary/85 list-disc list-inside">
                 <li>
@@ -326,11 +363,14 @@ export default function ContractingPage() {
               </ul>
               <ul className="mt-4 space-y-2 text-body text-text-primary/85">
                 <li>
-                  <Link className="text-brand-olive hover:text-accent underline underline-offset-4" href="/publications">
+                  <Link
+                    className="text-brand-olive hover:text-accent underline underline-offset-4"
+                    href="/publications"
+                  >
                     Publications →
                   </Link>
                 </li>
-                </ul>
+              </ul>
             </div>
           </div>
         </Container>
@@ -339,35 +379,35 @@ export default function ContractingPage() {
       <Section background="surfaceMuted" padding="lg">
         <Container>
           <div className="mx-auto max-w-reading space-y-4">
-              <Header level={2}>How engagement works</Header>
-              <Paragraph className="text-text-primary/85">
-                If you’re looking for dependable frontend support—done thoughtfully and communicated clearly—here’s what you can
-                expect.
-              </Paragraph>
+            <Header level={2}>How engagement works</Header>
+            <Paragraph className="text-text-primary/85">
+              If you’re looking for dependable frontend support—done thoughtfully and communicated
+              clearly—here’s what you can expect.
+            </Paragraph>
 
-              <div className="space-y-3">
-                <ul className="space-y-2 text-body text-text-primary/85 list-disc list-inside">
-                  <li>Available for hourly or project-based contracts</li>
-                  <li>Remote-friendly, or in person in San Diego or the Netherlands</li>
-                  <li>Clear communication and predictable availability</li>
-                  <li>Open to starting with a short trial engagement</li>
-                </ul>
+            <div className="space-y-3">
+              <ul className="space-y-2 text-body text-text-primary/85 list-disc list-inside">
+                <li>Available for hourly or project-based contracts</li>
+                <li>Remote-friendly, or in person in San Diego or the Netherlands</li>
+                <li>Clear communication and predictable availability</li>
+                <li>Open to starting with a short trial engagement</li>
+              </ul>
+            </div>
+            <div className="space-y-3">
+              <Paragraph className="font-medium text-text-primary italic">Next step</Paragraph>
+              <Paragraph className="text-text-primary/85 italic">
+                If you want to talk scope and availability, send a note or book a call and I’ll
+                reply with next steps.
+              </Paragraph>
+              <div className="pt-1">
+                <Button as="link" href="/contact" variant="secondary">
+                  Get in touch
+                </Button>
               </div>
-              <div className="space-y-3">
-                <Paragraph className="font-medium text-text-primary italic">Next step</Paragraph>
-                <Paragraph className="text-text-primary/85 italic">
-                  If you want to talk scope and availability, send a note or book a call and I’ll reply with next steps.
-                </Paragraph>
-                <div className="pt-1">
-                  <Button as="link" href="/contact" variant="secondary">
-                    Get in touch
-                  </Button>
-                </div>
-              </div>
+            </div>
           </div>
         </Container>
       </Section>
     </>
   );
 }
-

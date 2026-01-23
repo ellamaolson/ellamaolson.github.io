@@ -8,13 +8,19 @@ interface BaseButtonProps {
   className?: string;
 }
 
-interface ButtonAsButton extends Omit<BaseButtonProps, 'children'>, Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'children'> {
+interface ButtonAsButton
+  extends
+    Omit<BaseButtonProps, 'children'>,
+    Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'children'> {
   children: ReactNode;
   as?: 'button';
   href?: never;
 }
 
-interface ButtonAsLink extends Omit<BaseButtonProps, 'children'>, Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'children'> {
+interface ButtonAsLink
+  extends
+    Omit<BaseButtonProps, 'children'>,
+    Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'children'> {
   children: ReactNode;
   as: 'link';
   href: string;
@@ -24,10 +30,10 @@ type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 /**
  * Button component - semantic button with variant system
- * 
+ *
  * Uses semantic tokens for colors, spacing, and typography.
  * Supports both button and link variants.
- * 
+ *
  * Variants:
  * - primary: Accent color CTA (use sparingly)
  * - secondary: Brand olive for secondary emphasis
@@ -46,7 +52,7 @@ export function Button({
   // Prefer calm color transitions (avoid animating borders/shadows)
   const baseClasses =
     'inline-flex items-center justify-center font-body font-medium transition-colors duration-200 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-surface';
-  
+
   const variantClasses = {
     /**
      * Elana Olson button system
