@@ -6,11 +6,8 @@
   /**
    * Base body styles only
    * Component-level styling lives in component files (Header, Paragraph, etc.)
+   * --font-heading is set by next/font/google in layout.tsx
    */
-  :root {
-    --font-heading: 'DM Serif Display', serif;
-  }
-  
   body {
     @apply bg-surface text-text-primary font-body;
     font-size: 1rem;

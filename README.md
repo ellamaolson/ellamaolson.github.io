@@ -53,6 +53,10 @@ Navigate to `/public` folder and add a `.nojekyll` file to it disable GitHub Pag
 ├── next.config.js
 ```
 
+## Deploying
+
+If you commented out the  `output` and `basepath` in the next config for running locally, re-enable them. Then run `pre-deploy` and push your changes to github. It will automatically deploy your changes to your publicly hosted site. 
+
 ## Liscence
 
 1. You are free to use this code as inspiration.

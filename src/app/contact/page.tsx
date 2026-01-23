@@ -108,18 +108,14 @@ export default function ContactPage() {
               {/* 4. If you have a question */}
               <div className="space-y-4 mt-16">
                 <Paragraph className="text-text-onDark">
-                  If you have a question before you&#39;re ready to book a call, email me at{' '}
+                  If you have a question before you&#39;re ready to book a call, you can email me at{' '}
                   <a
                     className="text-text-onDark underline underline-offset-4 decoration-border-onDark/60 hover:text-accent transition-colors duration-200"
                     href="mailto:elanaolson@gmail.com"
                   >
                     elanaolson@gmail.com
                   </a>
-                  .
                 </Paragraph>
-                <Button as="link" href="mailto:elanaolson@gmail.com" variant="secondary">
-                  Email me
-                </Button>
               </div>
             </div>
           </div>

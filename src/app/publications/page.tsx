@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Container } from '../components/ui/Container';
 import { Section } from '../components/ui/Section';
 import { Header } from '../components/ui/Header';
@@ -40,14 +41,14 @@ export default function Publications() {
                   className="border-l border-border-strong pl-6 space-y-3"
                 >
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
-                    {/* Use <img> to avoid next/image remote domain config for static export */}
-                    <div className="shrink-0">
-                      <img
+                    <div className="shrink-0 relative h-16 w-16">
+                      <Image
                         src={pub.image}
                         alt=""
-                        className="h-16 w-16 rounded-xl border border-border-subtle bg-surface-raised object-cover"
+                        fill
+                        sizes="64px"
+                        className="rounded-xl border border-border-subtle bg-surface-raised object-cover"
                         loading="lazy"
-                        decoding="async"
                       />
                     </div>
 

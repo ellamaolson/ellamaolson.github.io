@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { Suspense } from 'react';
+import { DM_Serif_Display } from 'next/font/google';
 import { StyledRoot } from './components/StyledRoot';
 import { GTMPageView } from './components/GTMPageView';
 import './globals.css';
@@ -8,9 +9,16 @@ import './fonts.css';
 
 const CALENDLY_WIDGET_SRC = 'https://assets.calendly.com/assets/external/widget.js';
 
+const dmSerifDisplay = DM_Serif_Display({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-heading',
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
   title: 'Elana Olson',
-  description: 'Engineer who loves traveling and painting',
+  description: 'Software Engineer and Website Creator',
   other: {
     'viewport-fit': 'cover',
   },
@@ -22,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={dmSerifDisplay.variable}>
       <head>
         <Script id="gtm-init" strategy="afterInteractive">
           {`
@@ -44,12 +52,6 @@ export default function RootLayout({
         
         {/* Calendly badge widget CSS */}
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-        
-        {/* Critical fonts */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
-          rel="stylesheet"
-        />
 
         {/* Preload critical fonts for better performance */}
         <link
