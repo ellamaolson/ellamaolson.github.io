@@ -393,14 +393,14 @@ export default function ServicesPage() {
                 suggest a simple, grounded next step. You can email me at{' '}
                 <a
                   className="underline underline-offset-4 decoration-border-subtle/80 hover:text-accent transition-colors duration-200"
-                  href="mailto:elanaolson@gmail.com"
+                  href="mailto:elana@elanaolson.com"
                 >
-                  elanaolson@gmail.com
+                  elana@elanaolson.com
                 </a>
                 .
               </Paragraph>
               <div className="pt-1">
-                <Button as="link" href="mailto:elanaolson@gmail.com" variant="outline">
+                <Button as="link" href="mailto:elana@elanaolson.com" variant="outline">
                   Send a note
                 </Button>
               </div>

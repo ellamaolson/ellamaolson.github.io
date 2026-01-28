@@ -74,6 +74,14 @@ export function Footer() {
             </div>
 
             <div className="space-y-2">
+              <Paragraph variant="p3" className="text-text-onDark">
+                <a
+                  href="mailto:elana@elanaolson.com"
+                  className="hover:text-accent transition-colors duration-200 focus:outline-none focus-visible:underline focus-visible:underline-offset-4 focus-visible:decoration-accent/80"
+                >
+                  elana@elanaolson.com
+                </a>
+              </Paragraph>
               <SocialLinks className="pt-2 [&_a]:text-white [&_a:hover]:text-accent [&_a]:focus:ring-accent [&_a]:focus:ring-offset-brand [&_a]:focus:ring-offset-2" />
             </div>
           </div>

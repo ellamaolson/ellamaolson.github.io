@@ -26,27 +26,28 @@ export default function ContactPage() {
   const handleScheduleClick = () => {
     if (window.Calendly?.initPopupWidget) {
       window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/elanaolson/30min',
+        url: 'https://calendly.com/elana-elanaolson/30min',
       });
     } else {
       // Fallback: open in new tab if script not loaded
-      window.open('https://calendly.com/elanaolson/30min', '_blank');
+      window.open('https://calendly.com/elana-elanaolson/30min', '_blank');
     }
   };
 
   return (
     <>
-      <Section background="transparent" padding="none" className="relative min-h-screen overflow-hidden">
+      <Section
+        background="transparent"
+        padding="none"
+        className="relative min-h-screen overflow-hidden"
+      >
         {/* Full-viewport background image */}
         <div
           className="absolute inset-0 bg-brand bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/la-jolla.jpg')" }}
           aria-hidden="true"
         />
-         <div
-          className="absolute inset-0 bg-[#726D6D]/20"
-          aria-hidden="true"
-        />
+        <div className="absolute inset-0 bg-[#726D6D]/20" aria-hidden="true" />
         {/* Calm overlay for legibility */}
         <div
           className="absolute inset-0 bg-gradient-to-b from-brand/55 via-text-primary/35 to-brand/60"
@@ -62,8 +63,7 @@ export default function ContactPage() {
                   Contact me
                 </Header>
                 <Paragraph variant="p1" className="text-text-onDark">
-                  Contact me to discuss your business needs and see if we&apos;re a good fit. 
-                
+                  Contact me to discuss your business needs and see if we&apos;re a good fit.
                 </Paragraph>
               </div>
               <div className="space-y-4 mt-16">
@@ -71,8 +71,8 @@ export default function ContactPage() {
                   Schedule a call
                 </Header>
                 <Paragraph className="text-text-onDark">
-                  Ready for a quick call? Schedule a free 30-minute consultation to share your vision 
-                  or explain your team&#39;s needs and we&#39;ll see where I can help.
+                  Ready for a quick call? Schedule a free 30-minute consultation to share your
+                  vision or explain your team&#39;s needs and we&#39;ll see where I can help.
                 </Paragraph>
                 <Button
                   as="button"
@@ -111,9 +111,9 @@ export default function ContactPage() {
                   If you have a question before you&#39;re ready to book a call, you can email me at{' '}
                   <a
                     className="text-text-onDark underline underline-offset-4 decoration-border-onDark/60 hover:text-accent transition-colors duration-200"
-                    href="mailto:elanaolson@gmail.com"
+                    href="mailto:elana@elanaolson.com"
                   >
-                    elanaolson@gmail.com
+                    elana@elanaolson.com
                   </a>
                 </Paragraph>
               </div>
