@@ -10,7 +10,9 @@ export function Footer() {
       <Container className="py-10">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="space-y-3">
-            <Paragraph className="text-[2rem] font-medium text-text-onDark font-heading">Elana Olson</Paragraph>
+            <Header level={3} className="text-text-onDark">
+              Elana Olson
+            </Header>
             <Paragraph variant="p3" className="text-text-onDark max-w-reading">
               Web design and engineering for small businesses and teams.
             </Paragraph>
@@ -18,10 +20,15 @@ export function Footer() {
 
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
             <div className="space-y-2">
-              <Header level={5} className="text-text-onDark">Start here</Header>
+              <Header level={4} className="text-text-onDark">
+                Start here
+              </Header>
               <ul className="space-y-1">
                 <li>
-                  <Link className="text-small text-text-onDark hover:text-text-onDark" href="/services">
+                  <Link
+                    className="text-small text-text-onDark hover:text-text-onDark"
+                    href="/services"
+                  >
                     Website services
                   </Link>
                 </li>
@@ -34,21 +41,29 @@ export function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-small text-text-onDark hover:text-text-onDark" href="/contact">
+                  <Link
+                    className="text-small text-text-onDark hover:text-text-onDark"
+                    href="/contact"
+                  >
                     Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-small text-text-onDark hover:text-text-onDark"
+                    href="/about"
+                  >
+                    About
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div className="space-y-2">
-              <Header level={5} className="text-text-onDark">More</Header>
+              <Header level={4} className="text-text-onDark">
+                More
+              </Header>
               <ul className="space-y-1">
-                <li>
-                  <Link className="text-small text-text-onDark hover:text-text-onDark" href="/about">
-                    About
-                  </Link>
-                </li>
                 <li>
                   <Link className="text-small text-text-onDark hover:text-text-onDark" href="/work">
                     Work
@@ -70,6 +85,14 @@ export function Footer() {
                     Travel
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className="text-small text-text-onDark hover:text-text-onDark"
+                    href="/terms"
+                  >
+                    Terms and conditions
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -88,10 +111,11 @@ export function Footer() {
         </div>
 
         <div className="mt-10">
-          <Paragraph variant="p3" className="text-text-onDark">© {new Date().getFullYear()} Elana Olson</Paragraph>
+          <Paragraph variant="p3" className="text-text-onDark">
+            © {new Date().getFullYear()} Elana Olson
+          </Paragraph>
         </div>
       </Container>
     </footer>
   );
 }
-
