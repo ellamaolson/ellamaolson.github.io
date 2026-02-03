@@ -4,16 +4,86 @@
       "city": "Ericiera",
       "country": "Portugal",
       "location": "Europe",
-      "emoji": "🌊",
-      "description": "A cozy dreamy little beach town that feels like a cross between Greece and California.",
+      "emoji": "🇵🇹",
+      "description": "A cozy dreamy little beach town that feels like a cross between Europe and California.",
       "highlights": [
         "Sleepy fishing village with epic beaches and surf",
         "White and blue buildings everywhere",
         "Such cute little groceries and markets to get beach picnic goodies"
       ],
-      "recommendations": ["Rent a car in Lisbon and drive here, then stay a few nights"],
       "image": "/ericiera.png",
       "altText": "Fishermen's beach in Ericiera, Portugal"
+    },
+
+    {
+      "city": "Annecy",
+      "country": "France",
+      "location": "Europe",
+      "emoji": "🇫🇷",
+      "description": "A marvelous medieval town high up in the French Alps with fairytale vibes",
+      "highlights": [
+        "Playing card games and sipping wine at an artist cafe housed in the old town prison - Café des Arts",
+        "Eating fresh raclette cheese with pickles and bread at a local cheese shop",
+        "Biking around the lake and taking in the beautiful scenery"
+      ],
+      "image": "/annecy.jpeg",
+      "altText": "Old medieval town of Annecy, France"
+    },
+    {
+      "city": "Yosemite National Park",
+      "country": "USA",
+      "location": "North America",
+      "emoji": "🇺🇸",
+      "description": "My favorite place in the world - the most beautiful nature and hiking trails.",
+      "highlights": [
+        "Reading a book in a hammock overlooking the river in Toulumne Meadows",
+        "Hiking the very steep but incredibly beautiful Upper Yosemite Falls Trail",
+        "Eating s'mores by the fire at the campgrounds after a long day of activities"
+      ],
+      "image": "/yosemite.jpeg",
+      "altText": "Yosemite National Park in California, USA"
+    },
+    {
+      "city": "Puerto Escondido",
+      "country": "Mexico",
+      "location": "Central America",
+      "emoji": "🇲🇽",
+      "description": "A glorious beach town with crystal clear water and a laid back vibes in the Oaxacan region",
+      "highlights": [
+        "Swimming with hundreds of dolphins during their mating season",
+        "Eating coconut-fried fresh fish tacos every day",
+        "Sun bathing the numerous gorgeous beaches and coves"
+      ],
+      "image": "/coco-taco.jpeg",
+      "altText": "Fried fish tacos in Mexico"
+    },
+    {
+      "city": "Lake Titicaca",
+      "country": "Peru",
+      "location": "South America",
+      "emoji": "🇵🇪",
+      "description": "A lake high up in the Andes Mountain with an indigenous peoples called the Uros living on floating island made out of reeds",
+      "highlights": [
+        "Collecting reeds from the lake to add to the floating foundations of the homes",
+        "Playing volleyball with the teenagers and little kids of this community",
+        "Hiking up to the top of the hill in Puno, the city on the shores of the lake, at 13,000ft "
+      ],
+      "image": "/peru-lake.jpeg",
+      "altText": "Floating houses on Lake Titicaca in Peru"
+    },
+    {
+      "city": "Da Lat",
+      "country": "Vietnam",
+      "location": "Southeast Asia",
+      "emoji": "🇻🇳",
+      "description": "A beautifully busy mountain town full of coffee shops, fresh pine air, and delicious food.",
+      "highlights": [
+        "Eating Banh Mi Xui Mai which are mouth watering pork meatballs and french bread",
+        "Riding the mountain coaster and jumping amongst the treetops in the nearby Datanla Waterfall",
+        "Getting lost in the central shopping market with the locals"
+      ],
+      "image": "/da-lat.jpeg",
+      "altText": "A giant pot of meatballs in Da Lat, Vietnam"
     }
   ]
 }
