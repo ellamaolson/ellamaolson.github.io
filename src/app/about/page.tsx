@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import { Section } from '../components/ui/Section';
 import { Container } from '../components/ui/Container';
 import { Header } from '../components/ui/Header';
@@ -107,21 +109,6 @@ export default function AboutPage() {
                     intersection of both worlds: understanding people deeply and digging into the
                     details to build something thoughtful and well-crafted.
                   </Paragraph>
-                </div>
-              </div>
-              <div>
-                <Header level={2} className="mt-28 text-text-onDark">
-                  How I got here (and why it works)
-                </Header>
-                <div className="space-y-4">
-                  <Paragraph variant="p2" className="text-text-onDark leading-relaxed">
-                    I studied Software Engineering at San José State University where I discovered
-                    my love for web development when building projects for my classes. I then worked
-                    at a few different companies - small and large - building websites and products
-                    for millions of users. Today, I work directly with small businesses and dev
-                    teams, building beautiful websites and products that attract customers and help
-                    business grow.
-                  </Paragraph>
                   <Paragraph variant="p2" className="text-text-onDark leading-relaxed">
                     My goal is simple:{' '}
                     <span className="font-bold italic">
@@ -133,15 +120,60 @@ export default function AboutPage() {
               </div>
               <div>
                 <Header level={2} className="mt-28 text-text-onDark">
+                  How I got here (and why it works)
+                </Header>
+                <div className="space-y-4">
+                  <Paragraph variant="p2" className="text-text-onDark leading-relaxed">
+                    I studied Software Engineering at SJSU, where hands-on projects sparked my
+                    interest in web development. After that, I worked across both small startups and
+                    large companies, including Atlassian and Google, building websites and products
+                    used by millions. Today, I partner with small businesses and developing teams to
+                    create websites and products that support real business growth.
+                  </Paragraph>
+
+                  <div className="text-body text-text-onDark/85 text-left mt-6">
+                    <div className="grid grid-cols-[auto_1fr] gap-3 items-center">
+                      <Image
+                        src="/sjsu.svg"
+                        alt="San Jose State University"
+                        width={36}
+                        height={36}
+                        className="h-9 w-9 object-contain flex-shrink-0"
+                        aria-hidden="true"
+                      />
+                      <div className="space-y-0.5">
+                        <Header level={4} className="font-[700] italic text-text-onDark">
+                          BS in Software Engineering
+                        </Header>
+                        <Paragraph className="text-text-onDark/85">
+                          San Jose State University
+                        </Paragraph>
+                        <Paragraph variant="p3" className="text-text-onDark/70">
+                          Graduated Cum Laude, May 2020
+                        </Paragraph>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <Header level={2} className="mt-28 text-text-onDark">
                   Me outside of work
                 </Header>
                 <div className="space-y-4">
                   <Paragraph variant="p2" className="text-text-onDark leading-relaxed">
-                    I seek out opportunities to engage in my local communities. I co-lead a local
-                    women’s group and volunteer at a sustainability oriented community kitchen
-                    weekly. These spaces ground me and remind me why I care so much about people,
-                    process, and creating things that genuinely serve. I also love to read, crochet,
-                    hike, and travel the world.
+                    I seek out opportunities to engage in my local communities. I co-lead a women’s
+                    group and volunteer at a sustainability oriented community kitchen. These spaces
+                    ground me and remind me why I care so much about people, process, and creating
+                    things that genuinely serve. I also love to read, crochet, hike, and travel the
+                    world. Check out my{' '}
+                    <Link
+                      href="/travel"
+                      className="text-text-onDark underline underline-offset-4 decoration-current hover:text-accent transition-colors duration-200"
+                    >
+                      travel section
+                    </Link>{' '}
+                    to see more.
                   </Paragraph>
                 </div>
               </div>

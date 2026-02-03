@@ -19,6 +19,9 @@ const dmSerifDisplay = DM_Serif_Display({
 export const metadata: Metadata = {
   title: 'Elana Olson',
   description: 'Software Engineer and Website Creator',
+  icons: {
+    icon: '/favicon.ico',
+  },
   other: {
     'viewport-fit': 'cover',
   },
@@ -49,7 +52,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://assets.calendly.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
+
         {/* Calendly badge widget CSS */}
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 
@@ -77,37 +80,12 @@ export default function RootLayout({
         />
 
         {/* Preload critical hero images for better performance */}
-        <link
-          rel="preload"
-          as="image"
-          href="/oak%20growing%20right.jpg"
-          fetchPriority="high"
-        />
+        <link rel="preload" as="image" href="/oak%20growing%20right.jpg" fetchPriority="high" />
         {/* Preload other critical hero images */}
-        <link
-          rel="preload"
-          as="image"
-          href="/sunset-forest.jpg"
-          fetchPriority="high"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/green-moutnain.jpg"
-          fetchPriority="high"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/la-jolla.jpg"
-          fetchPriority="high"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/flowers-growing.jpg"
-          fetchPriority="high"
-        />
+        <link rel="preload" as="image" href="/sunset-forest.jpg" fetchPriority="high" />
+        <link rel="preload" as="image" href="/green-moutnain.jpg" fetchPriority="high" />
+        <link rel="preload" as="image" href="/la-jolla.jpg" fetchPriority="high" />
+        <link rel="preload" as="image" href="/flowers-growing.jpg" fetchPriority="high" />
       </head>
       <body className="font-body">
         <noscript>
