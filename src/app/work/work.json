@@ -1,12 +1,40 @@
 {
   "work": [
     {
+      "company": "Freelance Website Designer & Developer",
+      "title": "elanaolson.com",
+      "status": "Full-time",
+      "location": "Remote",
+      "startDate": "10/1/25",
+      "endDate": "",
+      "description": "Consulting small businesses and larger companies on smart, scalable web development",
+      "notes": [
+        "Website creation, redesign, maintenance",
+        "Contract frontend engineering in React or Angular (TS/JS)"
+      ],
+      "relavantLinks": []
+    },
+    {
+      "company": "Women's Group Leader & Facilitator",
+      "title": "Co-founder",
+      "status": "Part-time",
+      "location": "Remote",
+      "startDate": "7/1/23",
+      "endDate": "",
+      "description": "Co-ead a local women’s group focused on creating a safe, welcoming space for thoughtful conversation and shared learning.",
+      "notes": [
+        "Facilitate regular discussions on personal growth, life skills, and gaining new perspectives, helping participants feel heard, supported, and connected.",
+        "Build community through empathetic leadership, active listening, and respect for diverse experiences, fostering trust and meaningful engagement over time."
+      ],
+      "relavantLinks": []
+    },
+    {
       "company": "Career Break",
       "title": "Personal Sabbatical",
       "status": "Full-time",
-      "location": "remote",
+      "location": "Remote",
       "startDate": "1/1/25",
-      "endDate": "",
+      "endDate": "10/1/25",
       "description": "Focused on travel, health, and recharging after several years in a high-intensity role. Checkout my travel section to see where I've been recently. Currently exploring roles that align with my skills and passions in frontend development and technical content creation.",
       "notes": [],
       "relavantLinks": []
@@ -15,7 +43,7 @@
       "company": "Atlassian",
       "title": "Software Engineer",
       "status": "Full-time",
-      "location": "remote",
+      "location": "Remote",
       "startDate": "7/1/20",
       "endDate": "12/16/24",
       "description": "I joined Atlassian's Confluence team as a new grad software engineer eager to tackle frontend development on an awesome product.",
