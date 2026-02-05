@@ -42,7 +42,7 @@ export default function Travel() {
             <Header level={1}>Travel</Header>
             <Paragraph className="text-text-secondary">
               I’ve been fortunate to explore some incredible places around the world. Here’s a map
-              of where I’ve been, plus a few standout (sometimes lesser-known) recommendations.
+              of where I’ve been, plus a few standout favorites.
             </Paragraph>
           </div>
         </Container>
@@ -117,22 +117,6 @@ export default function Travel() {
                       <ul className="list-disc pl-5 space-y-1 text-body text-text-primary/85 text-left">
                         {destination.highlights.map((highlight, highlightIndex) => (
                           <li key={highlightIndex}>{highlight}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ) : null}
-
-                  {destination?.recommendations?.length ? (
-                    <div className="space-y-2 max-w-reading mx-auto md:mx-0 md:text-left">
-                      <Paragraph
-                        variant="p3"
-                        className="font-medium tracking-[0.14em] uppercase text-text-secondary"
-                      >
-                        Recommendations
-                      </Paragraph>
-                      <ul className="list-disc pl-5 space-y-1 text-body text-text-primary/85 text-left">
-                        {destination.recommendations.map((rec, recIndex) => (
-                          <li key={recIndex}>{rec}</li>
                         ))}
                       </ul>
                     </div>
