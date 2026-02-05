@@ -7,7 +7,7 @@ import { LoadableImage } from '../components/LoadableImage';
 
 import websiteCreationImage from '../../../public/green-house.jpg';
 import redesignRefreshImage from '../../../public/someone-painting.jpg';
-import ongoingCareImage from '../../../public/old-car.jpg';
+import oldCar from '../../../public/old-school-car.jpg';
 
 export default function ServicesPage() {
   return (
@@ -67,9 +67,9 @@ export default function ServicesPage() {
                     variant="p3"
                     className="tracking-[0.18em] uppercase text-text-secondary"
                   >
-                    Brand New
+                    Full House
                   </Paragraph>
-                  <Header level={3}>Website Creation</Header>
+                  <Header level={3}>Brand New Website Creation</Header>
                   <Paragraph className="mx-auto mt-2 max-w-[72ch] text-text-secondary">
                     A fully custom site built from the ground up for businesses who need a
                     professional online presence.
@@ -113,7 +113,7 @@ export default function ServicesPage() {
                           Starting Package
                         </Header>
                         <Paragraph variant="p3" className="font-medium text-text-primary/80 italic">
-                          No SEO copy or custom images
+                          No SEO or custom images
                         </Paragraph>
                         <Paragraph>
                           <span className="font-medium text-text-primary/80">Investment:</span>{' '}
@@ -130,7 +130,7 @@ export default function ServicesPage() {
                           Full Package
                         </Header>
                         <Paragraph variant="p3" className="font-medium text-text-primary/80 italic">
-                          With custom SEO copy &amp; images
+                          With custom SEO optimization &amp; images
                         </Paragraph>
                         <Paragraph>
                           <span className="font-medium text-text-primary/80">Investment:</span>{' '}
@@ -166,7 +166,7 @@ export default function ServicesPage() {
                     variant="p3"
                     className="tracking-[0.18em] uppercase text-text-secondary"
                   >
-                    The Tune-Up
+                    Re-Paint & Refresh
                   </Paragraph>
                   <Header level={3}>Webpage Redesign</Header>
                   <Paragraph className="mx-auto mt-2 max-w-[72ch] text-text-secondary">
@@ -208,7 +208,7 @@ export default function ServicesPage() {
                           Single Page Redesign
                         </Header>
                         <Paragraph variant="p3" className="font-medium text-text-primary/80 italic">
-                          No SEO copy or custom images
+                          No SEO or custom images
                         </Paragraph>
                         <Paragraph>
                           <span className="font-medium text-text-primary/80">Investment:</span> $400
@@ -225,7 +225,7 @@ export default function ServicesPage() {
                           Single Page Redesign With SEO
                         </Header>
                         <Paragraph variant="p3" className="font-medium text-text-primary/80 italic">
-                          With custom SEO copy &amp; images
+                          With custom SEO optimization &amp; images
                         </Paragraph>
                         <Paragraph>
                           <span className="font-medium text-text-primary/80">Investment:</span> $500
@@ -273,7 +273,7 @@ export default function ServicesPage() {
                 <div className="mt-6 grid gap-8 md:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] md:items-stretch">
                   <div className="space-y-4">
                     <LoadableImage
-                      src={ongoingCareImage}
+                      src={oldCar}
                       alt="An old car"
                       className="h-64 sm:h-[19rem] md:h-[21.5rem] w-full rounded-xl"
                     />
