@@ -105,17 +105,16 @@ export default function AboutPage() {
                 <div className="space-y-4">
                   <Paragraph variant="p2" className="leading-relaxed text-text-onDark">
                     I know “people person” isn’t what most folks picture when I say I’m a software
-                    engineer — but working with people is my favorite part of the job. I work at the
-                    intersection of both worlds: understanding people deeply and digging into the
-                    details to build something thoughtful and well-crafted.
+                    engineer, but working with people is my favorite part of the job. I partner with
+                    small businesses and developing teams to create websites and products that
+                    support real business growth. My goal is simple:{' '}
                   </Paragraph>
-                  <Paragraph variant="p2" className="text-text-onDark leading-relaxed">
-                    My goal is simple:{' '}
-                    <span className="font-bold italic">
-                      bring steady engineering, clear structure, and good energy to every project
-                      and team.
-                    </span>
-                  </Paragraph>
+                  <div className="mt-6 border-l border-border-onDark pl-4 space-y-2 max-w-reading">
+                    <Paragraph className="text-text-onDark italic">
+                      Bring steady engineering, solid communication, and good energy to every
+                      project and team.
+                    </Paragraph>
+                  </div>
                 </div>
               </div>
               <div>
@@ -124,11 +123,11 @@ export default function AboutPage() {
                 </Header>
                 <div className="space-y-4">
                   <Paragraph variant="p2" className="text-text-onDark leading-relaxed">
-                    I studied Software Engineering at SJSU, where hands-on projects sparked my
-                    interest in web development. After that, I worked across both small startups and
-                    large companies, including Atlassian and Google, building websites and products
-                    used by millions. Today, I partner with small businesses and developing teams to
-                    create websites and products that support real business growth.
+                    Interning at Google really kicked off my journey in frontend development. I fell
+                    in love with idea of building beautiful tools for engineers and began directing
+                    all my energy towards learning web development. I’ve since built products and
+                    features used by millions, led workshops on frontend development, and spoke at
+                    conferences worldwide about tech tooling.
                   </Paragraph>
 
                   <div className="text-body text-text-onDark/85 text-left mt-6">
@@ -165,15 +164,15 @@ export default function AboutPage() {
                     I seek out opportunities to engage in my local communities. I co-lead a women’s
                     group and volunteer at a sustainability oriented community kitchen. These spaces
                     ground me and remind me why I care so much about people, process, and creating
-                    things that genuinely serve. I also love to read, crochet, hike, and travel the
-                    world. Check out my{' '}
+                    things that genuinely serve. I also love to do art, eat great food, and travel
+                    the world. Check out my{' '}
                     <Link
                       href="/travel"
                       className="text-text-onDark underline underline-offset-4 decoration-current hover:text-accent transition-colors duration-200"
                     >
                       travel section
                     </Link>{' '}
-                    to see more.
+                    to see where I’ve been.
                   </Paragraph>
                 </div>
               </div>

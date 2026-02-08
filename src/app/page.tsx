@@ -48,7 +48,12 @@ export default function Home() {
             </Paragraph>
 
             <div className="flex flex-col items-start gap-6 sm:gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-              <Button as="link" href="/contact" variant="primary" className="w-64 sm:w-auto text-sm sm:text-base whitespace-nowrap">
+              <Button
+                as="link"
+                href="/contact"
+                variant="primary"
+                className="w-64 sm:w-auto text-sm sm:text-base whitespace-nowrap"
+              >
                 Schedule a Free Consultation
               </Button>
             </div>
@@ -56,8 +61,76 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* Section 2: Who I Help */}
-      <Section background="surfaceMuted" padding="lg">
+      {/* Section: About Teaser */}
+      <Section background="surfaceMuted" padding="lg" className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 bg-[radial-gradient(900px_circle_at_30%_50%,rgba(194,162,58,0.12),transparent_60%)]"
+          aria-hidden="true"
+        />
+        <Container maxWidth="wide" className="relative">
+          <div className="flex flex-col md:flex-row items-center gap-16 sm:gap-12 md:gap-24 lg:gap-32">
+            {/* Photo with warm decorative elements */}
+            <div className="relative shrink-0">
+              {/* Halo glow */}
+              <div
+                className="pointer-events-none absolute -inset-10 rounded-full blur-2xl opacity-80 bg-[radial-gradient(circle,rgba(194,162,58,0.35)_0%,rgba(194,162,58,0.15)_40%,transparent_70%)]"
+                aria-hidden="true"
+              />
+              {/* Decorative ring */}
+              <div
+                className="pointer-events-none absolute -inset-4 rounded-full border border-accent/30"
+                aria-hidden="true"
+              />
+              <div className="relative w-72 sm:w-72 md:w-80 lg:w-96 aspect-square overflow-hidden rounded-full border-2 border-accent/30 shadow-xl shadow-accent/10">
+                <LoadableImage
+                  alt="Elana Olson"
+                  src={elanaHeadshotImage}
+                  className="w-full h-full rounded-full"
+                  priority={true}
+                />
+              </div>
+            </div>
+
+            {/* About content in warm card */}
+            <div className="flex-1 rounded-3xl bg-gradient-to-br from-brand/95 to-brand-moss/90 text-text-onDark p-7 sm:p-9 shadow-xl">
+              <Header level={2} className="text-text-onDark">
+                Hi, I&apos;m Elana
+              </Header>
+
+              <div className="mt-5 space-y-4">
+                <Paragraph className="text-text-onDark/95 text-lead leading-relaxed">
+                  Your website is often the first conversation you have with your clients. I help
+                  make sure it&apos;s a good one.
+                </Paragraph>
+
+                <Paragraph className="text-text-onDark/80 leading-relaxed">
+                  I pair professional engineering with a genuine love of collaboration to turn a
+                  shared vision into a website that feels thoughtful, works beautifully, and grows
+                  alongside your business.
+                </Paragraph>
+              </div>
+
+              <div className="mt-6">
+                <a
+                  href="/about"
+                  className="group inline-flex items-baseline gap-2 text-body font-medium text-accent hover:text-accent/80 transition-colors duration-200 focus:outline-none focus-visible:underline focus-visible:underline-offset-4"
+                >
+                  Get to know me{' '}
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform duration-200 group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Section 2: Who I Work With */}
+      <Section background="surfaceRaised" padding="lg">
         <Container maxWidth="wide">
           <div className="space-y-10">
             <div className="max-w-reading space-y-3">
@@ -71,9 +144,8 @@ export default function Home() {
               <article className="group space-y-4 border-l border-brand-olive/35 pl-6 transition-colors duration-200 hover:border-brand-olive/60">
                 <Header level={3}>Small Businesses & Independent Professionals</Header>
                 <Paragraph className="text-text-primary/85 max-w-reading">
-                  You want a website that feels welcoming and easy to understand — one that
-                  eloquently explains what you do and makes it simple for the right people to reach
-                  out.
+                  You want a website that feels welcoming, explains what you do clearly, and makes
+                  it easy for the right people to reach out.
                 </Paragraph>
                 <div className="pt-1">
                   <Button as="link" href="/services" variant="outline">
@@ -86,7 +158,7 @@ export default function Home() {
                 <Header level={3}>Product Teams & Companies</Header>
                 <Paragraph className="text-text-primary/85 max-w-reading">
                   You want an experienced frontend engineer who can step in, ship clean UI, build
-                  fast in React or Angular, and will leave things better than before.
+                  fast in React or Angular, and leave the codebase stronger than before.
                 </Paragraph>
                 <div className="pt-1">
                   <Button
@@ -105,7 +177,7 @@ export default function Home() {
       </Section>
 
       {/* Section 3: What Makes Elana Olson Different */}
-      <Section background="surfaceRaised" padding="lg">
+      <Section background="surface" padding="lg">
         <Container maxWidth="wide">
           <Grid variant="asymmetric" className="items-stretch">
             <div className="space-y-10">
@@ -188,7 +260,7 @@ export default function Home() {
           <div className="min-h-[70vh] flex items-center justify-center">
             <div className="w-full max-w-reading">
               <div className="rounded-[2rem] border border-accent/45 bg-white/10 p-1 shadow-2xl backdrop-blur-sm">
-                <div className="rounded-[1.75rem] border border-border-onDark bg-surface/90 text-text-primary">
+                <div className="rounded-[1.75rem] border border-border-onDark bg-surface-raised text-text-primary">
                   <div className="px-6 py-8 sm:px-8 sm:py-10">
                     <div className="space-y-3">
                       <Header level={2}>My services</Header>
@@ -213,15 +285,18 @@ export default function Home() {
                             <Header level={3}>
                               Website Design &amp; Redesign (Small Businesses)
                             </Header>
-                            <Paragraph className="text-text-secondary">
-                              Small business website creation and redesign that looks beautiful,
-                              feels welcoming, and stays easy to manage as you grow.
-                            </Paragraph>
+
+                            <ul className="mt-2 space-y-2 list-disc list-inside text-text-secondary">
+                              <li>Brand new website creation</li>
+                              <li>Webpage redesign</li>
+                              <li>SEO optimization</li>
+                            </ul>
+
                             <a
                               href="/services"
                               className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
                             >
-                              Website design services{' '}
+                              Website Services{' '}
                               <span
                                 aria-hidden="true"
                                 className="transition-transform duration-200 group-hover:translate-x-1"
@@ -246,15 +321,15 @@ export default function Home() {
                           </div>
                           <div className="space-y-3">
                             <Header level={3}>Ongoing Website Care &amp; Retainers</Header>
-                            <Paragraph className="text-text-secondary">
-                              Reliable website support for updates, improvements, and maintenance—so
-                              your site stays current without becoming another thing to worry about.
-                            </Paragraph>
+                            <ul className="mt-2 space-y-2 list-disc list-inside text-text-secondary">
+                              <li>On-demand bug fixes</li>
+                              <li>Monthly maintance</li>
+                            </ul>
                             <a
                               href="/services#ongoing-care"
                               className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
                             >
-                              Website care &amp; retainers{' '}
+                              Website Support{' '}
                               <span
                                 aria-hidden="true"
                                 className="transition-transform duration-200 group-hover:translate-x-1"
@@ -279,15 +354,16 @@ export default function Home() {
                           </div>
                           <div className="space-y-3">
                             <Header level={3}>Frontend Engineering (React / Angular)</Header>
-                            <Paragraph className="text-text-secondary">
-                              Frontend engineering for product teams — work that’s fast,
-                              maintainable, and easy to hand off.
-                            </Paragraph>
+
+                            <ul className="mt-2 space-y-2 list-disc list-inside text-text-secondary">
+                              <li>Hourly or project-based contracts</li>
+                              <li>Reliable engineering</li>
+                            </ul>
                             <a
                               href="/contracting"
                               className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
                             >
-                              Contract engineering{' '}
+                              Contract Engineering{' '}
                               <span
                                 aria-hidden="true"
                                 className="transition-transform duration-200 group-hover:translate-x-1"
@@ -461,81 +537,6 @@ export default function Home() {
               </Button>
             </div>
           </div>
-        </Container>
-      </Section>
-
-      {/* Section 6: About (light surface + dark card for contrast) */}
-      <Section background="surfaceRaised" padding="lg" className="relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-[radial-gradient(900px_circle_at_20%_10%,rgba(194,162,58,0.14),transparent_55%)]"
-          aria-hidden="true"
-        />
-        <Container maxWidth="wide" className="relative">
-          <Grid variant="split" className="items-center md:gap-20">
-            <div className="flex flex-col items-center justify-center gap-4">
-              <div className="relative w-full max-w-[18rem] sm:max-w-[20rem] md:max-w-[22rem] lg:max-w-[24rem] mx-auto overflow-visible">
-                <div
-                  className="pointer-events-none absolute -inset-3 rounded-full border border-[rgb(36_45_26/0.35)]"
-                  aria-hidden="true"
-                />
-                <div
-                  className="pointer-events-none absolute -inset-10 rounded-full blur-[12px] opacity-90 bg-[radial-gradient(circle,rgba(241_239_233/0)_50%,rgba(36_45_26/0.62)_58%,rgba(36_45_26/0.20)_72%,rgba(241_239_233/0)_92%)]"
-                  aria-hidden="true"
-                />
-
-                <div className="relative aspect-square w-full overflow-hidden rounded-full border border-border-strong bg-surface-raised">
-                  <LoadableImage
-                    alt="Elana Olson, founder of Elana Olson web development"
-                    src={elanaHeadshotImage}
-                    className="w-full h-full rounded-full"
-                    priority={true}
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Copy: dark brand card for contrast + trust */}
-            <div className="rounded-2xl bg-[rgb(36_45_26/0.86)] text-text-onDark border border-border-onDark p-6 sm:p-8">
-              <div className="space-y-3 max-w-reading">
-                <Header level={2} className="text-text-onDark">
-                  About Me
-                </Header>
-              </div>
-
-              <div className="mt-6 space-y-4 max-w-reading">
-                <Paragraph className="text-text-onDark">
-                  Hi, I’m Elana Olson, I design and build elegant websites that feel clear, warm,
-                  and easy to trust.
-                </Paragraph>
-                <Paragraph className="text-text-onDark">
-                  Your website is often the first conversation you have with your clients; when it’s
-                  welcoming and grounded in a clear message, people can relax, understand, and reach
-                  out with confidence.
-                </Paragraph>
-                <Paragraph className="text-text-onDark">
-                  I’m a professionally trained software engineer with years of experience building
-                  and maintaining production products—ensuring consistency, accessibility, and
-                  long-term maintainability.
-                </Paragraph>
-              </div>
-
-              <div className="mt-6 border-l border-border-onDark pl-4 space-y-2 max-w-reading">
-                <Paragraph className="text-text-onDark">
-                  <strong>What you can expect:</strong> clear communication, reliable engineering,
-                  and a warm, human-centered process.
-                </Paragraph>
-              </div>
-
-              <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center">
-                <a
-                  href="/about"
-                  className="inline-flex items-baseline gap-2 text-body font-medium text-text-onDark hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
-                >
-                  Get to know me <span aria-hidden="true">→</span>
-                </a>
-              </div>
-            </div>
-          </Grid>
         </Container>
       </Section>
     </>
