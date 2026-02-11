@@ -80,12 +80,22 @@ export default function RootLayout({
         />
 
         {/* Preload critical hero images for better performance */}
-        <link rel="preload" as="image" href="/oak%20growing%20right.jpg" fetchPriority="high" />
+        <link rel="preload" as="image" href="/oak.jpg" fetchPriority="high" />
         {/* Preload other critical hero images */}
-        <link rel="preload" as="image" href="/sunset-forest.jpg" fetchPriority="high" />
-        <link rel="preload" as="image" href="/green-moutnain.jpg" fetchPriority="high" />
-        <link rel="preload" as="image" href="/la-jolla.jpg" fetchPriority="high" />
-        <link rel="preload" as="image" href="/flowers-growing.jpg" fetchPriority="high" />
+        <link rel="preload" as="image" href="/backgrounds/sunset-forest.jpg" fetchPriority="high" />
+        <link
+          rel="preload"
+          as="image"
+          href="/backgrounds/green-moutnain.jpg"
+          fetchPriority="high"
+        />
+        <link rel="preload" as="image" href="/backgrounds/la-jolla.jpg" fetchPriority="high" />
+        <link
+          rel="preload"
+          as="image"
+          href="/backgrounds/flowers-growing.jpg"
+          fetchPriority="high"
+        />
       </head>
       <body className="font-body">
         <noscript>

@@ -8,7 +8,7 @@ import { Button } from './components/ui/Button';
 import { Grid } from './components/ui/Grid';
 import { LoadableImage } from './components/LoadableImage';
 
-import elanaHeadshotImage from '../../public/elana-headshot.png';
+import elanaHeadshotImage from '../../public/about/elana-headshot.png';
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-brand bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/oak%20growing%20right.jpg')",
+            backgroundImage: "url('/backgrounds/oak.jpg')",
           }}
           aria-hidden="true"
         />
@@ -244,7 +244,7 @@ export default function Home() {
       <Section background="transparent" padding="lg" className="relative overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/moon.jpg')" }}
+          style={{ backgroundImage: "url('/backgrounds/moon.jpg')" }}
           aria-hidden="true"
         />
         <div

@@ -19,7 +19,7 @@ export default function ServicesPage() {
       >
         <div
           className="absolute inset-0 bg-brand bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/sunset-forest.jpg')" }}
+          style={{ backgroundImage: "url('/backgrounds/sunset-forest.jpg')" }}
           aria-hidden="true"
         />
         <div

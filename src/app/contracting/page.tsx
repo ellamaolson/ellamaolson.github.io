@@ -17,7 +17,7 @@ export default function ContractingPage() {
       >
         <div
           className="absolute inset-0 bottom-[-20px] sm:bottom-0 bg-brand bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/green-moutnain.jpg')" }}
+          style={{ backgroundImage: "url('/backgrounds/mountain.jpg')" }}
           aria-hidden="true"
         />
         <div
@@ -136,7 +136,7 @@ export default function ContractingPage() {
               <div className="text-body text-text-primary/85 text-left">
                 <div className="grid grid-cols-[auto_1fr] gap-3 items-center">
                   <Image
-                    src="/sjsu.svg"
+                    src="/icons/sjsu.svg"
                     alt="San Jose State University"
                     width={36}
                     height={36}
@@ -207,7 +207,7 @@ export default function ContractingPage() {
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <Image
-                    src="/atlassian-icon.png"
+                    src="/icons/atlassian-icon.png"
                     alt="Atlassian"
                     width={36}
                     height={36}
@@ -226,7 +226,7 @@ export default function ContractingPage() {
 
                 <li className="flex items-start gap-3">
                   <Image
-                    src="/google-icon.png"
+                    src="/icons/google-icon.png"
                     alt="Google"
                     width={36}
                     height={36}
@@ -245,7 +245,7 @@ export default function ContractingPage() {
 
                 <li className="flex items-start gap-3">
                   <Image
-                    src="/tappity.png"
+                    src="/icons/tappity.png"
                     alt="Tappity"
                     width={36}
                     height={36}

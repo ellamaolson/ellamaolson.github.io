@@ -6,12 +6,12 @@ import { Header } from '../components/ui/Header';
 import { Paragraph } from '../components/ui/Paragraph';
 import { Button } from '../components/ui/Button';
 import { LoadableImage } from '../components/LoadableImage';
-import babyAlpacaImage from '../../../public/holding-baby-alpaca.jpeg';
-import lisbonImage from '../../../public/lisbon.jpeg';
-import elanaEliImage from '../../../public/elana-eli.jpeg';
-import elanaSpainImage from '../../../public/elana-spain.jpeg';
-import elanaTreesImage from '../../../public/elana-trees-sm.jpg';
-import elanaNetherlandsImage from '../../../public/elana-netherlands.jpeg';
+import babyAlpacaImage from '../../../public/about/holding-baby-alpaca.jpeg';
+import lisbonImage from '../../../public/about/lisbon.jpeg';
+import elanaEliImage from '../../../public/about/elana-eli.jpeg';
+import elanaSpainImage from '../../../public/about/elana-spain.jpeg';
+import elanaTreesImage from '../../../public/about/elana-trees-sm.jpg';
+import elanaNetherlandsImage from '../../../public/about/elana-netherlands.jpeg';
 
 export default function AboutPage() {
   return (
@@ -23,7 +23,7 @@ export default function AboutPage() {
       >
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/flowers-growing.jpg')" }}
+          style={{ backgroundImage: "url('/backgrounds/flowers-growing.jpg')" }}
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-[#242D1A]/80" aria-hidden="true" />
@@ -133,7 +133,7 @@ export default function AboutPage() {
                   <div className="text-body text-text-onDark/85 text-left mt-6">
                     <div className="grid grid-cols-[auto_1fr] gap-3 items-center">
                       <Image
-                        src="/sjsu.svg"
+                        src="/icons/sjsu.svg"
                         alt="San Jose State University"
                         width={36}
                         height={36}

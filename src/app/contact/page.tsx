@@ -44,7 +44,7 @@ export default function ContactPage() {
         {/* Full-viewport background image */}
         <div
           className="absolute inset-0 bg-brand bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/la-jolla.jpg')" }}
+          style={{ backgroundImage: "url('/backgrounds/la-jolla.jpg')" }}
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-[#726D6D]/20" aria-hidden="true" />
