@@ -241,11 +241,8 @@ export default function Home() {
       </Section>
 
       {/* Section: My Services (primary conversion + SEO anchor) */}
-      <Section background="transparent" padding="lg" className="relative overflow-hidden">
-        <div
-          className="relative h-[100vh] md:h-[100vh] overflow-hidden flex items-center"
-          aria-hidden="true"
-        >
+      <Section background="transparent" padding="none" className="relative overflow-hidden">
+        <div className="relative min-h-[100vh] flex items-center">
           <div
             className="absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat max-md:bg-scroll"
             style={{ backgroundImage: "url('/backgrounds/moon.jpg')" }}
@@ -260,8 +257,8 @@ export default function Home() {
           />
 
           <Container maxWidth="full" className="relative">
-            <div className="min-h-[70vh] flex items-center justify-center">
-              <div className="w-full" style={{ maxWidth: '72rem' }}>
+            <div className="min-h-[70vh] flex items-center justify-center py-12">
+              <div className="w-full min-w-[40vw]" style={{ maxWidth: '72rem' }}>
                 <div className="rounded-[2rem] border border-accent/45 bg-white/10 p-1 shadow-2xl backdrop-blur-sm">
                   <div className="rounded-[1.75rem] border border-border-onDark bg-surface-raised text-text-primary">
                     <div className="px-6 py-8 sm:px-8 sm:py-10">
