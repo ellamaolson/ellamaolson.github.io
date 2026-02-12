@@ -5,7 +5,6 @@ import { DM_Serif_Display } from 'next/font/google';
 import { StyledRoot } from './components/StyledRoot';
 import { GTMPageView } from './components/GTMPageView';
 import './globals.css';
-import './fonts.css';
 
 const CALENDLY_WIDGET_SRC = 'https://assets.calendly.com/assets/external/widget.js';
 
