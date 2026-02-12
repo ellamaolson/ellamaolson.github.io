@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <>
-      <Section background="surface" padding="md" className="min-h-screen">
-        <Container maxWidth="notebook" className="py-10 sm:py-14">
+      <Section background="surface" padding="none" className="min-h-screen py-8 sm:py-section">
+        <Container maxWidth="notebook">
           <div className="space-y-10">
             <div>
               <Header level={1} className="text-text-primary">

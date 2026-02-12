@@ -18,8 +18,8 @@ export default function Work() {
 
   return (
     <>
-      <Section background="surfaceMuted" padding="lg">
-        <Container maxWidth="notebook" className="py-10 sm:py-14">
+      <Section background="surfaceMuted" padding="none" className="py-8 sm:py-section">
+        <Container maxWidth="notebook">
           <div className="space-y-4 mx-auto text-left">
             <Header level={1}>Work</Header>
             <Paragraph className="text-text-secondary">
@@ -30,8 +30,8 @@ export default function Work() {
         </Container>
       </Section>
 
-      <Section background="surface" padding="lg">
-        <Container maxWidth="notebook" className="py-10 sm:py-14">
+      <Section background="surface" padding="none" className="py-8 sm:py-section">
+        <Container maxWidth="notebook">
           <div className="space-y-12 mx-auto">
             {workList.map((work, index) => {
               const startDate = formatDate(work.startDate);

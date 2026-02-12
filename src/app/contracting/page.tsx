@@ -13,7 +13,7 @@ export default function ContractingPage() {
       <Section
         background="transparent"
         padding="none"
-        className="relative overflow-visible sm:overflow-hidden min-h-[calc(140vh+20px)] sm:min-h-[96vh]"
+        className="relative overflow-visible sm:overflow-hidden min-h-[calc(150vh+20px)] sm:min-h-[106vh]"
       >
         <div
           className="absolute inset-0 bottom-[-20px] sm:bottom-0 bg-brand bg-cover bg-center bg-no-repeat"
@@ -24,7 +24,7 @@ export default function ContractingPage() {
           className="absolute inset-0 bottom-[-20px] sm:bottom-0 bg-gradient-to-b from-text-primary/65 via-text-primary/35 to-text-primary/70"
           aria-hidden="true"
         />
-        <Container maxWidth="wide" className="relative min-h-[calc(140vh+20px)] sm:min-h-[96vh]">
+        <Container maxWidth="wide" className="relative min-h-[calc(150vh+20px)] sm:min-h-[106vh]">
           <div className="pt-[14vh] md:pt-[18vh] space-y-12 pb-5">
             <div className="mx-auto w-full md:w-[80%] space-y-6">
               <Header level={1} className="text-text-onDark">

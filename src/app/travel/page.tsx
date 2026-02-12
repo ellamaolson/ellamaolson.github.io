@@ -36,7 +36,7 @@ export default function Travel() {
 
   return (
     <>
-      <Section background="surfaceMuted" padding="lg">
+      <Section background="surfaceMuted" padding="none" className="py-8 sm:py-section">
         <Container maxWidth="wide">
           <div className="space-y-4 max-w-reading mx-auto text-center">
             <Header level={1}>Travel</Header>
@@ -48,7 +48,7 @@ export default function Travel() {
         </Container>
       </Section>
 
-      <Section background="surface" padding="lg">
+      <Section background="surface" padding="none" className="py-8 sm:py-section">
         <Container maxWidth="wide">
           <div className="relative overflow-hidden rounded-2xl border border-border-subtle bg-surface-raised h-64 sm:h-80 md:h-96 w-[80%] mx-auto">
             {mapLoading && (
@@ -74,7 +74,7 @@ export default function Travel() {
         </Container>
       </Section>
 
-      <Section background="surfaceRaised" padding="lg">
+      <Section background="surfaceRaised" padding="none" className="py-8 sm:py-section">
         <Container maxWidth="wide">
           <div className="space-y-10 max-w-4xl mx-auto">
             {travelData?.destinations?.map((destination, index) => (

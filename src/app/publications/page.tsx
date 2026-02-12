@@ -13,8 +13,8 @@ export default function Publications() {
 
   return (
     <>
-      <Section background="surfaceMuted" padding="lg">
-        <Container maxWidth="notebook" className="py-10 sm:py-14">
+      <Section background="surfaceMuted" padding="none" className="py-8 sm:py-section">
+        <Container maxWidth="notebook">
           <div className="space-y-4 mx-auto text-left">
             <Header level={1}>Publications</Header>
             <Paragraph className="text-text-secondary">
@@ -24,8 +24,8 @@ export default function Publications() {
         </Container>
       </Section>
 
-      <Section background="surface" padding="lg">
-        <Container maxWidth="notebook" className="py-10 sm:py-14">
+      <Section background="surface" padding="none" className="py-8 sm:py-section">
+        <Container maxWidth="notebook">
           <ul className="space-y-10 mx-auto">
             {sortedPubs.map((pub, index) => {
               const pubDate = new Date(pub.date).toLocaleString('en-us', {
