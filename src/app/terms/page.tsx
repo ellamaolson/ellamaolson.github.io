@@ -14,7 +14,7 @@ export default function TermsPage() {
   return (
     <>
       <Section background="surface" padding="md" className="min-h-screen">
-        <Container maxWidth="full" className="max-w-[80%] py-10 sm:py-14">
+        <Container maxWidth="notebook" className="py-10 sm:py-14">
           <div className="space-y-10">
             <div>
               <Header level={1} className="text-text-primary">

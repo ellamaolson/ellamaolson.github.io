@@ -19,20 +19,20 @@ export default function Work() {
   return (
     <>
       <Section background="surfaceMuted" padding="lg">
-        <Container maxWidth="wide">
-          <div className="space-y-4 max-w-reading">
+        <Container maxWidth="notebook" className="py-10 sm:py-14">
+          <div className="space-y-4 mx-auto text-left">
             <Header level={1}>Work</Header>
             <Paragraph className="text-text-secondary">
-              A few roles and projects I’ve been part of—focused on frontend engineering, systems work, and
-              clear communication.
+              A few roles and projects I&apos;ve been part of—focused on frontend engineering,
+              systems work, and clear communication.
             </Paragraph>
           </div>
         </Container>
       </Section>
 
       <Section background="surface" padding="lg">
-        <Container maxWidth="wide">
-          <div className="space-y-12">
+        <Container maxWidth="notebook" className="py-10 sm:py-14">
+          <div className="space-y-12 mx-auto">
             {workList.map((work, index) => {
               const startDate = formatDate(work.startDate);
               const endDate = work.endDate ? formatDate(work.endDate) : 'Present';
@@ -50,11 +50,11 @@ export default function Work() {
                   </header>
 
                   {work.description ? (
-                    <Paragraph className="text-text-primary/85 max-w-reading">{work.description}</Paragraph>
+                    <Paragraph className="text-text-primary/85">{work.description}</Paragraph>
                   ) : null}
 
                   {work.notes?.length ? (
-                    <ul className="list-disc pl-5 space-y-2 text-body text-text-primary/85 max-w-reading">
+                    <ul className="list-disc pl-5 space-y-2 text-body text-text-primary/85">
                       {work.notes.map((note, noteIndex) => (
                         <li key={noteIndex}>{note}</li>
                       ))}
@@ -62,8 +62,11 @@ export default function Work() {
                   ) : null}
 
                   {work.relavantLinks?.length ? (
-                    <div className="space-y-2 max-w-reading">
-                      <Paragraph variant="p3" className="font-medium tracking-[0.14em] uppercase text-text-secondary">
+                    <div className="space-y-2">
+                      <Paragraph
+                        variant="p3"
+                        className="font-medium tracking-[0.14em] uppercase text-text-secondary"
+                      >
                         Links
                       </Paragraph>
                       <ul className="space-y-2">
@@ -94,11 +97,11 @@ export default function Work() {
       </Section>
 
       <Section background="surfaceMuted" padding="md">
-        <Container maxWidth="wide">
-          <div className="flex items-center justify-between gap-6 flex-wrap">
-            <Paragraph className="text-text-secondary max-w-reading">
-              If you’d like to collaborate, start with a short note—what you’re building, what’s stuck, and
-              what “good” looks like.
+        <Container maxWidth="notebook" className="py-10 sm:py-14">
+          <div className="flex flex-col items-center gap-6 text-center mx-auto">
+            <Paragraph className="text-text-secondary">
+              If you&apos;d like to collaborate, start with a short note—what you&apos;re building,
+              what&apos;s stuck, and what &quot;good&quot; looks like.
             </Paragraph>
             <SocialLinks />
           </div>

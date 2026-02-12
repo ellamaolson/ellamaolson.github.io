@@ -14,8 +14,8 @@ export default function Publications() {
   return (
     <>
       <Section background="surfaceMuted" padding="lg">
-        <Container maxWidth="wide">
-          <div className="space-y-4 max-w-reading">
+        <Container maxWidth="notebook" className="py-10 sm:py-14">
+          <div className="space-y-4 mx-auto text-left">
             <Header level={1}>Publications</Header>
             <Paragraph className="text-text-secondary">
               Writing and talks—mostly frontend engineering, React/Next.js, and Angular.
@@ -25,8 +25,8 @@ export default function Publications() {
       </Section>
 
       <Section background="surface" padding="lg">
-        <Container maxWidth="wide">
-          <ul className="space-y-10">
+        <Container maxWidth="notebook" className="py-10 sm:py-14">
+          <ul className="space-y-10 mx-auto">
             {sortedPubs.map((pub, index) => {
               const pubDate = new Date(pub.date).toLocaleString('en-us', {
                 year: 'numeric',
@@ -64,7 +64,7 @@ export default function Publications() {
                         </a>
                       </Header>
 
-                      <Paragraph className="text-text-primary/85 max-w-reading">{pub.description}</Paragraph>
+                      <Paragraph className="text-text-primary/85">{pub.description}</Paragraph>
 
                       <Paragraph variant="p3" className="text-text-secondary">
                         Published {pubDate} ·{' '}
