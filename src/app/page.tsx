@@ -129,7 +129,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* Section 2: Who I Work With */}
+      {/* Section: Who I Work With */}
       <Section background="surfaceRaised" padding="lg">
         <Container maxWidth="wide">
           <div className="space-y-10">
@@ -176,7 +176,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* Section 3: What Makes Elana Olson Different */}
+      {/* Section: What Makes Elana Olson Different */}
       <Section background="surface" padding="lg">
         <Container maxWidth="wide">
           <Grid variant="asymmetric" className="items-stretch">
@@ -240,150 +240,153 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* Section 4: My Services (primary conversion + SEO anchor) */}
+      {/* Section: My Services (primary conversion + SEO anchor) */}
       <Section background="transparent" padding="lg" className="relative overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/backgrounds/moon.jpg')" }}
+          className="relative h-[100vh] md:h-[100vh] overflow-hidden flex items-center"
           aria-hidden="true"
-        />
-        <div
-          className="absolute inset-0 bg-gradient-to-b from-text-primary/70 via-text-primary/55 to-text-primary/65"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute inset-0 bg-[radial-gradient(900px_circle_at_60%_30%,rgba(194,162,58,0.18),transparent_55%)]"
-          aria-hidden="true"
-        />
+        >
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat max-md:bg-scroll"
+            style={{ backgroundImage: "url('/backgrounds/moon.jpg')" }}
+          />
+          <div
+            className="absolute inset-0 bg-gradient-to-b from-text-primary/70 via-text-primary/55 to-text-primary/65"
+            aria-hidden="true"
+          />
+          <div
+            className="absolute inset-0 bg-[radial-gradient(900px_circle_at_60%_30%,rgba(194,162,58,0.18),transparent_55%)]"
+            aria-hidden="true"
+          />
 
-        <Container maxWidth="wide" className="relative">
-          <div className="min-h-[70vh] flex items-center justify-center">
-            <div className="w-full max-w-reading">
-              <div className="rounded-[2rem] border border-accent/45 bg-white/10 p-1 shadow-2xl backdrop-blur-sm">
-                <div className="rounded-[1.75rem] border border-border-onDark bg-surface-raised text-text-primary">
-                  <div className="px-6 py-8 sm:px-8 sm:py-10">
-                    <div className="space-y-3">
-                      <Header level={2}>My services</Header>
+          <Container maxWidth="full" className="relative">
+            <div className="min-h-[70vh] flex items-center justify-center">
+              <div className="w-full" style={{ maxWidth: '72rem' }}>
+                <div className="rounded-[2rem] border border-accent/45 bg-white/10 p-1 shadow-2xl backdrop-blur-sm">
+                  <div className="rounded-[1.75rem] border border-border-onDark bg-surface-raised text-text-primary">
+                    <div className="px-6 py-8 sm:px-8 sm:py-10">
+                      <div className="space-y-3">
+                        <Header level={2}>My services</Header>
+                      </div>
+                      <ul
+                        className="mt-8 divide-y divide-border-subtle"
+                        aria-label="Services overview"
+                      >
+                        <li className="py-8">
+                          <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
+                            <div className="shrink-0 pt-1">
+                              <span className="inline-flex items-center gap-3 text-2xl sm:text-small tracking-[0.18em] uppercase text-text-secondary">
+                                <span
+                                  className="h-3 w-3 sm:h-2 sm:w-2 rounded-full bg-accent/80"
+                                  aria-hidden="true"
+                                />
+                                01
+                              </span>
+                            </div>
+                            <div className="space-y-3">
+                              <Header level={3}>
+                                Website Design &amp; Redesign (Small Businesses)
+                              </Header>
+
+                              <ul className="mt-2 space-y-2 list-disc list-inside text-text-secondary">
+                                <li>Brand new website creation</li>
+                                <li>Webpage redesign</li>
+                                <li>SEO optimization</li>
+                              </ul>
+
+                              <a
+                                href="/services"
+                                className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                              >
+                                Website Services{' '}
+                                <span
+                                  aria-hidden="true"
+                                  className="transition-transform duration-200 group-hover:translate-x-1"
+                                >
+                                  →
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li className="py-8">
+                          <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
+                            <div className="shrink-0 pt-1">
+                              <span className="inline-flex items-center gap-3 text-2xl sm:text-small tracking-[0.18em] uppercase text-text-secondary">
+                                <span
+                                  className="h-3 w-3 sm:h-2 sm:w-2 rounded-full bg-accent/80"
+                                  aria-hidden="true"
+                                />
+                                02
+                              </span>
+                            </div>
+                            <div className="space-y-3">
+                              <Header level={3}>Ongoing Website Care &amp; Retainers</Header>
+                              <ul className="mt-2 space-y-2 list-disc list-inside text-text-secondary">
+                                <li>On-demand bug fixes</li>
+                                <li>Monthly maintance</li>
+                              </ul>
+                              <a
+                                href="/services#ongoing-care"
+                                className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                              >
+                                Website Support{' '}
+                                <span
+                                  aria-hidden="true"
+                                  className="transition-transform duration-200 group-hover:translate-x-1"
+                                >
+                                  →
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li className="py-8">
+                          <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
+                            <div className="shrink-0 pt-1">
+                              <span className="inline-flex items-center gap-3 text-2xl sm:text-small tracking-[0.18em] uppercase text-text-secondary">
+                                <span
+                                  className="h-3 w-3 sm:h-2 sm:w-2 rounded-full bg-accent/80"
+                                  aria-hidden="true"
+                                />
+                                03
+                              </span>
+                            </div>
+                            <div className="space-y-3">
+                              <Header level={3}>Frontend Engineering (React / Angular)</Header>
+
+                              <ul className="mt-2 space-y-2 list-disc list-inside text-text-secondary">
+                                <li>Hourly or project-based contracts</li>
+                                <li>Reliable engineering</li>
+                              </ul>
+                              <a
+                                href="/contracting"
+                                className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
+                              >
+                                Contract Engineering{' '}
+                                <span
+                                  aria-hidden="true"
+                                  className="transition-transform duration-200 group-hover:translate-x-1"
+                                >
+                                  →
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-
-                    <ul
-                      className="mt-8 divide-y divide-border-subtle"
-                      aria-label="Services overview"
-                    >
-                      <li className="py-8">
-                        <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
-                          <div className="shrink-0 pt-1">
-                            <span className="inline-flex items-center gap-3 text-2xl sm:text-small tracking-[0.18em] uppercase text-text-secondary">
-                              <span
-                                className="h-3 w-3 sm:h-2 sm:w-2 rounded-full bg-accent/80"
-                                aria-hidden="true"
-                              />
-                              01
-                            </span>
-                          </div>
-                          <div className="space-y-3">
-                            <Header level={3}>
-                              Website Design &amp; Redesign (Small Businesses)
-                            </Header>
-
-                            <ul className="mt-2 space-y-2 list-disc list-inside text-text-secondary">
-                              <li>Brand new website creation</li>
-                              <li>Webpage redesign</li>
-                              <li>SEO optimization</li>
-                            </ul>
-
-                            <a
-                              href="/services"
-                              className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
-                            >
-                              Website Services{' '}
-                              <span
-                                aria-hidden="true"
-                                className="transition-transform duration-200 group-hover:translate-x-1"
-                              >
-                                →
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li className="py-8">
-                        <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
-                          <div className="shrink-0 pt-1">
-                            <span className="inline-flex items-center gap-3 text-2xl sm:text-small tracking-[0.18em] uppercase text-text-secondary">
-                              <span
-                                className="h-3 w-3 sm:h-2 sm:w-2 rounded-full bg-accent/80"
-                                aria-hidden="true"
-                              />
-                              02
-                            </span>
-                          </div>
-                          <div className="space-y-3">
-                            <Header level={3}>Ongoing Website Care &amp; Retainers</Header>
-                            <ul className="mt-2 space-y-2 list-disc list-inside text-text-secondary">
-                              <li>On-demand bug fixes</li>
-                              <li>Monthly maintance</li>
-                            </ul>
-                            <a
-                              href="/services#ongoing-care"
-                              className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
-                            >
-                              Website Support{' '}
-                              <span
-                                aria-hidden="true"
-                                className="transition-transform duration-200 group-hover:translate-x-1"
-                              >
-                                →
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li className="py-8">
-                        <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
-                          <div className="shrink-0 pt-1">
-                            <span className="inline-flex items-center gap-3 text-2xl sm:text-small tracking-[0.18em] uppercase text-text-secondary">
-                              <span
-                                className="h-3 w-3 sm:h-2 sm:w-2 rounded-full bg-accent/80"
-                                aria-hidden="true"
-                              />
-                              03
-                            </span>
-                          </div>
-                          <div className="space-y-3">
-                            <Header level={3}>Frontend Engineering (React / Angular)</Header>
-
-                            <ul className="mt-2 space-y-2 list-disc list-inside text-text-secondary">
-                              <li>Hourly or project-based contracts</li>
-                              <li>Reliable engineering</li>
-                            </ul>
-                            <a
-                              href="/contracting"
-                              className="group inline-flex items-baseline gap-2 text-body font-medium text-brand-olive hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80"
-                            >
-                              Contract Engineering{' '}
-                              <span
-                                aria-hidden="true"
-                                className="transition-transform duration-200 group-hover:translate-x-1"
-                              >
-                                →
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </Container>
+          </Container>
+        </div>
       </Section>
 
-      {/* Section 5: How it works (step menu + CTA) */}
+      {/* Section: How it works (step menu + CTA) */}
       <Section background="surface" padding="md">
         <Container maxWidth="wide">
           <div className="max-w-wide space-y-8 mx-auto text-center">
