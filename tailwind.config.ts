@@ -58,7 +58,8 @@ const config: Config = {
           DEFAULT: '#E7E4DC', // Main light background surface
           muted: '#DDD8CF', // Slightly darker stone for section rhythm
           raised: '#F1EFE9', // Softened stone for subtle elevation (no stark white)
-          inverse: '#242D1A', // Dark surface (brand anchor)
+          inverse: '#242D1A', // Dark surface (brand anchor),
+          white: '#FFFFFF', // Pure white for high contrast needs (sparingly)
         },
         text: {
           primary: '#1B1C14', // Primary reading + headings on light surfaces
@@ -127,18 +128,18 @@ const config: Config = {
       },
       spacing: {
         // Generous spacing for calm, welcoming feel
-        'section': '6rem', // 96px - vertical spacing between major sections
+        section: '6rem', // 96px - vertical spacing between major sections
         'section-sm': '4rem', // 64px - for smaller sections
-        'content': '2rem', // 32px - spacing within content blocks
+        content: '2rem', // 32px - spacing within content blocks
         'content-sm': '1.5rem', // 24px - tighter content spacing
         // Page rhythm helpers
-        'gutter': '1.25rem', // Default horizontal padding (mobile)
+        gutter: '1.25rem', // Default horizontal padding (mobile)
         'gutter-lg': '2rem', // Default horizontal padding (desktop)
       },
       maxWidth: {
-        'reading': '65ch', // Optimal reading width for text blocks
-        'content': '80%', // Main layout width
-        'wide': '80%', // Hero/layout width
+        reading: '65ch', // Optimal reading width for text blocks
+        content: '80%', // Main layout width
+        wide: '80%', // Hero/layout width
       },
     },
   },

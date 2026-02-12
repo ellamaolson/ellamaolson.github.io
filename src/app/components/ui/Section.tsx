@@ -16,6 +16,7 @@ interface SectionProps {
     | 'surface'
     | 'surfaceMuted'
     | 'surfaceRaised'
+    | 'white'
     | 'brand'
     | 'transparent'
     | 'salt'
@@ -27,17 +28,18 @@ interface SectionProps {
   padding?: 'none' | 'sm' | 'md' | 'lg';
 }
 
-export function Section({ 
-  children, 
+export function Section({
+  children,
   className = '',
   background = 'transparent',
-  padding = 'lg'
+  padding = 'lg',
 }: SectionProps) {
   const backgroundClasses = {
     // Semantic
     surface: 'bg-surface',
     surfaceMuted: 'bg-surface-muted',
     surfaceRaised: 'bg-surface-raised',
+    white: 'bg-surface-white',
     brand: 'bg-brand',
     // Legacy
     salt: 'bg-salt',
@@ -61,6 +63,7 @@ export function Section({
     surface: 'text-text-primary',
     surfaceMuted: 'text-text-primary',
     surfaceRaised: 'text-text-primary',
+    white: 'text-text-primary',
     brand: 'text-text-onDark',
     transparent: 'text-text-primary',
     // Legacy mapping (for now)
@@ -73,7 +76,7 @@ export function Section({
   };
 
   return (
-    <section 
+    <section
       className={`section-transition ${backgroundClasses[background]} ${textColorClasses[background]} ${paddingClasses[padding]} ${className}`}
     >
       {children}

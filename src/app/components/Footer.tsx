@@ -51,9 +51,9 @@ export function Footer() {
                 <li>
                   <Link
                     className="text-small text-text-onDark hover:text-text-onDark"
-                    href="/about"
+                    href="/portfolio"
                   >
-                    About
+                    Portfolio
                   </Link>
                 </li>
               </ul>
@@ -69,6 +69,7 @@ export function Footer() {
                     Work
                   </Link>
                 </li>
+
                 <li>
                   <Link
                     className="text-small text-text-onDark hover:text-text-onDark"

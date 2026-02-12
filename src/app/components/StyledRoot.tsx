@@ -9,7 +9,7 @@ export function StyledRoot({
 }>) {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-brand text-text-onDark border-b border-border-onDark">
+      <header className="bg-brand text-text-onDark">
         <Container maxWidth="wide" className="py-4">
           <NavigationBar />
         </Container>

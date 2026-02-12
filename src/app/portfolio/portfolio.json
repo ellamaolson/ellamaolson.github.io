@@ -1,0 +1,9 @@
+{
+  "title": "Hayoga Yoga Studio",
+  "heroImage": "/portfolio/hayoga-desktop.png",
+  "desktopPreviewImage": "/portfolio/hayoga-desktop.png",
+  "mobilePreviewImage": "/portfolio/hayoga-mobile.png",
+  "colorPaletteImage": "/portfolio/hayoga-color-palette.png",
+  "stitchedDesktopImages": ["/portfolio/hayoga-desktop.png"],
+  "stitchedMobileImages": ["/portfolio/hayoga-mobile.png"]
+}
