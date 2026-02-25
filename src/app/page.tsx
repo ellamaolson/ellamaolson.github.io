@@ -8,7 +8,9 @@ import { Button } from './components/ui/Button';
 import { Grid } from './components/ui/Grid';
 import { LoadableImage } from './components/LoadableImage';
 
-import elanaHeadshotImage from '../../public/about/elana-headshot.png';
+import elanaProfileImage from '../../public/about/elana-profile.jpeg';
+import elanaBridgeImage from '../../public/about/elana-bridge.jpeg';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -64,27 +66,27 @@ export default function Home() {
       {/* Section: About Teaser */}
       <Section background="surfaceMuted" padding="lg" className="relative overflow-hidden">
         <div
-          className="absolute inset-0 bg-[radial-gradient(900px_circle_at_30%_50%,rgba(194,162,58,0.12),transparent_60%)]"
+          className="absolute inset-0 bg-[radial-gradient(900px_circle_at_30%_50%,rgba(185,110,105,0.12),transparent_60%)]"
           aria-hidden="true"
         />
         <Container maxWidth="wide" className="relative">
           <div className="flex flex-col md:flex-row items-center gap-16 sm:gap-12 md:gap-24 lg:gap-32">
             {/* Photo with warm decorative elements */}
-            <div className="relative shrink-0">
+            <div className="relative shrink-0 w-fit">
               {/* Halo glow */}
               <div
-                className="pointer-events-none absolute -inset-10 rounded-full blur-2xl opacity-80 bg-[radial-gradient(circle,rgba(194,162,58,0.35)_0%,rgba(194,162,58,0.15)_40%,transparent_70%)]"
+                className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] aspect-square rounded-full blur-2xl opacity-80 bg-[radial-gradient(circle,rgba(185,120,110,0.35)_0%,rgba(170,110,105,0.18)_45%,transparent_70%)]"
                 aria-hidden="true"
               />
               {/* Decorative ring */}
               <div
-                className="pointer-events-none absolute -inset-4 rounded-full border border-accent/30"
+                className="pointer-events-none absolute -inset-4 rounded-full border border-[rgba(185,110,105,0.40)]"
                 aria-hidden="true"
               />
-              <div className="relative w-72 sm:w-72 md:w-80 lg:w-96 aspect-square overflow-hidden rounded-full border-2 border-accent/30 shadow-xl shadow-accent/10">
+              <div className="relative w-72 sm:w-72 md:w-80 lg:w-96 aspect-square overflow-hidden rounded-full border-2 border-[rgba(185,110,105,0.35)]">
                 <LoadableImage
                   alt="Elana Olson"
-                  src={elanaHeadshotImage}
+                  src={elanaProfileImage}
                   className="w-full h-full rounded-full"
                   priority={true}
                 />
@@ -188,6 +190,17 @@ export default function Home() {
                 </Paragraph>
               </div>
 
+              {/* Mobile-only image: between header and list */}
+              <div className="md:hidden w-[90%] mx-auto">
+                <div className="relative h-[11rem] sm:h-[14rem] w-full overflow-hidden rounded-2xl border border-border-subtle bg-surface-muted">
+                  <LoadableImage
+                    alt="Elana on a bridge"
+                    src={elanaBridgeImage}
+                    className="w-full h-full [&_img]:scale-[1.15]"
+                  />
+                </div>
+              </div>
+
               <dl className="space-y-8 max-w-reading">
                 <div className="border-l border-border-strong pl-6">
                   <dt className="font-heading text-h3 text-text-primary">
@@ -230,9 +243,9 @@ export default function Home() {
             <div className="hidden md:block h-full">
               <div className="relative h-full w-full overflow-hidden rounded-2xl border border-border-subtle bg-surface-muted">
                 <LoadableImage
-                  alt="Autumn oak photograph"
-                  src="/autumn%20oak.jpg"
-                  className="w-full h-full"
+                  alt="Elana on a bridge"
+                  src={elanaBridgeImage}
+                  className="w-full h-full [&_img]:scale-[1.15]"
                 />
               </div>
             </div>

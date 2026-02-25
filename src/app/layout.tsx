@@ -82,12 +82,7 @@ export default function RootLayout({
         <link rel="preload" as="image" href="/oak.jpg" fetchPriority="high" />
         {/* Preload other critical hero images */}
         <link rel="preload" as="image" href="/backgrounds/sunset-forest.jpg" fetchPriority="high" />
-        <link
-          rel="preload"
-          as="image"
-          href="/backgrounds/green-moutnain.jpg"
-          fetchPriority="high"
-        />
+        <link rel="preload" as="image" href="/backgrounds/mountain.jpg" fetchPriority="high" />
         <link rel="preload" as="image" href="/backgrounds/la-jolla.jpg" fetchPriority="high" />
         <link
           rel="preload"
@@ -95,6 +90,9 @@ export default function RootLayout({
           href="/backgrounds/flowers-growing.jpg"
           fetchPriority="high"
         />
+        <link rel="preload" as="image" href="/about/elana-profile.jpeg" fetchPriority="high" />
+        <link rel="preload" as="image" href="/about/elana-bridge.jpeg" fetchPriority="high" />
+        <link rel="preload" as="image" href="/backgrounds/moon.jpg" fetchPriority="high" />
       </head>
       <body className="font-body">
         <noscript>

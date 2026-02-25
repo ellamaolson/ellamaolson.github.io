@@ -27,7 +27,7 @@ export const LoadableImage = ({
         alt={alt}
         src={src}
         fill
-        sizes="(max-width: 768px) 213px, 33vw"
+        sizes="(max-width: 768px) 100vw, 50vw"
         priority={priority}
         className={`rounded-lg object-cover transition-opacity duration-300 ${
           isLoading ? 'opacity-0' : 'opacity-100'
