@@ -265,14 +265,14 @@ export default function Home() {
             </blockquote>
             <div className="mt-6 flex flex-col items-center gap-3">
               <div>
-                <p className="text-body font-medium text-text-primary">Hayoga Yoga School</p>
+                <p className="text-body font-medium text-text-primary">Hayoga Yoga Studio</p>
                 <p className="text-small text-text-primary/70">Client</p>
               </div>
               <Link
                 href="/portfolio"
                 className="mt-2 text-body text-accent hover:text-accent/80 transition-colors duration-200 underline underline-offset-4"
               >
-                View project →
+                View portfolio →
               </Link>
             </div>
           </div>
