@@ -269,16 +269,17 @@ export default function Home() {
               <div className="w-full min-w-[40vw]" style={{ maxWidth: '72rem' }}>
                 <div className="rounded-[2rem] border border-accent/45 bg-white/10 p-1 shadow-2xl backdrop-blur-sm">
                   <div className="rounded-[1.75rem] border border-border-onDark bg-surface-raised text-text-primary">
-                    <div className="px-6 py-8 sm:px-8 sm:py-10">
-                      <div className="space-y-3">
-                        <Header level={2}>My services</Header>
+                    <div className="px-10 py-8 sm:px-16 md:px-20 sm:py-10 flex flex-col items-center">
+                      <div className="space-y-3 text-center">
+                        <Header level={2}>Services</Header>
                       </div>
+
                       <ul
-                        className="mt-8 divide-y divide-border-subtle"
+                        className="mt-8 divide-y divide-border-subtle w-full max-w-2xl"
                         aria-label="Services overview"
                       >
                         <li className="py-8">
-                          <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
+                          <div className="flex flex-col items-center sm:items-start gap-4 sm:flex-row sm:gap-8">
                             <div className="shrink-0 pt-1">
                               <span className="inline-flex items-center gap-3 text-2xl sm:text-small tracking-[0.18em] uppercase text-text-secondary">
                                 <span
@@ -316,7 +317,7 @@ export default function Home() {
                         </li>
 
                         <li className="py-8">
-                          <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
+                          <div className="flex flex-col items-center sm:items-start gap-4 sm:flex-row sm:gap-8">
                             <div className="shrink-0 pt-1">
                               <span className="inline-flex items-center gap-3 text-2xl sm:text-small tracking-[0.18em] uppercase text-text-secondary">
                                 <span
@@ -349,7 +350,7 @@ export default function Home() {
                         </li>
 
                         <li className="py-8">
-                          <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
+                          <div className="flex flex-col items-center sm:items-start gap-4 sm:flex-row sm:gap-8">
                             <div className="shrink-0 pt-1">
                               <span className="inline-flex items-center gap-3 text-2xl sm:text-small tracking-[0.18em] uppercase text-text-secondary">
                                 <span
@@ -405,14 +406,14 @@ export default function Home() {
             </div>
 
             <nav aria-label="How we work" className="py-4 sm:py-6">
-              <ol className="flex flex-col gap-8 sm:flex-row sm:flex-nowrap sm:items-stretch sm:justify-center sm:gap-4 mx-auto">
-                <li className="sm:flex-1 sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
-                  <div className="relative h-full min-h-[14.5rem] sm:min-h-[18rem] rounded-[1.85rem] border-2 border-border-strong/25 bg-[rgb(161_90_43/0.30)] p-6 sm:p-6 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
-                    <div className="relative z-10 space-y-3 text-left">
-                      <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
+              <ol className="flex flex-col gap-3 sm:flex-row sm:flex-nowrap sm:items-stretch sm:justify-center sm:gap-4 mx-auto">
+                <li className="sm:flex-1 sm:min-w-[10rem] sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
+                  <div className="relative h-full sm:min-h-[18rem] rounded-[1.85rem] border-2 border-border-strong/25 bg-[rgb(161_90_43/0.30)] p-4 sm:p-6 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
+                    <div className="relative z-10 space-y-3 text-center sm:text-left flex flex-col items-center sm:items-start">
+                      <div className="inline-flex h-10 w-10 sm:h-14 sm:w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
                         <svg
                           viewBox="0 0 24 24"
-                          className="h-7 w-7"
+                          className="h-5 w-5 sm:h-7 sm:w-7"
                           fill="none"
                           stroke="currentColor"
                           strokeWidth="2"
@@ -432,19 +433,20 @@ export default function Home() {
                 </li>
 
                 <li
-                  className="hidden sm:flex items-center justify-center text-4xl md:text-5xl leading-none text-text-secondary/35"
+                  className="flex items-center justify-center text-4xl md:text-5xl leading-none text-text-secondary/35"
                   aria-hidden="true"
                 >
-                  →
+                  <span className="sm:hidden">↓</span>
+                  <span className="hidden sm:inline">→</span>
                 </li>
 
-                <li className="sm:flex-1 sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
-                  <div className="relative h-full min-h-[14.5rem] sm:min-h-[18rem] rounded-[1.75rem] border-2 border-border-strong/25 bg-[rgb(213_125_71/0.32)] p-6 sm:p-6 sm:-translate-y-1 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
-                    <div className="relative z-10 space-y-3 text-left">
-                      <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
+                <li className="sm:flex-1 sm:min-w-[10rem] sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
+                  <div className="relative h-full sm:min-h-[18rem] rounded-[1.75rem] border-2 border-border-strong/25 bg-[rgb(213_125_71/0.32)] p-4 sm:p-6 sm:-translate-y-1 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
+                    <div className="relative z-10 space-y-3 text-center sm:text-left flex flex-col items-center sm:items-start">
+                      <div className="inline-flex h-10 w-10 sm:h-14 sm:w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
                         <svg
                           viewBox="0 0 24 24"
-                          className="h-7 w-7"
+                          className="h-5 w-5 sm:h-7 sm:w-7"
                           fill="none"
                           stroke="currentColor"
                           strokeWidth="2"
@@ -468,19 +470,20 @@ export default function Home() {
                 </li>
 
                 <li
-                  className="hidden sm:flex items-center justify-center text-4xl md:text-5xl leading-none text-text-secondary/35"
+                  className="flex items-center justify-center text-4xl md:text-5xl leading-none text-text-secondary/35"
                   aria-hidden="true"
                 >
-                  →
+                  <span className="sm:hidden">↓</span>
+                  <span className="hidden sm:inline">→</span>
                 </li>
 
-                <li className="sm:flex-1 sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
-                  <div className="relative h-full min-h-[14.5rem] sm:min-h-[18rem] rounded-[1.9rem] border-2 border-border-strong/25 bg-[rgb(194_162_58/0.38)] p-6 sm:p-6 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
-                    <div className="relative z-10 space-y-3 text-left">
-                      <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
+                <li className="sm:flex-1 sm:min-w-[10rem] sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
+                  <div className="relative h-full sm:min-h-[18rem] rounded-[1.9rem] border-2 border-border-strong/25 bg-[rgb(194_162_58/0.38)] p-4 sm:p-6 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
+                    <div className="relative z-10 space-y-3 text-center sm:text-left flex flex-col items-center sm:items-start">
+                      <div className="inline-flex h-10 w-10 sm:h-14 sm:w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
                         <svg
                           viewBox="0 0 24 24"
-                          className="h-7 w-7"
+                          className="h-5 w-5 sm:h-7 sm:w-7"
                           fill="none"
                           stroke="currentColor"
                           strokeWidth="2"
@@ -501,19 +504,20 @@ export default function Home() {
                 </li>
 
                 <li
-                  className="hidden sm:flex items-center justify-center text-4xl md:text-5xl leading-none text-text-secondary/35"
+                  className="flex items-center justify-center text-4xl md:text-5xl leading-none text-text-secondary/35"
                   aria-hidden="true"
                 >
-                  →
+                  <span className="sm:hidden">↓</span>
+                  <span className="hidden sm:inline">→</span>
                 </li>
 
-                <li className="sm:flex-1 sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
-                  <div className="relative h-full min-h-[14.5rem] sm:min-h-[18rem] rounded-[1.8rem] border-2 border-border-strong/25 bg-[rgb(46_74_13/0.28)] p-6 sm:p-6 sm:translate-y-1 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
-                    <div className="relative z-10 space-y-3 text-left">
-                      <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
+                <li className="sm:flex-1 sm:min-w-[10rem] sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
+                  <div className="relative h-full sm:min-h-[18rem] rounded-[1.8rem] border-2 border-border-strong/25 bg-[rgb(46_74_13/0.28)] p-4 sm:p-6 sm:translate-y-1 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
+                    <div className="relative z-10 space-y-3 text-center sm:text-left flex flex-col items-center sm:items-start">
+                      <div className="inline-flex h-10 w-10 sm:h-14 sm:w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
                         <svg
                           viewBox="0 0 24 24"
-                          className="h-7 w-7"
+                          className="h-5 w-5 sm:h-7 sm:w-7"
                           fill="none"
                           stroke="currentColor"
                           strokeWidth="2"
