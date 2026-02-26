@@ -53,11 +53,17 @@
    * These are for specific use cases, not general typography.
    * Typography styling belongs in Header and Paragraph components.
    */
-  
+
   /* Editorial font utility for non-heading elements that need heading font */
   .font-editorial {
     @apply font-heading;
     letter-spacing: 0.02em;
+  }
+
+  /* Warm pink glow for photo borders */
+  .pink-glow {
+    border: 2px solid rgba(185, 110, 105, 0.35);
+    box-shadow: 0 0 24px 8px rgba(185, 120, 110, 0.25);
   }
 }
 

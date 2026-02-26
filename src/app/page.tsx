@@ -72,18 +72,13 @@ export default function Home() {
         <Container maxWidth="wide" className="relative">
           <div className="flex flex-col md:flex-row items-center gap-16 sm:gap-12 md:gap-24 lg:gap-32">
             {/* Photo with warm decorative elements */}
-            <div className="relative shrink-0 w-fit">
-              {/* Halo glow */}
-              <div
-                className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] aspect-square rounded-full blur-2xl opacity-80 bg-[radial-gradient(circle,rgba(185,120,110,0.35)_0%,rgba(170,110,105,0.18)_45%,transparent_70%)]"
-                aria-hidden="true"
-              />
+            <div className="relative shrink-0">
               {/* Decorative ring */}
               <div
                 className="pointer-events-none absolute -inset-4 rounded-full border border-[rgba(185,110,105,0.40)]"
                 aria-hidden="true"
               />
-              <div className="relative w-72 sm:w-72 md:w-80 lg:w-96 aspect-square overflow-hidden rounded-full border-2 border-[rgba(185,110,105,0.35)]">
+              <div className="relative w-72 sm:w-72 md:w-80 lg:w-96 aspect-square overflow-hidden rounded-full pink-glow">
                 <LoadableImage
                   alt="Elana Olson"
                   src={elanaProfileImage}
@@ -179,7 +174,7 @@ export default function Home() {
       </Section>
 
       {/* Section: What Makes Elana Olson Different */}
-      <Section background="surface" padding="lg">
+      <Section background="surfaceMuted" padding="lg">
         <Container maxWidth="wide">
           <Grid variant="asymmetric" className="items-stretch">
             <div className="space-y-10">
@@ -192,7 +187,7 @@ export default function Home() {
 
               {/* Mobile-only image: between header and list */}
               <div className="md:hidden w-[90%] mx-auto">
-                <div className="relative h-[11rem] sm:h-[14rem] w-full overflow-hidden rounded-2xl border border-border-subtle bg-surface-muted">
+                <div className="relative h-[11rem] sm:h-[14rem] w-full overflow-hidden rounded-2xl border-2 border-[rgba(185,110,105,0.35)] shadow-[0_0_24px_8px_rgba(185,120,110,0.25)]">
                   <LoadableImage
                     alt="Elana on a bridge"
                     src={elanaBridgeImage}
@@ -241,7 +236,7 @@ export default function Home() {
             </div>
 
             <div className="hidden md:block h-full">
-              <div className="relative h-full w-full overflow-hidden rounded-2xl border border-border-subtle bg-surface-muted">
+              <div className="relative h-full w-full overflow-hidden rounded-2xl border-2 border-[rgba(185,110,105,0.35)] shadow-[0_0_24px_8px_rgba(185,120,110,0.25)]">
                 <LoadableImage
                   alt="Elana on a bridge"
                   src={elanaBridgeImage}
@@ -258,12 +253,12 @@ export default function Home() {
         <div className="relative min-h-[100vh] flex items-center">
           <div
             className="absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat max-md:bg-scroll"
-            style={{ backgroundImage: "url('/backgrounds/moon.jpg')" }}
+            style={{ backgroundImage: "url('/backgrounds/purple.jpeg')" }}
           />
-          <div
+          {/* <div
             className="absolute inset-0 bg-gradient-to-b from-text-primary/70 via-text-primary/55 to-text-primary/65"
             aria-hidden="true"
-          />
+          /> */}
           <div
             className="absolute inset-0 bg-[radial-gradient(900px_circle_at_60%_30%,rgba(194,162,58,0.18),transparent_55%)]"
             aria-hidden="true"
@@ -397,7 +392,7 @@ export default function Home() {
       </Section>
 
       {/* Section: How it works (step menu + CTA) */}
-      <Section background="surface" padding="md">
+      <Section background="surfaceRaised" padding="md">
         <Container maxWidth="wide">
           <div className="max-w-wide space-y-8 mx-auto text-center">
             <div className="space-y-2">
