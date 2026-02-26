@@ -8,8 +8,8 @@ import { Button } from './components/ui/Button';
 import { Grid } from './components/ui/Grid';
 import { LoadableImage } from './components/LoadableImage';
 
-import elanaProfileImage from '../../public/about/elana-profile.jpeg';
-import elanaBridgeImage from '../../public/about/elana-bridge.jpeg';
+import elanaProfileImage from '../../public/about/elana-profile.jpg';
+import elanaBridgeImage from '../../public/about/elana-bridge.jpg';
 import Link from 'next/link';
 
 export default function Home() {
@@ -284,7 +284,7 @@ export default function Home() {
         <div className="relative min-h-[100vh] flex items-center">
           <div
             className="absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat max-md:bg-scroll"
-            style={{ backgroundImage: "url('/backgrounds/purple.jpeg')" }}
+            style={{ backgroundImage: "url('/backgrounds/purple.jpg')" }}
           />
 
           <div

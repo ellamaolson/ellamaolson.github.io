@@ -26,7 +26,7 @@
         "Eating fresh raclette cheese with pickles and bread at a local cheese shop",
         "Biking around the lake and taking in the beautiful scenery"
       ],
-      "image": "/travel/annecy.jpeg",
+      "image": "/travel/annecy.jpg",
       "altText": "Old medieval town of Annecy, France"
     },
     {
@@ -40,7 +40,7 @@
         "Hiking the very steep but incredibly beautiful Upper Yosemite Falls Trail",
         "Eating s'mores by the fire at the campgrounds after a long day of activities"
       ],
-      "image": "/travel/yosemite.jpeg",
+      "image": "/travel/yosemite.jpg",
       "altText": "Yosemite National Park in California, USA"
     },
     {
@@ -54,7 +54,7 @@
         "Eating coconut-fried fresh fish tacos every day",
         "Sun bathing the numerous gorgeous beaches and coves"
       ],
-      "image": "/travel/coco-taco.jpeg",
+      "image": "/travel/coco-taco.jpg",
       "altText": "Fried fish tacos in Mexico"
     },
     {
@@ -68,7 +68,7 @@
         "Playing volleyball with the teenagers and little kids of this community",
         "Hiking up to the top of the hill in Puno, the city on the shores of the lake, at 13,000ft "
       ],
-      "image": "/travel/peru-lake.jpeg",
+      "image": "/travel/peru-lake.jpg",
       "altText": "Floating houses on Lake Titicaca in Peru"
     },
     {
@@ -82,7 +82,7 @@
         "Riding the mountain coaster and jumping amongst the treetops in the nearby Datanla Waterfall",
         "Getting lost in the central shopping market with the locals"
       ],
-      "image": "/travel/da-lat.jpeg",
+      "image": "/travel/da-lat.jpg",
       "altText": "A giant pot of meatballs in Da Lat, Vietnam"
     }
   ]

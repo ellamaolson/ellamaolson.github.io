@@ -90,8 +90,8 @@ export default function RootLayout({
           href="/backgrounds/flowers-growing.jpg"
           fetchPriority="high"
         />
-        <link rel="preload" as="image" href="/about/elana-profile.jpeg" fetchPriority="high" />
-        <link rel="preload" as="image" href="/about/elana-bridge.jpeg" fetchPriority="high" />
+        <link rel="preload" as="image" href="/about/elana-profile.jpg" fetchPriority="high" />
+        <link rel="preload" as="image" href="/about/elana-bridge.jpg" fetchPriority="high" />
         <link rel="preload" as="image" href="/backgrounds/moon.jpg" fetchPriority="high" />
       </head>
       <body className="font-body">

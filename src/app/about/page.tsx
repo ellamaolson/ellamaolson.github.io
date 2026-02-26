@@ -6,12 +6,12 @@ import { Header } from '../components/ui/Header';
 import { Paragraph } from '../components/ui/Paragraph';
 import { Button } from '../components/ui/Button';
 import { LoadableImage } from '../components/LoadableImage';
-import babyAlpacaImage from '../../../public/about/holding-baby-alpaca.jpeg';
-import lisbonImage from '../../../public/about/lisbon.jpeg';
-import elanaEliImage from '../../../public/about/elana-eli.jpeg';
-import elanaSpainImage from '../../../public/about/elana-spain.jpeg';
+import babyAlpacaImage from '../../../public/about/holding-baby-alpaca.jpg';
+import lisbonImage from '../../../public/about/lisbon.jpg';
+import elanaEliImage from '../../../public/about/elana-eli.jpg';
+import elanaSpainImage from '../../../public/about/elana-spain.jpg';
 import elanaTreesImage from '../../../public/about/elana-trees-sm.jpg';
-import elanaNetherlandsImage from '../../../public/about/elana-netherlands.jpeg';
+import elanaNetherlandsImage from '../../../public/about/elana-netherlands.jpg';
 
 export default function AboutPage() {
   return (
