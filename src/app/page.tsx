@@ -82,7 +82,7 @@ export default function Home() {
                 <LoadableImage
                   alt="Elana Olson"
                   src={elanaProfileImage}
-                  className="w-full h-full rounded-full"
+                  className="w-full h-full rounded-full saturate-[1.25]"
                   priority={true}
                 />
               </div>
@@ -191,7 +191,7 @@ export default function Home() {
                   <LoadableImage
                     alt="Elana on a bridge"
                     src={elanaBridgeImage}
-                    className="w-full h-full [&_img]:scale-[1.15]"
+                    className="w-full h-full [&_img]:scale-[1.15] saturate-[1.25]"
                   />
                 </div>
               </div>
@@ -240,7 +240,7 @@ export default function Home() {
                 <LoadableImage
                   alt="Elana on a bridge"
                   src={elanaBridgeImage}
-                  className="w-full h-full [&_img]:scale-[1.15]"
+                  className="w-full h-full [&_img]:scale-[1.15] saturate-[1.25]"
                 />
               </div>
             </div>
