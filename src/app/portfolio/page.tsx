@@ -9,9 +9,8 @@ import { Paragraph } from '../components/ui/Paragraph';
 import portfolioData from './portfolio.json';
 import { Button } from '../components/ui/Button';
 
-const LIVE_SITE_URL = 'https://elanaolson.wixsite.com/hayoga/en?rc=test-site';
-const LIVE_SITE_URL_MOBILE =
-  'https://elanaolson.wixsite.com/hayoga/en?rc=test-site&showMobileView=true';
+const LIVE_SITE_URL = 'https://www.hayoga.nl/';
+const LIVE_SITE_URL_MOBILE = 'https://www.hayoga.nl/?showMobileView=true';
 
 export default function PortfolioPage() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -117,7 +116,7 @@ export default function PortfolioPage() {
       {/* Portfolio images — 1 wide on top, 2 side-by-side below */}
       <Section background="surface" padding="sm">
         <Container maxWidth="notebook">
-          <div className="space-y-10 md:space-y-14">
+          <div className="space-y-10 md:space-y-14 pb-12">
             {/* Wide image on top */}
             <div className="bg-surface-raised rounded-xl p-4 lg:p-8 shadow flex items-center justify-center">
               <Image
@@ -179,7 +178,7 @@ export default function PortfolioPage() {
       {/* Brand design — font, color palette, theme */}
       <Section background="surface" padding="sm">
         <Container maxWidth="notebook">
-          <div className="space-y-8 text-center">
+          <div className="space-y-8 text-center pb-12">
             <div>
               <Header level={2} className="text-accent">
                 BRAND DESIGN
@@ -188,7 +187,9 @@ export default function PortfolioPage() {
                 Warm / Feminine / Natural / Professional / Holistic
               </p>
             </div>
-            <div className="flex flex-wrap justify-center gap-1.5 lg:gap-8">
+
+            {/* Color palette */}
+            <div className="flex flex-wrap justify-center gap-1.5 lg:gap-8 relative z-10  pb-8">
               {[
                 { hex: 'FAF7F5' },
                 { hex: 'F3EDE7' },
@@ -206,27 +207,52 @@ export default function PortfolioPage() {
                 </div>
               ))}
             </div>
+
             <Paragraph className="text-text-primary/85 leading-relaxed mx-auto">
               Linotype Didot sets an elegant, expressive tone for headings, paired with Junge for
               warm, highly readable body text. Imagery inspired by flowing movement, meditation, and
               nature reflects the teacher&apos;s gentle mind body approach in her practice.
             </Paragraph>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-24 text-center md:text-left max-w-reading mx-auto">
-              <ul className="list-disc list-inside space-y-2 text-body text-text-secondary">
-                <li>Brand strategy &amp; positioning</li>
-                <li>Visual identity &amp; color palette</li>
-                <li>Custom Imagery</li>
-              </ul>
-              <ul className="list-disc list-inside space-y-2 text-body text-text-secondary">
-                <li>Responsive web design</li>
-                <li>Bilingual content (EN/NL)</li>
-                <li>SEO optimization</li>
-              </ul>
-            </div>
+            <p className="flex flex-wrap justify-center gap-x-2 gap-y-1 text-body text-text-secondary pb-8">
+              <span>Brand Strategy</span>
+              <span aria-hidden="true">·</span>
+              <span>Bilingual Content (EN/NL)</span>
+              <span aria-hidden="true">·</span>
+              <span>Custom Imagery</span>
+              <span aria-hidden="true">·</span>
+              <span>Responsive Design</span>
+              <span aria-hidden="true">·</span>
+              <span>SEO Optimization</span>
+            </p>
 
+            {/* Business cards */}
+            <div className="flex justify-center gap-4 lg:gap-8">
+              <Image
+                src="/portfolio/hayoga-card-front.png"
+                alt="Hayoga brand design business card front"
+                width={600}
+                height={400}
+                className="w-[50%] h-auto rounded-lg shadow-lg object-contain"
+              />
+              <Image
+                src="/portfolio/hayoga-card-back.png"
+                alt="Hayoga brand design business card back"
+                width={600}
+                height={400}
+                className="w-[50%] h-auto rounded-lg shadow-lg object-contain"
+              />
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Interactive Previews */}
+      <Section background="surfaceMuted" padding="sm">
+        <Container maxWidth="notebook">
+          <div className="space-y-8 text-center pb-12">
             {/* Interactive previews — click to open modal */}
-            <Header level={3} className="text-text-secondary pt-12">
+            <Header level={2} className="text-text-secondary pb-4">
               Click to Preview
             </Header>
             <div className="flex flex-col items-center gap-16 lg:flex-row lg:justify-center lg:items-center">
@@ -309,6 +335,12 @@ export default function PortfolioPage() {
                   Mobile
                 </span>
               </button>
+            </div>
+
+            <div className="pt-8 flex justify-center">
+              <Button as="link" href={LIVE_SITE_URL} variant="outline">
+                Visit Hayoga →
+              </Button>
             </div>
           </div>
         </Container>

@@ -248,6 +248,37 @@ export default function Home() {
         </Container>
       </Section>
 
+      {/* Section: Client Testimonial */}
+      <Section background="surfaceRaised" padding="lg" className="relative overflow-hidden">
+        {/* Decorative gold border */}
+        <div
+          className="pointer-events-none absolute inset-8 border border-accent/40 rounded-sm"
+          aria-hidden="true"
+        />
+        <Container maxWidth="wide" className="relative">
+          <div className="max-w-reading mx-auto text-center">
+            <span className="text-display text-accent/40 leading-none block">&ldquo;</span>
+            <blockquote className="text-h3 font-heading text-text-primary leading-relaxed -mt-6">
+              Elana was wonderful to work with. She took the time to understand my vision and
+              translated it into a beautiful, professional website that truly represents what my
+              yoga practice is about.
+            </blockquote>
+            <div className="mt-6 flex flex-col items-center gap-3">
+              <div>
+                <p className="text-body font-medium text-text-primary">Hayoga Yoga School</p>
+                <p className="text-small text-text-primary/70">Client</p>
+              </div>
+              <Link
+                href="/portfolio"
+                className="mt-2 text-body text-accent hover:text-accent/80 transition-colors duration-200 underline underline-offset-4"
+              >
+                View project →
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
       {/* Section: My Services (primary conversion + SEO anchor) */}
       <Section background="transparent" padding="none" className="relative overflow-hidden">
         <div className="relative min-h-[100vh] flex items-center">
@@ -255,10 +286,7 @@ export default function Home() {
             className="absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat max-md:bg-scroll"
             style={{ backgroundImage: "url('/backgrounds/purple.jpeg')" }}
           />
-          {/* <div
-            className="absolute inset-0 bg-gradient-to-b from-text-primary/70 via-text-primary/55 to-text-primary/65"
-            aria-hidden="true"
-          /> */}
+
           <div
             className="absolute inset-0 bg-[radial-gradient(900px_circle_at_60%_30%,rgba(194,162,58,0.18),transparent_55%)]"
             aria-hidden="true"
