@@ -21,7 +21,7 @@ export default function TermsPage() {
                 Terms &amp; Conditions
               </Header>
               <Paragraph variant="p2" className="text-text-secondary mt-2">
-                Last updated: February 2, 2026
+                Last updated: March 4, 2026
               </Paragraph>
             </div>
 
@@ -102,6 +102,11 @@ export default function TermsPage() {
                   related to the services, excluding taxes imposed on the Service Provider&apos;s
                   income
                 </li>
+                <li>
+                  Final deliverables, website transfers, and launches will only occur after all
+                  outstanding invoices have been paid in full — this applies to design projects,
+                  development projects, and website builds
+                </li>
               </ul>
             </div>
 
@@ -154,9 +159,16 @@ export default function TermsPage() {
                 6. Revisions and Changes
               </Header>
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
-                Reasonable revisions are included only if explicitly stated in the Agreement.
-                Requests that materially alter the scope, direction, or complexity of the work may
-                be treated as change requests and billed separately.
+                Each project includes a limited number of revision rounds as defined in the
+                applicable Agreement. Revisions are intended to refine work within the agreed scope
+                — they do not include new directions, added features, or material changes to the
+                project.
+              </Paragraph>
+              <Paragraph variant="p2" className="text-text-primary leading-relaxed">
+                Additional revisions beyond the included scope may be billed at my standard hourly
+                rate and may affect project timelines. Requests that significantly alter the scope,
+                direction, or complexity of the work will be treated as change requests and require
+                a separate agreement.
               </Paragraph>
             </div>
 
@@ -176,7 +188,51 @@ export default function TermsPage() {
 
             <div className="space-y-6">
               <Header level={2} className="text-text-primary">
-                8. Limitation of Liability
+                8. Website Availability &amp; Maintenance
+              </Header>
+              <Paragraph variant="p2" className="text-text-primary leading-relaxed">
+                Websites depend on third-party platforms, hosting providers, domain registrars, and
+                technical infrastructure outside my control. As a result, websites may experience
+                temporary downtime due to software updates, hosting outages, DNS propagation,
+                security patches, or scheduled maintenance. Uninterrupted uptime is not guaranteed.
+              </Paragraph>
+              <Paragraph variant="p2" className="text-text-primary leading-relaxed">
+                I will make reasonable professional efforts to investigate and resolve issues that
+                fall within the scope of agreed services. Maintenance requests submitted during
+                normal business hours will generally be addressed within 1–2 business days,
+                depending on complexity. This is a good-faith service expectation, not a guaranteed
+                service-level agreement.
+              </Paragraph>
+              <Paragraph variant="p2" className="text-text-primary leading-relaxed">
+                Maintenance retainers include routine updates, troubleshooting, and minor
+                adjustments within the allocated hours for the billing period. They do not include
+                major redesigns, large new features, or significant scope expansions. Unused
+                maintenance hours do not roll over to the following billing period unless otherwise
+                agreed in writing. Work that exceeds the included hours may be billed at my standard
+                hourly rate.
+              </Paragraph>
+            </div>
+
+            <div className="space-y-6">
+              <Header level={2} className="text-text-primary">
+                9. Project Delays
+              </Header>
+              <Paragraph variant="p2" className="text-text-primary leading-relaxed">
+                Project timelines depend on timely client communication and the delivery of required
+                materials. If a client does not provide content, approvals, credentials, or other
+                necessary inputs in a reasonable timeframe, the project timeline may be extended
+                accordingly.
+              </Paragraph>
+              <Paragraph variant="p2" className="text-text-primary leading-relaxed">
+                If a project becomes inactive for more than 30 days due to client non-response or
+                unpaid invoices, I reserve the right to reschedule the project based on current
+                availability or to invoice the remaining balance as outlined in the Agreement.
+              </Paragraph>
+            </div>
+
+            <div className="space-y-6">
+              <Header level={2} className="text-text-primary">
+                10. Limitation of Liability
               </Header>
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
                 To the maximum extent permitted by law:
@@ -203,7 +259,7 @@ export default function TermsPage() {
 
             <div className="space-y-6">
               <Header level={2} className="text-text-primary">
-                9. Termination
+                11. Termination
               </Header>
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
                 Either party may terminate services in accordance with the Agreement. We reserve the
@@ -215,7 +271,7 @@ export default function TermsPage() {
 
             <div className="space-y-6">
               <Header level={2} className="text-text-primary">
-                10. Confidentiality
+                12. Confidentiality
               </Header>
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
                 Both parties agree to keep confidential any non-public information received in
@@ -225,7 +281,7 @@ export default function TermsPage() {
 
             <div className="space-y-6">
               <Header level={2} className="text-text-primary">
-                11. Relationship of the Parties
+                13. Relationship of the Parties
               </Header>
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
                 The Service Provider is an independent contractor. Nothing in these Terms creates a
@@ -235,7 +291,7 @@ export default function TermsPage() {
 
             <div className="space-y-6">
               <Header level={2} className="text-text-primary">
-                12. Governing Law
+                14. Governing Law
               </Header>
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
                 These Terms are governed by the laws of the United States when the Service Provider
@@ -247,7 +303,7 @@ export default function TermsPage() {
 
             <div className="space-y-6">
               <Header level={2} className="text-text-primary">
-                13. Modifications
+                15. Modifications
               </Header>
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
                 We may update these Terms from time to time. The version in effect at the time
@@ -260,7 +316,7 @@ export default function TermsPage() {
 
             <div className="space-y-6">
               <Header level={2} className="text-text-primary">
-                14. Entire Agreement
+                16. Entire Agreement
               </Header>
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
                 These Terms, together with any applicable Agreement, constitute the entire agreement
@@ -270,7 +326,7 @@ export default function TermsPage() {
 
             <div className="space-y-6">
               <Header level={2} className="text-text-primary">
-                15. Contact
+                17. Contact
               </Header>
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
                 Questions regarding these Terms may be directed to:
