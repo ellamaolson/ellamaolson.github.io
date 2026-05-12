@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRef } from 'react';
 
 export function NavigationBar() {
@@ -26,9 +27,17 @@ export function NavigationBar() {
         <Link
           href="/"
           onClick={handleLinkClick}
-          className="text-[1.5rem] font-medium text-text-onDark hover:text-accent transition-colors duration-200 py-1 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80 font-heading"
+          className="group inline-flex items-center gap-0 text-[1.5rem] font-medium text-text-onDark hover:text-accent transition-colors duration-200 focus:outline-none focus-visible:underline focus-visible:underline-offset-8 focus-visible:decoration-accent/80 font-heading"
           aria-label="Elana Olson home"
         >
+          <Image
+            src="/elana_logo.png"
+            alt=""
+            width={24}
+            height={24}
+            className="h-[3.75rem] w-auto transition-[filter] duration-200 group-hover:[filter:brightness(0)_saturate(100%)_invert(67%)_sepia(48%)_saturate(500%)_hue-rotate(5deg)]"
+            aria-hidden="true"
+          />
           Elana Olson
         </Link>
 
