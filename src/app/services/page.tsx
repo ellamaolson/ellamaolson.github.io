@@ -91,11 +91,11 @@ export default function ServicesPage() {
                     <ul className="mt-2 space-y-2 list-disc list-inside">
                       <li>Creative brand alignment (colors, typography, tone)</li>
                       <li>Audience and positioning strategy for your ideal clients</li>
-                      <li>Custom 4-page Wix website</li>
+                      <li>Custom 5-page website</li>
                       <li>Domain configuration</li>
                       <li>Mobile-friendly design</li>
                       <li>Copywriting guidance</li>
-                      <li>Recorded walkthrough and handoff guidance</li>
+                      <li>Contact form setup</li>
                       <li>1 round of revisions</li>
                       <li>2 weeks of post-launch support</li>
                     </ul>
@@ -104,38 +104,19 @@ export default function ServicesPage() {
 
                 <footer className="mt-8 border-t border-border-subtle pt-6">
                   <div className="grid gap-4 sm:grid-cols-[1fr_auto] sm:items-end">
-                    <div className="grid gap-4 sm:grid-cols-2">
+                    <div className="grid gap-4">
                       <div className="space-y-1 text-small text-text-secondary">
                         <Header level={4} as="h4" className="mb-1">
-                          Essential
+                          Custom Website Build
                         </Header>
-                        <Paragraph variant="p3" className="font-medium text-text-primary/80 italic">
-                          Custom site, no SEO add-on
-                        </Paragraph>
-                        <Paragraph>
-                          <span className="font-medium text-text-primary/80">Investment:</span>{' '}
-                          $1,600 / €1,450
-                        </Paragraph>
-                        <Paragraph>
-                          <span className="font-medium text-text-primary/80">Timeline:</span> 3-4
-                          weeks
-                        </Paragraph>
-                      </div>
 
-                      <div className="space-y-1 text-small text-text-secondary">
-                        <Header level={4} as="h4" className="mb-1">
-                          Complete
-                        </Header>
-                        <Paragraph variant="p3" className="font-medium text-text-primary/80 italic">
-                          With SEO optimization &amp; custom imagery
-                        </Paragraph>
+                        <Paragraph>$2,500 / €2,200 excl. VAT</Paragraph>
                         <Paragraph>
-                          <span className="font-medium text-text-primary/80">Investment:</span>{' '}
-                          $1,950 / €1,800
-                        </Paragraph>
-                        <Paragraph>
-                          <span className="font-medium text-text-primary/80">Timeline:</span> 4-5
+                          <span className="font-medium text-text-primary/80">Timeline:</span> 4-6
                           weeks
+                        </Paragraph>
+                        <Paragraph variant="p3" className="font-medium text-text-primary/80 italic">
+                          Add-ons available, please enquire for more details
                         </Paragraph>
                       </div>
                     </div>
@@ -168,9 +149,9 @@ export default function ServicesPage() {
                   >
                     Realign
                   </Paragraph>
-                  <Header level={3}>Page Redesign</Header>
+                  <Header level={3}>Website Audit</Header>
                   <Paragraph className="mx-auto mt-2 max-w-[72ch] text-text-secondary">
-                    A deep dive into a single page redesign to modernize the feel of your site.
+                    An audit of your website to identify areas for improvement and modernization.
                   </Paragraph>
                 </header>
 
@@ -188,50 +169,39 @@ export default function ServicesPage() {
                       What&apos;s included
                     </Header>
                     <ul className="mt-2 space-y-2 list-disc list-inside">
-                      <li>Audit of current page structure, messaging, and user flow</li>
+                      <li>Full website review with UX guidance</li>
                       <li>Refreshed creative direction (palette, typography, tone)</li>
-                      <li>Redesigned page layout built for clarity and conversion</li>
+                      <li>Mobile responsiveness review</li>
+                      <li>Structure/navigation feedback</li>
                       <li>SEO-focused copy recommendations</li>
-                      <li>Recorded walkthrough</li>
-                      <li>1 round of revisions</li>
+                      <li>Prioritized action list</li>
                     </ul>
+                    <div className="mt-8 space-y-1">
+                      <Paragraph variant="p3" className="font-medium text-text-primary/80 italic">
+                        Need help putting these changes into action?
+                      </Paragraph>
+                      <Paragraph variant="p3" className="text-text-secondary italic">
+                        I offer flexible hourly support to help implement recommendations and
+                        continue refining your site over time.
+                      </Paragraph>
+                    </div>
                   </div>
                 </div>
 
                 <footer className="mt-8 border-t border-border-subtle pt-6">
                   <div className="grid gap-4 sm:grid-cols-[1fr_auto] sm:items-end">
-                    <div className="grid gap-4 sm:grid-cols-2">
+                    <div className="grid gap-4">
                       <div className="space-y-1 text-small text-text-secondary">
                         <Header level={4} as="h4" className="mb-1">
-                          Essential
+                          Full Website Audit
                         </Header>
-                        <Paragraph variant="p3" className="font-medium text-text-primary/80 italic">
-                          Redesign with structure and copy guidance
-                        </Paragraph>
-                        <Paragraph>
-                          <span className="font-medium text-text-primary/80">Investment:</span> $650
-                          / €600
-                        </Paragraph>
-                        <Paragraph>
-                          <span className="font-medium text-text-primary/80">Timeline:</span> 1-2
-                          weeks
-                        </Paragraph>
-                      </div>
 
-                      <div className="space-y-1 text-small text-text-secondary">
-                        <Header level={4} as="h4" className="mb-1">
-                          Complete
-                        </Header>
+                        <Paragraph>$400 / €350 excl. VAT</Paragraph>
+                        <Paragraph>
+                          <span className="font-medium text-text-primary/80">Timeline:</span> 1 week
+                        </Paragraph>
                         <Paragraph variant="p3" className="font-medium text-text-primary/80 italic">
-                          With SEO optimization &amp; custom imagery
-                        </Paragraph>
-                        <Paragraph>
-                          <span className="font-medium text-text-primary/80">Investment:</span> $850
-                          / €750
-                        </Paragraph>
-                        <Paragraph>
-                          <span className="font-medium text-text-primary/80">Timeline:</span> 2-3
-                          weeks
+                          Further support available, please enquire for more details
                         </Paragraph>
                       </div>
                     </div>
@@ -282,11 +252,12 @@ export default function ServicesPage() {
                       What&apos;s included
                     </Header>
                     <ul className="mt-2 space-y-2 list-disc list-inside">
-                      <li>Content updates (new offerings, hours, team bios)</li>
+                      <li>Website updates</li>
                       <li>Bug fixes and performance checks</li>
-                      <li>Design refinements as your business evolves</li>
+                      <li>Blog/content uploads</li>
+                      <li>Marketing support</li>
                       <li>Priority email support</li>
-                      <li>Dedicated monthly hours</li>
+                      <li>Dedicated monthly support, cancel anytime</li>
                     </ul>
                   </div>
                 </div>
@@ -296,35 +267,21 @@ export default function ServicesPage() {
                     <div className="grid gap-4 sm:grid-cols-2">
                       <div className="space-y-1 text-small text-text-secondary">
                         <Header level={4} as="h4" className="mb-1">
-                          Maintain
+                          Light Support
                         </Header>
+                        <Paragraph>$400 / €350 excl. VAT</Paragraph>
                         <Paragraph variant="p3" className="font-medium text-text-primary/80 italic">
-                          Up to 5 hours / month
-                        </Paragraph>
-                        <Paragraph>
-                          <span className="font-medium text-text-primary/80">Investment:</span> $350
-                          / €325
-                        </Paragraph>
-                        <Paragraph>
-                          <span className="font-medium text-text-primary/80">Commitment:</span>{' '}
-                          Monthly, cancel anytime
+                          5 hours / month
                         </Paragraph>
                       </div>
 
                       <div className="space-y-1 text-small text-text-secondary">
                         <Header level={4} as="h4" className="mb-1">
-                          Grow
+                          Growth Retainer
                         </Header>
+                        <Paragraph>$700 / €650 excl. VAT</Paragraph>
                         <Paragraph variant="p3" className="font-medium text-text-primary/80 italic">
-                          Up to 10 hours / month
-                        </Paragraph>
-                        <Paragraph>
-                          <span className="font-medium text-text-primary/80">Investment:</span> $650
-                          / €600
-                        </Paragraph>
-                        <Paragraph>
-                          <span className="font-medium text-text-primary/80">Commitment:</span>{' '}
-                          Monthly, cancel anytime
+                          10 hours / month
                         </Paragraph>
                       </div>
                     </div>
