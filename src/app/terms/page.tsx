@@ -21,7 +21,7 @@ export default function TermsPage() {
                 Terms &amp; Conditions
               </Header>
               <Paragraph variant="p2" className="text-text-secondary mt-2">
-                Last updated: March 4, 2026
+                Last updated: June 5, 2026
               </Paragraph>
             </div>
 
@@ -31,11 +31,10 @@ export default function TermsPage() {
                 &quot;website&quot;). These Terms &amp; Conditions (&quot;Terms&quot;) govern the
                 provision of services by Elana Olson (&quot;Service Provider,&quot; &quot;we,&quot;
                 &quot;us,&quot; or &quot;our&quot;) to any client (&quot;Client,&quot;
-                &quot;you,&quot; or &quot;your&quot;). By accessing or using this website, engaging
-                our services, signing a proposal or contract, or submitting payment, you agree to be
-                bound by these Terms. You agree to use this website only for lawful purposes and in
-                a manner that does not infringe the rights of others. If you do not agree with these
-                Terms, please do not use this website or engage our services.
+                &quot;you,&quot; or &quot;your&quot;). By engaging services, signing an agreement,
+                accepting a proposal, or submitting payment, the Client agrees to these Terms &
+                Conditions and any applicable project agreement. If there is a conflict between
+                these Terms and an Agreement, the Agreement will control for that project.
               </Paragraph>
             </div>
 
@@ -44,19 +43,22 @@ export default function TermsPage() {
                 1. Services
               </Header>
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
-                We provide professional services including, but not limited to:
+                Services may include:
               </Paragraph>
               <ul className="list-disc list-inside space-y-2 text-body text-text-primary leading-relaxed font-body">
-                <li>Website design and development</li>
-                <li>Website redesigns</li>
-                <li>Ongoing website maintenance and retainers</li>
+                <li>Website design, development, redesigns, and maintenance</li>
                 <li>Front-end and contract engineering services</li>
+                <li>Technical consulting and digital operations support</li>
+                <li>
+                  Staff onboarding, training, documentation, workflow design, and technology
+                  adoption support
+                </li>
+                <li>Digital systems audits, process improvement, and operational guidance</li>
               </ul>
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
-                The specific scope, deliverables, timelines, and pricing for services will be
-                defined in a written proposal, statement of work, or contract agreed upon by both
-                parties (&quot;Agreement&quot;). Any services not expressly included in the agreed
-                scope are outside the scope and may require a separate agreement or additional fees.
+                Specific deliverables, timelines, pricing, and scope will be defined in the
+                applicable Agreement. Any work not expressly included is outside scope and may
+                require additional fees.
               </Paragraph>
             </div>
 
@@ -65,49 +67,28 @@ export default function TermsPage() {
                 2. Client Responsibilities
               </Header>
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
-                The Client agrees to:
-              </Paragraph>
-              <ul className="list-disc list-inside space-y-2 text-body text-text-primary leading-relaxed font-body">
-                <li>
-                  Provide timely access to required information, content, assets, credentials, and
-                  approvals
-                </li>
-                <li>
-                  Ensure that all materials provided are accurate, lawful, and owned or properly
-                  licensed by the Client
-                </li>
-                <li>
-                  Respond to communications and feedback requests within a reasonable timeframe
-                </li>
-              </ul>
-              <Paragraph variant="p2" className="text-text-primary leading-relaxed">
-                Delays caused by the Client may result in adjusted timelines and may incur
-                additional fees.
+                Client agrees to provide required materials, access, approvals, and feedback in a
+                timely manner and to ensure all supplied content is accurate, lawful, and properly
+                licensed. Delays caused by the Client may result in adjusted timelines.
               </Paragraph>
             </div>
 
             <div className="space-y-6">
               <Header level={2} className="text-text-primary">
-                3. Fees, Invoicing, and Payment
+                3. Payment and Fees
               </Header>
-              <ul className="list-disc list-inside space-y-2 text-body text-text-primary leading-relaxed font-body">
-                <li>Fees are outlined in the applicable Agreement or invoice</li>
-                <li>Invoices are due according to the payment terms stated therein</li>
-                <li>
-                  Late payments may result in suspension of services until payment is received
-                </li>
-                <li>All fees are non-refundable unless expressly stated otherwise in writing</li>
-                <li>
-                  The Client is responsible for all applicable taxes, duties, or government charges
-                  related to the services, excluding taxes imposed on the Service Provider&apos;s
-                  income
-                </li>
-                <li>
-                  Final deliverables, website transfers, and launches will only occur after all
-                  outstanding invoices have been paid in full — this applies to design projects,
-                  development projects, and website builds
-                </li>
-              </ul>
+              <Paragraph variant="p2" className="text-text-primary leading-relaxed">
+                Invoices are due according to the payment terms stated in the Agreement or invoice.
+                Late payments may result in suspension of services until payment is received. All
+                fees paid are non-refundable unless otherwise stated in writing. Client is
+                responsible for applicable taxes except taxes imposed on Service Provider&apos;s
+                income.
+              </Paragraph>
+              <Paragraph variant="p2" className="text-text-primary leading-relaxed">
+                Final deliverables, website transfers, and launches will only occur after all
+                outstanding invoices have been paid in full — this applies to design projects,
+                development projects, and website builds.
+              </Paragraph>
             </div>
 
             <div className="space-y-6">
@@ -126,26 +107,16 @@ export default function TermsPage() {
                 5. Intellectual Property
               </Header>
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
-                Unless otherwise stated in writing:
+                All work, drafts, designs, code, documentation, and deliverables remain the property
+                of the Service Provider until full payment has been received. Upon full payment,
+                ownership or usage rights to final deliverables will transfer as specified in the
+                Agreement. Service Provider retains ownership of any pre-existing materials,
+                frameworks, templates, systems, processes, libraries, or tools used to provide
+                services. Service Provider may display completed work in portfolios, case studies,
+                marketing materials, and professional presentations unless otherwise agreed in
+                writing.
               </Paragraph>
-              <ul className="list-disc list-inside space-y-2 text-body text-text-primary leading-relaxed font-body">
-                <li>
-                  All work remains the property of the Service Provider until full payment has been
-                  received
-                </li>
-                <li>
-                  Upon full payment, the Client is granted a license or ownership (as specified in
-                  the Agreement) to the final deliverables
-                </li>
-                <li>
-                  The Service Provider retains the right to display completed work in portfolios,
-                  case studies, and promotional materials
-                </li>
-                <li>
-                  Any pre-existing tools, frameworks, or materials owned by the Service Provider
-                  remain the Service Provider&apos;s intellectual property
-                </li>
-              </ul>
+
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
                 All content on this website (text, graphics, logos, images, and software) is the
                 property of Elana Olson or its content suppliers and is protected by applicable
@@ -159,16 +130,11 @@ export default function TermsPage() {
                 6. Revisions and Changes
               </Header>
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
-                Each project includes a limited number of revision rounds as defined in the
-                applicable Agreement. Revisions are intended to refine work within the agreed scope
-                — they do not include new directions, added features, or material changes to the
-                project.
-              </Paragraph>
-              <Paragraph variant="p2" className="text-text-primary leading-relaxed">
-                Additional revisions beyond the included scope may be billed at my standard hourly
-                rate and may affect project timelines. Requests that significantly alter the scope,
-                direction, or complexity of the work will be treated as change requests and require
-                a separate agreement.
+                Revisions included in a project are defined in the applicable Agreement. Revisions
+                are intended to refine agreed deliverables and do not include new functionality,
+                additional pages, new design directions, substantial restructuring, or expanded
+                scope. Additional work may require a separate quote or be billed at the standard
+                hourly rate.
               </Paragraph>
             </div>
 
@@ -179,10 +145,10 @@ export default function TermsPage() {
               <Paragraph variant="p2" className="text-text-primary leading-relaxed">
                 The Service Provider may rely on third-party tools, platforms, or services (e.g.,
                 hosting providers, software libraries, plugins). We are not responsible for outages,
-                changes, or failures caused by third-party services. This website may contain links
-                to third-party websites; such links are for convenience only and do not imply
-                endorsement. We are not responsible for the content, privacy practices, or
-                availability of third-party sites.
+                security incidents, policy changes, platform limitations, software defects, service
+                interruptions, pricing changes, or data loss caused by third-party providers. Client
+                acknowledges that websites and digital services rely on third-party infrastructure
+                beyond Service Provider&apos;s control.
               </Paragraph>
             </div>
 
