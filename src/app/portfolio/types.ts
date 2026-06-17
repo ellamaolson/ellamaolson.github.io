@@ -5,6 +5,7 @@ export type PortfolioColor = {
 export type PortfolioProject = {
   slug: string;
   title: string;
+  thumbnail: string;
   company: string;
   industry: string;
   services: string;

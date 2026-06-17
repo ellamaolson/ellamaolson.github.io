@@ -195,8 +195,11 @@ export function PortfolioTemplate({ project }: PortfolioTemplateProps) {
             </Paragraph>
 
             <p className="flex flex-wrap justify-center gap-x-2 gap-y-1 text-body text-text-secondary pb-8">
-              {project.brand.tags.map((tag) => (
-                <span key={tag}>{tag}</span>
+              {project.brand.tags.map((tag, index) => (
+                <span key={tag} className="inline-flex items-center gap-x-2">
+                  <span>{tag}</span>
+                  {index < project.brand.tags.length - 1 && <span aria-hidden="true">·</span>}
+                </span>
               ))}
             </p>
 

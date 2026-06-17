@@ -3,19 +3,17 @@
     {
       "slug": "hayoga",
       "title": "Hayoga Yoga Studio",
+      "thumbnail": "/portfolio/hayoga-thumbnail.jpg",
       "company": "Hayoga Yoga Studio",
       "industry": "Health & Wellness",
-      "services": "Web Design & Development",
+      "services": "Branding & Website Project",
       "hero": {
         "macbookImage": "/portfolio/hayoga-macbook.png",
         "description": "Custom website and brand design for Hayoga Yoga School in the Netherlands, offering in person and online classes. The finished site includes bilingual copy, custom images, and a natural feeling design that guides visitors toward booking a class."
       },
       "gallery": {
         "mainImage": "/portfolio/hayoga-about.png",
-        "secondaryImages": [
-          "/portfolio/hayoga-offerings.png",
-          "/portfolio/hayoga-programs.png"
-        ]
+        "secondaryImages": ["/portfolio/hayoga-offerings.png", "/portfolio/hayoga-programs.png"]
       },
       "testimonial": {
         "quote": "Elana was wonderful to work with. She took the time to understand my vision and translated it into a beautiful, professional website that truly represents what my yoga practice is about.",

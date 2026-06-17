@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 interface BaseButtonProps {
   children: ReactNode;
-  variant?: 'primary' | 'secondary' | 'outline' | 'outlineLight' | 'ghost';
+  variant?: 'primary' | 'secondary' | 'tertiary' | 'outline' | 'outlineLight' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
   className?: string;
 }
@@ -37,6 +37,7 @@ type ButtonProps = ButtonAsButton | ButtonAsLink;
  * Variants:
  * - primary: Accent color CTA (use sparingly)
  * - secondary: Brand olive for secondary emphasis
+ * - tertiary: Quiet text CTA with subtle hover
  * - outline: For light surfaces with border
  * - outlineLight: For dark/brand sections
  * - ghost: Text-only button
@@ -58,12 +59,14 @@ export function Button({
      * Elana Olson button system
      * - primary: muted ochre CTA (sparingly), dark text for contrast
      * - secondary: brand olive fill for secondary emphasis
+     * - tertiary: quiet text CTA on light surfaces
      * - outline: for light surfaces (olive text + subtle border)
      * - outlineLight: for dark/brand sections (light text + subtle light border)
      * - ghost: quiet text button on light surfaces
      */
     primary: 'bg-accent text-text-primary hover:bg-accent/90 focus:ring-accent',
     secondary: 'bg-brand-olive text-text-onDark hover:bg-brand-olive/90 focus:ring-brand-olive',
+    tertiary: 'text-brand-olive hover:text-text-primary hover:bg-surface-muted focus:ring-brand-olive',
     outline:
       // No border emphasis on hover; rely on text + surface shift.
       'border border-border-strong text-brand-olive hover:text-text-primary hover:bg-surface-muted hover:border-transparent focus:ring-brand-olive',
