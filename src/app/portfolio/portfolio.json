@@ -1,9 +1,55 @@
 {
-  "title": "Hayoga Yoga Studio",
-  "heroImage": "/portfolio/hayoga-desktop.png",
-  "desktopPreviewImage": "/portfolio/hayoga-desktop.png",
-  "mobilePreviewImage": "/portfolio/hayoga-mobile.png",
-  "colorPaletteImage": "/portfolio/hayoga-color-palette.png",
-  "stitchedDesktopImages": ["/portfolio/hayoga-desktop.png"],
-  "stitchedMobileImages": ["/portfolio/hayoga-mobile.png"]
+  "projects": [
+    {
+      "slug": "hayoga",
+      "title": "Hayoga Yoga Studio",
+      "company": "Hayoga Yoga Studio",
+      "industry": "Health & Wellness",
+      "services": "Web Design & Development",
+      "hero": {
+        "macbookImage": "/portfolio/hayoga-macbook.png",
+        "description": "Custom website and brand design for Hayoga Yoga School in the Netherlands, offering in person and online classes. The finished site includes bilingual copy, custom images, and a natural feeling design that guides visitors toward booking a class."
+      },
+      "gallery": {
+        "mainImage": "/portfolio/hayoga-about.png",
+        "secondaryImages": [
+          "/portfolio/hayoga-offerings.png",
+          "/portfolio/hayoga-programs.png"
+        ]
+      },
+      "testimonial": {
+        "quote": "Elana was wonderful to work with. She took the time to understand my vision and translated it into a beautiful, professional website that truly represents what my yoga practice is about.",
+        "attribution": "Hayoga Yoga School",
+        "role": "Client"
+      },
+      "brand": {
+        "heading": "BRAND DESIGN",
+        "tagline": "Warm / Feminine / Natural / Professional / Holistic",
+        "colors": [
+          { "hex": "FAF7F5" },
+          { "hex": "F3EDE7" },
+          { "hex": "D3A99F" },
+          { "hex": "B07A6A" },
+          { "hex": "8FAEA3" },
+          { "hex": "6B7A4E" }
+        ],
+        "details": "Linotype Didot sets an elegant, expressive tone for headings, paired with Junge for warm, highly readable body text. Imagery inspired by flowing movement, meditation, and nature reflects the teacher's gentle mind body approach in her practice.",
+        "tags": [
+          "Brand Strategy",
+          "Bilingual Content (EN/NL)",
+          "Custom Imagery",
+          "Responsive Design",
+          "SEO Optimization"
+        ],
+        "businessCardFront": "/portfolio/hayoga-card-front.png",
+        "businessCardBack": "/portfolio/hayoga-card-back.png"
+      },
+      "preview": {
+        "desktopImage": "/portfolio/hayoga-desktop.png",
+        "mobileImage": "/portfolio/hayoga-mobile.png",
+        "liveUrl": "https://www.hayoga.nl/",
+        "liveUrlMobile": "https://www.hayoga.nl/?showMobileView=true"
+      }
+    }
+  ]
 }
