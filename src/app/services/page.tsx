@@ -26,7 +26,7 @@ export default function ServicesPage() {
           className="absolute inset-0 bg-gradient-to-b from-text-primary/65 via-text-primary/35 to-text-primary/70"
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-[#DDD8CF]/15" aria-hidden="true" />
+        <div className="absolute inset-0 bg-surface-muted/15" aria-hidden="true" />
         <Container maxWidth="wide" className="relative py-10 sm:py-14">
           <div className="pt-[14vh] md:pt-[18vh] space-y-12">
             <div className="mx-auto w-full md:w-[80%] space-y-6">

@@ -62,12 +62,39 @@
 
   /* Warm pink glow for photo borders */
   .pink-glow {
-    border: 2px solid rgba(185, 110, 105, 0.35);
-    box-shadow: 0 0 24px 8px rgba(185, 120, 110, 0.25);
+    border: 2px solid color-mix(in srgb, var(--color-blush) 35%, transparent);
+    box-shadow: 0 0 24px 8px color-mix(in srgb, var(--color-blush) 25%, transparent);
+  }
+
+  /* Hero radial gradient using ochre accent */
+  .hero-gradient-accent {
+    background: radial-gradient(900px circle at 60% 30%, color-mix(in srgb, var(--color-accent) 18%, transparent), transparent 55%);
+  }
+
+  /* Process card backgrounds */
+  .bg-card-blush {
+    background-color: color-mix(in srgb, var(--color-blush) 30%, transparent);
+  }
+  .bg-card-rust {
+    background-color: color-mix(in srgb, var(--color-accent-hover) 30%, transparent);
+  }
+  .bg-card-amber {
+    background-color: color-mix(in srgb, var(--color-palette-amber) 32%, transparent);
+  }
+  .bg-card-ochre {
+    background-color: color-mix(in srgb, var(--color-accent) 38%, transparent);
+  }
+  .bg-card-olive {
+    background-color: color-mix(in srgb, var(--color-brand-olive) 28%, transparent);
   }
 }
 
 @layer utilities {
+  /* Deep trunk shadow for process/feature cards */
+  .shadow-card {
+    box-shadow: 0 18px 44px color-mix(in srgb, var(--color-text-primary) 10%, transparent);
+  }
+
   .text-balance {
     text-wrap: balance;
   }

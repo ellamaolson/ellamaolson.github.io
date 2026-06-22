@@ -66,7 +66,7 @@ export default function Home() {
       {/* Section: About Teaser */}
       <Section background="surfaceMuted" padding="lg" className="relative overflow-hidden">
         <div
-          className="absolute inset-0 bg-[radial-gradient(900px_circle_at_30%_50%,rgba(185,110,105,0.12),transparent_60%)]"
+          className="absolute inset-0 bg-[radial-gradient(900px_circle_at_30%_50%,rgba(var(--color-blush),0.12),transparent_60%)]"
           aria-hidden="true"
         />
         <Container maxWidth="wide" className="relative">
@@ -75,7 +75,7 @@ export default function Home() {
             <div className="relative shrink-0">
               {/* Decorative ring */}
               <div
-                className="pointer-events-none absolute -inset-4 rounded-full border border-[rgba(185,110,105,0.40)]"
+                className="pointer-events-none absolute -inset-4 rounded-full border border-blush/40"
                 aria-hidden="true"
               />
               <div className="relative w-72 sm:w-72 md:w-80 lg:w-96 aspect-square overflow-hidden rounded-full pink-glow">
@@ -187,7 +187,7 @@ export default function Home() {
 
               {/* Mobile-only image: between header and list */}
               <div className="md:hidden w-[90%] mx-auto">
-                <div className="relative h-[11rem] sm:h-[14rem] w-full overflow-hidden rounded-2xl border-2 border-[rgba(185,110,105,0.35)] shadow-[0_0_24px_8px_rgba(185,120,110,0.25)]">
+                <div className="relative h-[11rem] sm:h-[14rem] w-full overflow-hidden rounded-2xl border-2 border-blush/35 shadow-[0_0_24px_8px_rgba(var(--color-blush),0.25)]">
                   <LoadableImage
                     alt="Elana on a bridge"
                     src={elanaBridgeImage}
@@ -236,7 +236,7 @@ export default function Home() {
             </div>
 
             <div className="hidden md:block h-full">
-              <div className="relative h-full w-full overflow-hidden rounded-2xl border-2 border-[rgba(185,110,105,0.35)] shadow-[0_0_24px_8px_rgba(185,120,110,0.25)]">
+              <div className="relative h-full w-full overflow-hidden rounded-2xl border-2 border-blush/35 shadow-[0_0_24px_8px_rgba(var(--color-blush),0.25)]">
                 <LoadableImage
                   alt="Elana on a bridge"
                   src={elanaBridgeImage}
@@ -288,7 +288,7 @@ export default function Home() {
           />
 
           <div
-            className="absolute inset-0 bg-[radial-gradient(900px_circle_at_60%_30%,rgba(194,162,58,0.18),transparent_55%)]"
+            className="absolute inset-0 hero-gradient-accent"
             aria-hidden="true"
           />
 
@@ -436,7 +436,7 @@ export default function Home() {
             <nav aria-label="How we work" className="py-4 sm:py-6">
               <ol className="flex flex-col gap-3 sm:flex-row sm:flex-nowrap sm:items-stretch sm:justify-center sm:gap-4 mx-auto">
                 <li className="sm:flex-1 sm:min-w-[10rem] sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
-                  <div className="relative h-full sm:min-h-[18rem] rounded-[1.85rem] border-2 border-border-strong/25 bg-[rgb(161_90_43/0.30)] p-4 sm:p-6 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
+                  <div className="relative h-full sm:min-h-[18rem] rounded-[1.85rem] border-2 border-border-strong/25 bg-card-blush p-4 sm:p-6 shadow-card">
                     <div className="relative z-10 space-y-3 text-center sm:text-left flex flex-col items-center sm:items-start">
                       <div className="inline-flex h-10 w-10 sm:h-14 sm:w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
                         <svg
@@ -469,7 +469,7 @@ export default function Home() {
                 </li>
 
                 <li className="sm:flex-1 sm:min-w-[10rem] sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
-                  <div className="relative h-full sm:min-h-[18rem] rounded-[1.75rem] border-2 border-border-strong/25 bg-[rgb(213_125_71/0.32)] p-4 sm:p-6 sm:-translate-y-1 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
+                  <div className="relative h-full sm:min-h-[18rem] rounded-[1.75rem] border-2 border-border-strong/25 bg-card-amber p-4 sm:p-6 sm:-translate-y-1 shadow-card">
                     <div className="relative z-10 space-y-3 text-center sm:text-left flex flex-col items-center sm:items-start">
                       <div className="inline-flex h-10 w-10 sm:h-14 sm:w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
                         <svg
@@ -506,7 +506,7 @@ export default function Home() {
                 </li>
 
                 <li className="sm:flex-1 sm:min-w-[10rem] sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
-                  <div className="relative h-full sm:min-h-[18rem] rounded-[1.9rem] border-2 border-border-strong/25 bg-[rgb(194_162_58/0.38)] p-4 sm:p-6 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
+                  <div className="relative h-full sm:min-h-[18rem] rounded-[1.9rem] border-2 border-border-strong/25 bg-card-ochre p-4 sm:p-6 shadow-card">
                     <div className="relative z-10 space-y-3 text-center sm:text-left flex flex-col items-center sm:items-start">
                       <div className="inline-flex h-10 w-10 sm:h-14 sm:w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
                         <svg
@@ -540,7 +540,7 @@ export default function Home() {
                 </li>
 
                 <li className="sm:flex-1 sm:min-w-[10rem] sm:max-w-[18.5rem] md:max-w-[21rem] lg:max-w-[24rem]">
-                  <div className="relative h-full sm:min-h-[18rem] rounded-[1.8rem] border-2 border-border-strong/25 bg-[rgb(46_74_13/0.28)] p-4 sm:p-6 sm:translate-y-1 shadow-[0_18px_44px_rgba(27,28,20,0.10)]">
+                  <div className="relative h-full sm:min-h-[18rem] rounded-[1.8rem] border-2 border-border-strong/25 bg-card-olive p-4 sm:p-6 sm:translate-y-1 shadow-card">
                     <div className="relative z-10 space-y-3 text-center sm:text-left flex flex-col items-center sm:items-start">
                       <div className="inline-flex h-10 w-10 sm:h-14 sm:w-14 items-center justify-center rounded-full border border-border-strong/45 bg-white/70 text-brand-olive">
                         <svg

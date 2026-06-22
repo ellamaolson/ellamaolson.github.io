@@ -26,7 +26,7 @@ export default function AboutPage() {
           style={{ backgroundImage: "url('/backgrounds/flowers-growing.jpg')" }}
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-[#242D1A]/80" aria-hidden="true" />
+        <div className="absolute inset-0 bg-brand/80" aria-hidden="true" />
         <div
           className="absolute inset-0 bg-gradient-to-br from-surfaceMuted via-surfaceMuted to-transparent"
           style={{ clipPath: 'polygon(0 0, 100% 0, 100% 70%, 0 100%)' }}

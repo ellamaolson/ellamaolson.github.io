@@ -47,7 +47,7 @@ export default function ContactPage() {
           style={{ backgroundImage: "url('/backgrounds/la-jolla.jpg')" }}
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-[#726D6D]/20" aria-hidden="true" />
+        <div className="absolute inset-0 bg-text-secondary/20" aria-hidden="true" />
         {/* Calm overlay for legibility */}
         <div
           className="absolute inset-0 bg-gradient-to-b from-brand/55 via-text-primary/35 to-brand/60"
@@ -78,7 +78,7 @@ export default function ContactPage() {
                   as="button"
                   onClick={handleScheduleClick}
                   variant="primary"
-                  className="bg-[#c2a23a] hover:bg-[#a8922e] text-white border-[#c2a23a]"
+                  className="bg-accent hover:bg-accent-dark text-white border-accent"
                 >
                   Book a call with me
                 </Button>

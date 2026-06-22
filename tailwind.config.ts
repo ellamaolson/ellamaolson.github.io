@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import plugin from 'tailwindcss/plugin';
 
 const config: Config = {
   content: [
@@ -43,6 +44,7 @@ const config: Config = {
           // Accents
           ochre: '#C2A23A', // Muted Ochre: primary CTA/highlight
           rust: '#A15A2B', // Soft Rust: secondary accent/hover states
+          amber: '#D57D47', // Warm Amber: process card accent
         },
 
         /**
@@ -66,6 +68,7 @@ const config: Config = {
           secondary: '#726D6D', // Secondary text, captions, metadata
           onDark: '#E7E4DC', // Text on dark/brand surfaces
           subtle: 'rgba(27, 28, 20, 0.72)', // Softer body text on light surfaces
+          accent: '#B96E69', // Dusty rose/blush: fun pop for callout text
         },
         brand: {
           DEFAULT: '#242D1A', // Structural anchor: nav/footer/dark sections
@@ -75,12 +78,14 @@ const config: Config = {
         accent: {
           DEFAULT: '#C2A23A', // Primary CTA/highlight (sparingly)
           hover: '#A15A2B', // Secondary accent/hover states (sparingly)
+          dark: '#a8922e', // Darkened ochre for hover states on ochre elements
         },
         border: {
           subtle: 'rgba(27, 28, 20, 0.14)', // Light borders on stone surfaces
           strong: 'rgba(27, 28, 20, 0.28)', // Stronger separators/dividers
           onDark: 'rgba(231, 228, 220, 0.22)', // Borders on dark/brand sections
         },
+        blush: '#B96E69', // Dusty rose: photo borders, warm glows
 
         /**
          * Legacy aliases (temporary)
@@ -143,6 +148,19 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addBase, theme }) {
+      addBase({
+        ':root': {
+          '--color-blush': theme('colors.blush'),
+          '--color-accent': theme('colors.accent.DEFAULT'),
+          '--color-accent-hover': theme('colors.accent.hover'),
+          '--color-palette-amber': theme('colors.palette.amber'),
+          '--color-text-primary': theme('colors.text.primary'),
+          '--color-brand-olive': theme('colors.brand.olive'),
+        },
+      });
+    }),
+  ],
 };
 export default config;
