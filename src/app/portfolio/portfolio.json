@@ -3,6 +3,7 @@
     {
       "slug": "hayoga",
       "title": "Hayoga Yoga Studio",
+      "url": "https://www.hayoga.nl/",
       "thumbnail": "/portfolio/hayoga-thumbnail.jpg",
       "company": "Hayoga Yoga Studio",
       "industry": "Health & Wellness",
@@ -13,7 +14,8 @@
       },
       "gallery": {
         "mainImage": "/portfolio/hayoga-about.png",
-        "secondaryImages": ["/portfolio/hayoga-offerings.png", "/portfolio/hayoga-programs.png"]
+        "secondaryImages": ["/portfolio/hayoga-offerings.png", "/portfolio/hayoga-programs.png"],
+        "tertiaryImages": ["/portfolio/hayoga-card-front.png", "/portfolio/hayoga-card-back.png"]
       },
       "testimonial": {
         "quote": "Elana was wonderful to work with. She took the time to understand my vision and translated it into a beautiful, professional website that truly represents what my yoga practice is about.",
@@ -22,31 +24,70 @@
       },
       "brand": {
         "heading": "BRAND DESIGN",
-        "tagline": "Warm / Feminine / Natural / Professional / Holistic",
+        "tagline": "Warm · Feminine · Natural · Professional · Holistic",
         "colors": [
-          { "hex": "FAF7F5" },
-          { "hex": "F3EDE7" },
-          { "hex": "D3A99F" },
-          { "hex": "B07A6A" },
-          { "hex": "8FAEA3" },
-          { "hex": "6B7A4E" }
+          { "name": "Linen", "hex": "FAF7F5" },
+          { "name": "Stone", "hex": "F3EDE7" },
+          { "name": "Rose", "hex": "D3A99F" },
+          { "name": "Clay", "hex": "B07A6A" },
+          { "name": "Sage", "hex": "8FAEA3" },
+          { "name": "Fern", "hex": "6B7A4E" }
         ],
-        "details": "Linotype Didot sets an elegant, expressive tone for headings, paired with Junge for warm, highly readable body text. Imagery inspired by flowing movement, meditation, and nature reflects the teacher's gentle mind body approach in her practice.",
+        "mainColor": { "name": "Rose", "hex": "D3A99F" },
+        "fonts": [
+          { "name": "Linotype Didot", "description": "Headings — elegant, expressive serif" },
+          { "name": "Junge", "description": "Body — warm, highly readable serif" }
+        ],
+        "imageDescription": "Business cards for Hayoga.",
         "tags": [
           "Brand Strategy",
           "Bilingual Content (EN/NL)",
           "Custom Imagery",
           "Responsive Design",
           "SEO Optimization"
-        ],
-        "businessCardFront": "/portfolio/hayoga-card-front.png",
-        "businessCardBack": "/portfolio/hayoga-card-back.png"
+        ]
+      }
+    },
+    {
+      "slug": "stephaniewallacetherapy",
+      "title": "Stephanie Wallace Therapy",
+      "url": "https://www.elanaolson.com",
+      "thumbnail": "/portfolio/swt-profile-pic.jpg",
+      "company": "Stephanie Wallace Therapy",
+      "industry": "Marriage and Family Therapy",
+      "services": "Branding & Website Project",
+      "hero": {
+        "macbookImage": "/portfolio/swt-macbook.png",
+        "description": "Custom website for Stephanie Wallace's therapy practice in the San Diego, California - offering general and specialized therapy for individuals and couples. The finished site includes custom copy, vibrant designs, and a clear CTA guiding clients towards scheduling a call with her."
       },
-      "preview": {
-        "desktopImage": "/portfolio/hayoga-desktop.png",
-        "mobileImage": "/portfolio/hayoga-mobile.png",
-        "liveUrl": "https://www.hayoga.nl/",
-        "liveUrlMobile": "https://www.hayoga.nl/?showMobileView=true"
+      "gallery": {
+        "mainImage": "/portfolio/swt-about.png",
+        "secondaryImages": ["/portfolio/swt-values.png", "/portfolio/swt-wavy.png"],
+        "tertiaryImages": ["/portfolio/swt-resources-1.png", "/portfolio/swt-resources-3.png"]
+      },
+      "brand": {
+        "heading": "BRAND DESIGN",
+        "tagline": "Ethereal · Inclusive · Refined · Luminous · Natural",
+        "colors": [
+          { "name": "Selenite", "hex": "F5F5FF" },
+          { "name": "Lavender", "hex": "E7E4F6" },
+          { "name": "Iris", "hex": "6556B8" },
+          { "name": "Mauve", "hex": "A57882" },
+          { "name": "Space", "hex": "13131B" }
+        ],
+        "mainColor": { "name": "Iris", "hex": "6556B8" },
+        "fonts": [
+          { "name": "Frances", "description": "Headings — elegant, expressive serif" },
+          { "name": "Inter", "description": "Body — warm, highly readable serif" }
+        ],
+        "imageDescription": "Sections from the Resource page where clients can browse the recommended resources.",
+        "tags": [
+          "Brand Strategy",
+          "Custom Copy",
+          "Custom Imagery",
+          "Responsive Design",
+          "SEO Optimization"
+        ]
       }
     }
   ]
