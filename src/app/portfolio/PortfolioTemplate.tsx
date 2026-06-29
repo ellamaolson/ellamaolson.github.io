@@ -200,11 +200,13 @@ export function PortfolioTemplate({ project }: PortfolioTemplateProps) {
               </div>
             )}
           </div>
-          <div className="mt-10 flex justify-center">
-            <Button as="link" href={project.url} variant="secondary">
-              Visit {project.title} →
-            </Button>
-          </div>
+          {project.url && (
+            <div className="mt-10 flex justify-center">
+              <Button as="link" href={project.url} variant="secondary">
+                Visit {project.title} →
+              </Button>
+            </div>
+          )}
         </Container>
       </Section>
     </>

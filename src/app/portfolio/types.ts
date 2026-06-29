@@ -11,7 +11,7 @@ export type PortfolioFont = {
 export type PortfolioProject = {
   slug: string;
   title: string;
-  url: string;
+  url?: string;
   thumbnail: string;
   company: string;
   industry: string;
