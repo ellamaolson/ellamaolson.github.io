@@ -11,6 +11,10 @@ type PortfolioPageProps = {
   };
 };
 
+export function generateStaticParams() {
+  return portfolioData.projects.map((p) => ({ slug: p.slug }));
+}
+
 export default function PortfolioSlugPage({ params }: PortfolioPageProps) {
   const project = portfolioData.projects.find((p) => p.slug === params.slug);
 
