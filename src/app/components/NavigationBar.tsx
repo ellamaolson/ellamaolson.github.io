@@ -10,6 +10,7 @@ export function NavigationBar() {
   const primaryNavItems = [
     { href: '/services', name: 'Website services' },
     { href: '/contracting', name: 'Contract engineering' },
+    { href: '/portfolio', name: 'Portfolio' },
     { href: '/about', name: 'About' },
     { href: '/contact', name: 'Contact' },
   ];
