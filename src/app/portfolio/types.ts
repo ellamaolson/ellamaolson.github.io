@@ -1,10 +1,17 @@
 export type PortfolioColor = {
+  name: string;
   hex: string;
+};
+
+export type PortfolioFont = {
+  name: string;
+  description: string;
 };
 
 export type PortfolioProject = {
   slug: string;
   title: string;
+  url: string;
   thumbnail: string;
   company: string;
   industry: string;
@@ -16,6 +23,7 @@ export type PortfolioProject = {
   gallery: {
     mainImage: string;
     secondaryImages: string[];
+    tertiaryImages?: string[];
   };
   testimonial?: {
     quote: string;
@@ -25,17 +33,11 @@ export type PortfolioProject = {
   brand: {
     heading: string;
     tagline: string;
+    mainColor?: PortfolioColor;
     colors: PortfolioColor[];
-    details: string;
+    fonts?: PortfolioFont[];
+    imageDescription?: string;
     tags: string[];
-    businessCardFront?: string;
-    businessCardBack?: string;
-  };
-  preview: {
-    desktopImage: string;
-    mobileImage: string;
-    liveUrl: string;
-    liveUrlMobile?: string;
   };
 };
 
